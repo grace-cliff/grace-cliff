@@ -480,7 +480,7 @@ if (window.location.href.includes("fashion-show.html")) {
         { 
             title: "College of DuPage Fashion Show Projections 'Euphoria'",
             info_1: "These abstract interactive shapes, with patterns taken from garments in the College of DuPage Fashion Show, create a meta experience. Using Cinema 4D these abstract shapes act like fabric colliding into each other swiftly. Euphoria in Greek means 'I'm bringing something good.' This was the intention for the show adding to the fashion show experience bringing movement and energy into the space. The Sculpture and Music is influenced by sea waves and indie music created by Philio Milioti.",
-            image: "/assets/fashion-show/image.jpg",
+            image: "/grace-cliff/assets/fashion-show/image.jpg",
             video_1: "https://player.vimeo.com/video/827116854?h=2b4d5813d8",
             video_2: "https://player.vimeo.com/video/827117294?h=67ea38b46d",
             image_1: "/grace-cliff/assets/fashion-show/image_1.jpg",
