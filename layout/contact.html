@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grace Cliff - Contact</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Grace Cliff">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets/logo/favicon.png">
+
+    <!-- Styles: Main -->
+    <link rel="stylesheet" type="text/css" href="../styles/main.css" />
+
+    <!-- Scripts: Main -->
+    <link rel="preload" as="script" href="../scripts/main.js">
+    <script type="module" src="../scripts/main.js" defer="defer"></script>
+
+    <!-- Scripts: Form -->
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+  </head>
+
+  <header id="header"></header>
+
+  <body>
+    <main id="mainContent" class="wrapper">
+        <section id="contact">
+          <h5>Contact</h5>
+          <form action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="4ee39bda-2d53-498a-959a-270be0fb2b93">
+              <div class="flex large--flex-row flex-column justify-between">
+                  <div class="flex flex-column large--width-50">
+                      <label for="name">First Name</label>
+                      <input id="name" type="text" aria-label="First Name" name="name" required>
+                  </div>
+                  <div class="flex flex-column large--width-50">
+                      <label for="email">Email Address</label>
+                      <input id="email" type="email" aria-label="Email Address" name="email" required>
+                  </div>
+              </div>
+              <div class="flex flex-column">
+                  <label for="subject">Subject</label>
+                  <input id="subject" type="text" aria-label="Subject" name="subject" required>
+              </div>
+              <div class="flex flex-column">
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" autocorrect="true" rows="10" required></textarea>
+              </div>
+              <div class="button-wrap">
+                  <button type="submit" class="button">Submit Form</button>
+              </div>
+          </form>         
+      </section>
+    </main>
+  </body>
+
+  <footer id="footer"></footer>
+</html>
+
+

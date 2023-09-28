@@ -1,0 +1,724 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:after, blockquote:before, q:after, q:before {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "UncutSans-Medium";
+  src: url("../fonts/UncutSans-Medium.otf");
+}
+
+@font-face {
+  font-family: "UncutSans-Regular";
+  src: url("../fonts/UncutSans-Regular.otf");
+}
+
+@font-face {
+  font-family: "UncutSans-Semibold";
+  src: url("../fonts/UncutSans-Semibold.otf");
+}
+
+@font-face {
+  font-family: "UncutSans-Bold";
+  src: url("../fonts/UncutSans-Bold.otf");
+}
+
+.hide {
+  display: none;
+}
+
+.block, .button-wrap .button, footer copyright {
+  display: block;
+}
+
+@media (min-width: 767px) {
+  .large--block {
+    display: block;
+  }
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.mobile-only {
+  display: block;
+}
+
+.desktop-only {
+  display: none;
+}
+
+@media (min-width: 767px) {
+  .desktop-only {
+    display: block;
+  }
+  .mobile-only {
+    display: none;
+  }
+}
+
+.relative, main, footer {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.inherit {
+  position: inherit;
+}
+
+.initial {
+  position: initial;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.flex, .grid-item, header .navigation, header .navigation ul, #portfolioGrid,
+#mainGrid, footer .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-column, .grid-item, #portfolioGrid,
+#mainGrid {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex-wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.justify-between, header .flex, header .grid-item, header .navigation, header .navigation ul, header #portfolioGrid,
+header #mainGrid, footer .flex {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.justify-around {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.justify-evenly {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.justify-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.justify-end {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.justify-start {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.items-center, header .navigation {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.items-end {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.items-start, footer .flex {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.align-self-center {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+@media (min-width: 767px) {
+  .large--flex-row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .large--flex, header .flex, header .grid-item, header .navigation, header .navigation ul, header #portfolioGrid,
+  header #mainGrid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .large--justify-start, header .flex, header .grid-item, header .navigation, header .navigation ul, header #portfolioGrid,
+  header #mainGrid {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+@media (min-width: 767px) {
+  .large--grid, #portfolioGrid,
+  #mainGrid {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 2rem;
+  }
+}
+
+.columns-2, #portfolioGrid,
+#mainGrid {
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.columns-3 {
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.columns-4 {
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+.span-2 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / span 2;
+}
+
+.border {
+  border: 2px solid;
+}
+
+.width-100, header {
+  width: 100%;
+}
+
+@media (min-width: 767px) {
+  .large--width-auto {
+    width: auto;
+  }
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+html {
+  font-size: 1rem;
+  font-family: "UncutSans-Regular";
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+img,
+iframe {
+  width: 100%;
+  height: 100%;
+}
+
+iframe {
+  min-height: 50vw;
+}
+
+@media (min-width: 767px) {
+  iframe {
+    min-height: 26vw;
+  }
+}
+
+.wrapper {
+  padding: 0 2rem;
+}
+
+@media (min-width: 767px) {
+  .wrapper {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .wrapper {
+    padding: 0 2.2rem;
+  }
+}
+
+.wrapper-top {
+  padding: 2rem 0;
+}
+
+@media (min-width: 767px) {
+  .wrapper-top {
+    padding: 1.5rem 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .wrapper-top {
+    padding: 2.2rem 0;
+  }
+}
+
+.heading-xxl {
+  font-size: clamp(3.5rem, 5vw, 10rem);
+}
+
+@media (min-width: 561px) {
+  .heading-xxl {
+    font-size: clamp(5rem, 5vw, 10rem);
+  }
+}
+
+@media (min-width: 1024px) {
+  .heading-xxl {
+    font-size: clamp(10rem, 5vw, 10rem);
+  }
+}
+
+.heading-xl {
+  font-size: clamp(2.5rem, 5vw, 5rem);
+}
+
+@media (min-width: 561px) {
+  .heading-xl {
+    font-size: clamp(3.5rem, 5vw, 5rem);
+    line-height: 3.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .heading-xl {
+    font-size: clamp(2.5rem, 5vw, 5rem);
+    line-height: 5rem;
+  }
+}
+
+.heading-lg, h5 {
+  font-size: clamp(3rem, 7vw, 3rem);
+}
+
+.heading-md, h4 {
+  font-size: clamp(1rem, 7vw, 1.1rem);
+}
+
+.heading-sm {
+  font-size: clamp(0.5rem, 7vw, 1rem);
+}
+
+.text-center, h5, .button-wrap, header .flex, header .grid-item, header .navigation, header .navigation ul, header #portfolioGrid,
+header #mainGrid, #contact h5, footer copyright {
+  text-align: center;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 36px;
+}
+
+h2 {
+  color: #000;
+  font-size: 2.1rem;
+  margin: 1rem 0 10px 0;
+  font-family: "UncutSans-Medium";
+}
+
+h3 {
+  margin-bottom: 1rem;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
+h4 {
+  font-weight: 600;
+}
+
+h5 {
+  color: #000;
+  font-family: "UncutSans-Semibold";
+}
+
+h6 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+@media (min-width: 767px) {
+  h6 {
+    font-size: 1rem;
+  }
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 28px;
+  margin-bottom: 1rem;
+  color: #000;
+}
+
+@media (min-width: 767px) {
+  p {
+    font-size: 1rem;
+    line-height: 24px;
+  }
+}
+
+li {
+  font-size: 1rem;
+  line-height: 24px;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.grid-item:focus {
+  outline: 3px solid #000;
+  outline-offset: 1px;
+}
+
+.button {
+  background: #000;
+  color: #000;
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid #000;
+  font-weight: 600;
+  font-family: "UncutSans-Regular";
+  letter-spacing: 1px;
+}
+
+.button:hover {
+  background: #000;
+  color: #000;
+  cursor: pointer;
+}
+
+.button.inverted {
+  background: #000;
+  color: #000;
+}
+
+.button.inverted:hover {
+  background: #000;
+  color: #000;
+  border: 1px solid #000;
+}
+
+.button:focus {
+  outline: 3px solid #000;
+  outline-offset: 1px;
+}
+
+.button-wrap {
+  margin: 2.2rem 0;
+  margin-bottom: 0;
+}
+
+.button-wrap .button {
+  border: none;
+  width: 100%;
+  background: #e8e3d6;
+  font-family: "UncutSans-Semibold";
+}
+
+.button-wrap .button:hover {
+  outline: 2px solid;
+  outline-offset: 2px;
+}
+
+@media (min-width: 767px) {
+  .button-wrap {
+    margin: 4rem;
+    margin-bottom: 0;
+  }
+  .button-wrap .button {
+    display: inline;
+    width: auto;
+  }
+}
+
+.main-content:focus {
+  top: 30px;
+  left: 30px;
+  height: initial;
+  width: inherit;
+  margin: initial;
+  clip: inherit;
+  z-index: 2;
+}
+
+label {
+  color: #000;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 10px 0;
+}
+
+@media (min-width: 767px) {
+  label {
+    font-size: 14px;
+  }
+}
+
+input,
+textarea {
+  border: 1px solid #000;
+  border-radius: 2px;
+  padding: 0.8rem;
+  font-family: "UncutSans-Regular";
+}
+
+textarea {
+  resize: none;
+}
+
+header {
+  position: fixed;
+  background: #e8e3d6;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  padding: 0 2.2rem;
+}
+
+header .navigation a {
+  font-size: 1.2rem;
+}
+
+header .navigation a.active, header .navigation a:hover {
+  border-bottom: 2px solid;
+}
+
+header img {
+  height: 80px;
+  width: 80px;
+}
+
+@media (min-width: 561px) {
+  header {
+    padding: 1rem 2.2rem;
+    text-align: left;
+  }
+  header .navigation {
+    margin-left: 2rem;
+  }
+  header .navigation li {
+    margin: 0 2rem;
+  }
+}
+
+.grid-item {
+  margin-bottom: 2rem;
+}
+
+.grid-item img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+@media (min-width: 1024px) {
+  .grid-item {
+    margin-bottom: 0;
+  }
+}
+
+#contact form {
+  padding-bottom: 0;
+  padding: 0;
+}
+
+@media (min-width: 767px) {
+  #contact form {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  #contact .large--width-50 {
+    width: calc(50% - 3px);
+  }
+}
+
+#portfolioGrid .grid-item p {
+  display: none;
+}
+
+#portfolioGrid .grid-item:hover img {
+  opacity: 0.5;
+}
+
+#mainContent {
+  top: 160px;
+}
+
+#topSection {
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 767px) {
+  #topSection h2 {
+    margin: 3rem 0;
+  }
+  #topSection .image,
+  #topSection .info {
+    width: calc(50% - 1rem);
+  }
+  #topSection .image {
+    margin-right: 1rem;
+  }
+  #topSection .info {
+    margin-left: 1rem;
+  }
+}
+
+footer {
+  top: 200px;
+}
+
+footer * {
+  color: #000;
+}
+
+footer .grid-item, footer header .navigation, header footer .navigation, footer header .navigation ul, header .navigation footer ul, footer #portfolioGrid,
+footer #mainGrid, footer .flex {
+  padding: 2rem 2rem 1rem 2rem;
+}
+
+footer ul {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  margin-bottom: 4rem;
+}
+
+footer h6, footer li, footer a {
+  margin-bottom: 1rem;
+}
+
+footer p {
+  text-align: center;
+  padding-bottom: 3rem;
+  font-size: 11px;
+}
+
+footer copyright {
+  padding: 0 2rem 0;
+  font-size: 11px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 767px) {
+  footer .grid-item, footer header .navigation, header footer .navigation, footer header .navigation ul, header .navigation footer ul, footer #portfolioGrid,
+  footer #mainGrid, footer .flex {
+    max-width: 500px;
+    margin: 0 auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 4rem 0 0;
+  }
+  footer ul {
+    margin-bottom: 0;
+  }
+  footer ul,
+  footer .logo {
+    -webkit-box-ordinal-group: initial;
+        -ms-flex-order: initial;
+            order: initial;
+  }
+}
+/*# sourceMappingURL=main.css.map */
