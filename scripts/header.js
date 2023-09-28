@@ -4,7 +4,7 @@ const header = document.getElementById('header');
 
 const headerHTML = `<div class="desktop-only">
                         <div class="flex">
-                            <a href="/layout/portfolio.html" title="Link to the portfolio page">
+                            <a href="/grace-cliff/layout/portfolio.html" title="Link to the portfolio page">
                                 <h1><img src="/grace-cliff/assets/logo/logo.png" alt="Logo for Grace Cliff depicting a face with a thumbprint." width="170" height="170"></h1>
                             </a>
                             <nav class="navigation">
