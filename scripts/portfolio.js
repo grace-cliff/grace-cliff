@@ -1157,7 +1157,7 @@ if (window.location.href.includes("starbucks.html")) {
         { 
             title: "Starbucks Rebranding",
             info_1: "This Starbucks rebrand is influenced by previous company rebrands. Having worked as a barista at Starbucks, I gained an inside perspective which influenced my creative decisions. I also admire the values and social impact of the company. When observing previous rebrands, I noticed the simplification of the logo. As a result, the Starbuck crown makes up the logo following these trends. I also wanted warmer colors and put more emphasis on the Starbucks experience and less on the quick convenient aspects of Starbucks. Below is a mood board from initial research, animated logo, ephemeral variety, website, and phone mockups.",
-            image: "../assets/starbucks/image.png",
+            image: "../assets/starbucks/image.jpg",
             image_1: "../assets/starbucks/image_1.jpg",
             image_2: "../assets/starbucks/image_2.jpg",
             image_3: "../assets/starbucks/image_3.jpg",
