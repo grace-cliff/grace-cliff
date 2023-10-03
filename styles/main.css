@@ -791,6 +791,10 @@ footer #mainGrid, footer #portfolioFilters, footer .flex {
   padding: 2rem 2rem 1rem 2rem;
 }
 
+footer u {
+  text-decoration: underline;
+}
+
 footer ul {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;

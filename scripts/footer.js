@@ -6,12 +6,9 @@ const footerHTML = `<div class="flex justify-between">
                         <a target="_blank" href=" https://www.instagram.com/grace.cliff.art/">Art Instagram</a>
                     </div>
                     <copyright>@copyright Grace Cliff <span id="year"></span></copyright>
-                    <p></p>`
+                    <p>Website Developed by <a href="https://annette-cliff.github.io/annette-cliff/layout/index.html" title="External link to Annette's website" target="_blank"><u>Annette Cliff</u></a></p>`
 
 footer.innerHTML = footerHTML;
 
 
 document.getElementById("year").textContent = new Date().getFullYear();
-
-// TODO: ADD TO FOOTER ONCE SITE IS LIVE
-// <p>Website Developed by <a href="https://www.annette-cliff.dev" title="External link to Annette's website" target="_blank">Annette Cliff</a></p>
