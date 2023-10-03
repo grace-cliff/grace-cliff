@@ -188,7 +188,7 @@ if (window.location.href.includes("portfolio.html")) {
         has_active_class 
         ? (filterTrigger.classList.remove('active'), portfolioFiltersMobile.style.display = "none") 
         : (filterTrigger.classList.add('active'), portfolioFiltersMobile.style.display = "block");
-    });
+    }); 
     
     portfolioFilters.addEventListener('click', (event) => {
     const targetCategory = event.target.getAttribute('data-category');
@@ -385,7 +385,7 @@ if (window.location.href.includes("breaking-magazine.html")) {
                         <div class="info">
                             <h2>${item.title}</h2>
                             <p>${item.info_1}</p>
-                            <p>${item.link_text}: <a href="${item.link} target="_blank" title="External link to the ${item.link_text}">${item.link}</a></p>
+                            <p>${item.link_text}: <a href="${item.link}" target="_blank" title="External link to the ${item.link_text}">${item.link}</a></p>
                         </div>
                     </div>`)
     .join('');
@@ -1165,8 +1165,6 @@ if (window.location.href.includes("starbucks.html")) {
             image_5: "../assets/starbucks/image_5.jpg",
             image_6: "../assets/starbucks/image_6.jpg",
             image_7: "../assets/starbucks/image_7.png"
-            // image_8: "../assets/starbucks/image_8.png",
-            // image_9: "../assets/starbucks/image_9.jpg"
         }
     ]
     
