@@ -603,14 +603,110 @@ header {
             .flex-column;
 }
 
+
+.portfolio-filter-trigger {
+    margin-bottom: 3rem;
+    position: relative;
+    display: inline-block;
+    font-family: "UncutSans-Bold";
+    &:hover {
+        cursor: pointer;
+    }
+    &.active {
+        &:before {
+            transform: rotate(-45deg);
+        }
+        &:after {
+            transform: rotate(45deg);
+        }
+    }
+    &:before,
+    &:after {
+        content: '';
+        background: #000;
+        position: absolute;
+        width: 12px;
+        height: 2px;
+        right: -28px;
+        top: 8px;
+    }
+    &:before {
+        transform: rotate(45deg);
+        right: -21px;
+    }
+    &:after {
+        transform: rotate(-45deg);
+    }
+    @include breakpoint('medium') {
+        display: none;
+    }
+}
+
+#portfolio-filters {
+    display: none;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    border: 1px solid;
+    @include breakpoint('medium') {
+        display: block !important;
+        border: none;
+        margin-bottom: 0;
+        padding: 0;
+    }
+}
+
+#portfolioFilters {
+    @extend .flex,
+            .items-start,
+            .flex-column,
+            .justify-evenly;
+    li {
+        font-family: "UncutSans-Bold";
+        margin-bottom: 1rem;
+        &:hover {
+            cursor: pointer;
+            border-bottom: 1px solid;
+        }
+        &.active {
+            border-bottom: 1px solid;
+        }
+    }
+    @include breakpoint('medium') {
+        margin-bottom: 3rem;
+        flex-direction: row;
+        align-items: center;
+        li {
+            text-align: center;
+            margin-bottom: 0;
+        }
+    }
+}
+
 #portfolioGrid {
     .grid-item {
         p {
             display: none;
         }
+        i {
+            font-style: italic;
+        }
+        picture {
+            @extend .block;
+        }
         &:hover {
-            img {
-                opacity: 0.5;
+            picture {
+                position: relative;
+                &:after {
+                    content: '';
+                    height: 100%;
+                    width: 100%;
+                    background: #000;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    opacity: 0.8;
+                    filter: opacity(0.6);
+                }
             }
         }
     }
@@ -624,6 +720,14 @@ header {
 
 #topSection {
     margin-bottom: 2rem;
+    .info {
+        b {
+            font-family: "UncutSans-Bold";
+        }
+        i {
+            font-style: italic;
+        }
+    }
     @include breakpoint('medium') {
         h2 {
             margin: 3rem 0;

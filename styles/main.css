@@ -61,7 +61,7 @@ table {
   display: none;
 }
 
-.block, .button-wrap .button, footer copyright {
+.block, .button-wrap .button, #portfolioGrid .grid-item picture, footer copyright {
   display: block;
 }
 
@@ -125,14 +125,14 @@ table {
 }
 
 .flex, .grid-item, header .navigation, header .navigation ul, #portfolioGrid,
-#mainGrid, footer .flex {
+#mainGrid, #portfolioFilters, footer .flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .flex-column, .grid-item, #portfolioGrid,
-#mainGrid {
+#mainGrid, #portfolioFilters {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -145,7 +145,7 @@ table {
 }
 
 .justify-between, header .flex, header .grid-item, header .navigation, header .navigation ul, header #portfolioGrid,
-header #mainGrid, footer .flex {
+header #mainGrid, header #portfolioFilters, footer .flex {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -156,7 +156,7 @@ header #mainGrid, footer .flex {
       justify-content: space-around;
 }
 
-.justify-evenly {
+.justify-evenly, #portfolioFilters {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -192,7 +192,7 @@ header #mainGrid, footer .flex {
           align-items: flex-end;
 }
 
-.items-start, footer .flex {
+.items-start, #portfolioFilters, footer .flex {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -212,13 +212,13 @@ header #mainGrid, footer .flex {
             flex-direction: row;
   }
   .large--flex, header .flex, header .grid-item, header .navigation, header .navigation ul, header #portfolioGrid,
-  header #mainGrid {
+  header #mainGrid, header #portfolioFilters {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
   .large--justify-start, header .flex, header .grid-item, header .navigation, header .navigation ul, header #portfolioGrid,
-  header #mainGrid {
+  header #mainGrid, header #portfolioFilters {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
@@ -393,7 +393,7 @@ iframe {
 }
 
 .text-center, h5, .button-wrap, header .flex, header .grid-item, header .navigation, header .navigation ul, header #portfolioGrid,
-header #mainGrid, #contact h5, footer copyright {
+header #mainGrid, header #portfolioFilters, #contact h5, footer copyright {
   text-align: center;
 }
 
@@ -626,12 +626,124 @@ header img {
   }
 }
 
+.portfolio-filter-trigger {
+  margin-bottom: 3rem;
+  position: relative;
+  display: inline-block;
+  font-family: "UncutSans-Bold";
+}
+
+.portfolio-filter-trigger:hover {
+  cursor: pointer;
+}
+
+.portfolio-filter-trigger.active:before {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.portfolio-filter-trigger.active:after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.portfolio-filter-trigger:before, .portfolio-filter-trigger:after {
+  content: '';
+  background: #000;
+  position: absolute;
+  width: 12px;
+  height: 2px;
+  right: -28px;
+  top: 8px;
+}
+
+.portfolio-filter-trigger:before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  right: -21px;
+}
+
+.portfolio-filter-trigger:after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+@media (min-width: 767px) {
+  .portfolio-filter-trigger {
+    display: none;
+  }
+}
+
+#portfolio-filters {
+  display: none;
+  padding: 2rem;
+  margin-bottom: 3rem;
+  border: 1px solid;
+}
+
+@media (min-width: 767px) {
+  #portfolio-filters {
+    display: block !important;
+    border: none;
+    margin-bottom: 0;
+    padding: 0;
+  }
+}
+
+#portfolioFilters li {
+  font-family: "UncutSans-Bold";
+  margin-bottom: 1rem;
+}
+
+#portfolioFilters li:hover {
+  cursor: pointer;
+  border-bottom: 1px solid;
+}
+
+#portfolioFilters li.active {
+  border-bottom: 1px solid;
+}
+
+@media (min-width: 767px) {
+  #portfolioFilters {
+    margin-bottom: 3rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #portfolioFilters li {
+    text-align: center;
+    margin-bottom: 0;
+  }
+}
+
 #portfolioGrid .grid-item p {
   display: none;
 }
 
-#portfolioGrid .grid-item:hover img {
-  opacity: 0.5;
+#portfolioGrid .grid-item i {
+  font-style: italic;
+}
+
+#portfolioGrid .grid-item:hover picture {
+  position: relative;
+}
+
+#portfolioGrid .grid-item:hover picture:after {
+  content: '';
+  height: 100%;
+  width: 100%;
+  background: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+  -webkit-filter: opacity(0.6);
+          filter: opacity(0.6);
 }
 
 #mainContent {
@@ -640,6 +752,14 @@ header img {
 
 #topSection {
   margin-bottom: 2rem;
+}
+
+#topSection .info b {
+  font-family: "UncutSans-Bold";
+}
+
+#topSection .info i {
+  font-style: italic;
 }
 
 @media (min-width: 767px) {
@@ -667,7 +787,7 @@ footer * {
 }
 
 footer .grid-item, footer header .navigation, header footer .navigation, footer header .navigation ul, header .navigation footer ul, footer #portfolioGrid,
-footer #mainGrid, footer .flex {
+footer #mainGrid, footer #portfolioFilters, footer .flex {
   padding: 2rem 2rem 1rem 2rem;
 }
 
@@ -699,7 +819,7 @@ footer a:hover {
 
 @media (min-width: 767px) {
   footer .grid-item, footer header .navigation, header footer .navigation, footer header .navigation ul, header .navigation footer ul, footer #portfolioGrid,
-  footer #mainGrid, footer .flex {
+  footer #mainGrid, footer #portfolioFilters, footer .flex {
     max-width: 500px;
     margin: 0 auto;
     -webkit-box-orient: horizontal;
