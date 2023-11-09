@@ -23,7 +23,7 @@ if (window.location.href.includes("portfolio.html")) {
         { 
             category: "Fashion",
             title: "College of DuPage Fashion Show <i>Euphoria</i>",
-            medium: "Projection Design",
+            medium: "Animation / Video",
             info: "These abstract interactive shapes, with patterns taken from garments in the College of DuPage Fashion Show, create a meta experience. Using Cinema 4D these abstract shapes act like fabric colliding into each other swiftly.",
             image: "../assets/portfolio/fashion-show.jpg",
             url: "../portfolio/fashion-show.html"
@@ -44,14 +44,14 @@ if (window.location.href.includes("portfolio.html")) {
             image: "../assets/portfolio/art-institute.jpg",
             url: "../portfolio/art-institute.html"
         },
-        { 
-            category: "Mixed Media",
-            title: "Mixed Media",
-            medium: "2D/3D Animation",
-            info: "This is a compilation of mixed media from various projects and clients. This includes graphic design posters, logos, kinetic type videos, rotoscoping and dance reels.",
-            image: "../assets/portfolio/mixed-media.png",
-            url: "../portfolio/mixed-media.html"
-        },
+        // { 
+        //     category: "Mixed Media",
+        //     title: "Mixed Media",
+        //     medium: "2D/3D Animation",
+        //     info: "This is a compilation of mixed media from various projects and clients. This includes graphic design posters, logos, kinetic type videos, rotoscoping and dance reels.",
+        //     image: "../assets/portfolio/mixed-media.png",
+        //     url: "../portfolio/mixed-media.html"
+        // },
         { 
             category: "Landscape",
             title: "<i>Landscape of Time</i> Immersive Projections",
@@ -87,7 +87,7 @@ if (window.location.href.includes("portfolio.html")) {
         { 
             category: "Ballet Body",
             title: "<i>Ballet Body</i> Performance Art Piece",
-            medium: "Performance Art",
+            medium: "Animation / Video",
             info: "This is a performance art piece about the lack of conversation around body image in the dance community. Awarded 2nd Place 3D and selected to display video at the 2023 Cleve Carney Art Gallery Exhibition.",
             image: "../assets/portfolio/ballet.png",
             url: "../portfolio/ballet-body.html"
@@ -95,7 +95,7 @@ if (window.location.href.includes("portfolio.html")) {
         { 
             category: "Expectations Vs. Reality",
             title: "<i>Expectations vs. Reality</i> Performace Art",
-            medium: "Performance Art",
+            medium: "Projection Design",
             info: "‘Expectations vs Reality’ is a multimedia piece that challenges one's predisposed notions of reality. It is a DADA inspired work with themes of playfulness, layered ideas, and avant-garde concepts. Time, color, and sound are all explored in this combination of projections with modern dance.",
             image: "../assets/portfolio/expectations-vs-reality.png",
             url: "../portfolio/expectations-vs-reality.html"
@@ -111,7 +111,7 @@ if (window.location.href.includes("portfolio.html")) {
         {
             category: "Kota the Friend",
             title: "Kota the Friend",
-            medium: "Web Design",
+            medium: "Graphic Design",
             info: "This website (hover over image to the left; click to enter) was inspired by lyric rapper Kota the Friend. It mimic’s his phone screen with the apps you can steam his music, find his Discography under Safari, Gallery, and Albums under the Albums app.  HTML and CSS external stylesheets were used in the creation of the website. It is made for a 1280 by 800 monitor or iPad. My process began with researching facts about Kota the Friend to tailor a website that would accurately mimic his iPhone. I then created three wireframe designs and with the best mockup made an interactive prototypes in Adobe XD. After finalizing my mockup I coded all the HTML and CSS using the program ‘Brackets’. I chose Kota the Friend because I like the messages he raps in his music from being down to earth, humble, to hustling for your goals.",
             image: "../assets/kota-the-friend/image.png",
             url: "../portfolio/kota-the-friend.html"
@@ -154,8 +154,8 @@ if (window.location.href.includes("portfolio.html")) {
             filter: "Graphic Design"
         },
         {
-            title: "2D/3D Animation",
-            filter: "2D/3D Animation"
+            title: "Animation / Video",
+            filter: "Animation / Video"
         },
         {
             title: "Installation",
