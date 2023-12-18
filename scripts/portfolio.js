@@ -115,6 +115,14 @@ if (window.location.href.includes("portfolio.html")) {
             info: "This website (hover over image to the left; click to enter) was inspired by lyric rapper Kota the Friend. It mimic’s his phone screen with the apps you can steam his music, find his Discography under Safari, Gallery, and Albums under the Albums app.  HTML and CSS external stylesheets were used in the creation of the website. It is made for a 1280 by 800 monitor or iPad. My process began with researching facts about Kota the Friend to tailor a website that would accurately mimic his iPhone. I then created three wireframe designs and with the best mockup made an interactive prototypes in Adobe XD. After finalizing my mockup I coded all the HTML and CSS using the program ‘Brackets’. I chose Kota the Friend because I like the messages he raps in his music from being down to earth, humble, to hustling for your goals.",
             image: "../assets/kota-the-friend/image.png",
             url: "../portfolio/kota-the-friend.html"
+        },
+        {
+            category: "Sunday Morning Grooves",
+            title: "Sunday Morning Grooves",
+            medium: "Animation / Video",
+            info: "",
+            image: "../assets/sunday-morning-grooves/image.png",
+            url: "../portfolio/sunday-morning-grooves.html"
         }
     ]
 
@@ -211,7 +219,7 @@ if (window.location.href.includes("about.html")) {
     var about = [
         { 
             title: "Hello, I'm Grace Cliff",
-            info_1: "<p>I am a highly creative multidisciplinary designer with a strong vision for motion graphics, 3D animation, and graphic design. </p> <p>To introduce myself, I graduated from Illinois State University, magna cum laude, with a B.A. Graphic Design, B.A. in Creative Technology, and a minor in Dance. My specialization is in immersive installations, 2D/3D animation, branding, kinetic type videos, and modeling. </p><p>My work has been displayed at The Art Institute of Chicago, MassArt Studio Foundation Brant Gallery, Waterstreet Dance Miwaukee, College of DuPage Wings Gallery, Illinois State School of Theatre and Dance, and the College Dance Association. <br></br> I am currently in the market for full-time or freelance design positions.</p>",
+            info_1: "<p>I am a highly creative multidisciplinary designer with a strong vision for motion graphics, 3D animation, and graphic design.</p> <p>I graduated from Illinois State University, magna cum laude, with a B.A. Graphic Design, B.A. in Creative Technology, and a minor in Dance. My specialization is in combining kinetic art with immersive installations. </p><p>My work has been displayed at The Art Institute of Chicago, MassArt Studio Foundation Brant Gallery, Waterstreet Dance Milwaukee, College of DuPage Wings Gallery, Illinois State School of Theatre and Dance, and the College Dance Association. <br></br> I am currently in the market for full-time or freelance design positions.</p>",
             image: "../assets/about/image.jpg",
             resume: "https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:f33fd1cb-f9fd-3516-b72d-e457bc5d0606"
         }
@@ -1203,6 +1211,53 @@ if (window.location.href.includes("starbucks.html")) {
                             </div>`);
             }
         }
+        return images.join('');
+    });
+    
+    mainGrid.innerHTML = mainGridHTML.join('');
+    
+}
+
+
+// Page: Sunday Morning Grooves
+if (window.location.href.includes("sunday-morning-grooves.html")) {
+    var sundayMorning = [
+        { 
+            title: "Sunday Morning Grooves",
+            info_1: "Sunday Morning Grooves encompasses the overall feeling of a warm summer Sunday morning. The piece starts slow as the sun rises and windchimes initiate movement in the scene. Soon jazz music plays as the morning picks up with a record player coming together to hip-hop. The video is heavily influenced by the rubber hose animation style and lofi beats videos. Autodesk Maya was used in modeling, rigging, animation, and rendering.",
+            image: "../assets/sunday-morning-grooves/image.jpg",
+            video: "https://www.youtube.com/embed/e5M4KIXG_7Y"
+        }
+    ]
+    
+    // top section
+    const topSection = document.getElementById('topSection');
+    
+    const topSectionHTML = sundayMorning
+    .map(item => `<div class="flex large--flex-row flex-column">
+                        <div class="image">
+                            <picture>
+                                <source srcset="${item.image}" media="(min-width: 600px)" />
+                                <img src="${item.image}" alt="${item.title}'s featured image" width="450" height="450" loading="lazy">
+                            </picture>
+                        </div>
+                        <div class="info">
+                            <h2>${item.title}</h2>
+                            <p>${item.info_1}</p>
+                        </div>
+                    </div>`)
+    .join('');
+    
+    topSection.innerHTML = topSectionHTML;
+    
+    // grid
+    const mainGrid = document.getElementById('mainGrid');
+    
+    const mainGridHTML = sundayMorning.map((item) => {
+        const images = [];
+        images.push(`<div class="image">
+                        <iframe title="vimeo-player" src="${item.video}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                    </div>`)
         return images.join('');
     });
     
