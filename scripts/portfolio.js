@@ -121,7 +121,7 @@ if (window.location.href.includes("portfolio.html")) {
             title: "Sunday Morning Grooves",
             medium: "Animation / Video",
             info: "",
-            image: "../assets/sunday-morning-grooves/image.png",
+            image: "../assets/portfolio/sunday-morning-grooves.png",
             url: "../portfolio/sunday-morning-grooves.html"
         }
     ]
@@ -1225,7 +1225,8 @@ if (window.location.href.includes("sunday-morning-grooves.html")) {
         { 
             title: "Sunday Morning Grooves",
             info_1: "Sunday Morning Grooves encompasses the overall feeling of a warm summer Sunday morning. The piece starts slow as the sun rises and windchimes initiate movement in the scene. Soon jazz music plays as the morning picks up with a record player coming together to hip-hop. The video is heavily influenced by the rubber hose animation style and lofi beats videos. Autodesk Maya was used in modeling, rigging, animation, and rendering.",
-            image: "../assets/sunday-morning-grooves/image.jpg",
+            image_1: "../assets/sunday-morning-grooves/image_1.jpg",
+            image_2: "../assets/sunday-morning-grooves/image_2.jpg",
             video: "https://www.youtube.com/embed/e5M4KIXG_7Y"
         }
     ]
@@ -1235,17 +1236,14 @@ if (window.location.href.includes("sunday-morning-grooves.html")) {
     
     const topSectionHTML = sundayMorning
     .map(item => `<div class="flex large--flex-row flex-column">
-                        <div class="image">
-                            <picture>
-                                <source srcset="${item.image}" media="(min-width: 600px)" />
-                                <img src="${item.image}" alt="${item.title}'s featured image" width="450" height="450" loading="lazy">
-                            </picture>
-                        </div>
-                        <div class="info">
-                            <h2>${item.title}</h2>
-                            <p>${item.info_1}</p>
-                        </div>
-                    </div>`)
+                    <div class="image">
+                        <iframe title="vimeo-player" src="${item.video}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="info">
+                        <h2>${item.title}</h2>
+                        <p>${item.info_1}</p>
+                    </div>
+                </div>`)
     .join('');
     
     topSection.innerHTML = topSectionHTML;
@@ -1255,9 +1253,16 @@ if (window.location.href.includes("sunday-morning-grooves.html")) {
     
     const mainGridHTML = sundayMorning.map((item) => {
         const images = [];
-        images.push(`<div class="image">
-                        <iframe title="vimeo-player" src="${item.video}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
-                    </div>`)
+        for (let i = 1; i <= 3; i++) {
+            if (item[`image_${i}`]) {
+                images.push(`<div class="grid-item">
+                                <picture>
+                                    <source srcset="${item[`image_${i}`]}" media="(min-width: 600px)" />
+                                    <img src="${item[`image_${i}`]}" alt="${item.title}'s featured image" width="450" height="450" loading="lazy">
+                                </picture>
+                            </div>`);
+            }
+        }
         return images.join('');
     });
     
