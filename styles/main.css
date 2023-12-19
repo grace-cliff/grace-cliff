@@ -752,22 +752,6 @@ header img {
   transition: opacity 1s ease-in-out;
 }
 
-#portfolioGrid .grid-item img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -webkit-transition: -webkit-transform .8s ease-in-out;
-  transition: -webkit-transform .8s ease-in-out;
-  transition: transform .8s ease-in-out;
-  transition: transform .8s ease-in-out, -webkit-transform .8s ease-in-out;
-}
-
-#portfolioGrid .grid-item picture:hover img {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-}
-
 #portfolioGrid .grid-item:hover picture {
   position: relative;
 }
@@ -783,6 +767,23 @@ header img {
   opacity: 0.8;
   -webkit-filter: opacity(0.6);
           filter: opacity(0.6);
+}
+
+@media (min-width: 500px) {
+  #portfolioGrid .grid-item img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition: -webkit-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;
+    transition: transform .8s ease-in-out, -webkit-transform .8s ease-in-out;
+  }
+  #portfolioGrid .grid-item picture:hover img {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
 }
 
 #mainContent {
