@@ -84,13 +84,13 @@ if (window.location.href.includes("portfolio.html")) {
             image: "../assets/portfolio/censored.png",
             url: "../portfolio/censored.html"
         },
-        { 
-            category: "Ballet Body",
-            title: "<i>Ballet Body</i> Performance Art Piece",
+        {
+            category: "Sunday Morning Grooves",
+            title: "Sunday Morning Grooves",
             medium: "Animation / Video",
-            info: "This is a performance art piece about the lack of conversation around body image in the dance community. Awarded 2nd Place 3D and selected to display video at the 2023 Cleve Carney Art Gallery Exhibition.",
-            image: "../assets/portfolio/ballet.png",
-            url: "../portfolio/ballet-body.html"
+            info: "",
+            image: "../assets/portfolio/sunday-morning-grooves.png",
+            url: "../portfolio/sunday-morning-grooves.html"
         },
         { 
             category: "Expectations Vs. Reality",
@@ -116,13 +116,13 @@ if (window.location.href.includes("portfolio.html")) {
             image: "../assets/kota-the-friend/image.png",
             url: "../portfolio/kota-the-friend.html"
         },
-        {
-            category: "Sunday Morning Grooves",
-            title: "Sunday Morning Grooves",
+        { 
+            category: "Ballet Body",
+            title: "<i>Ballet Body</i> Performance Art Piece",
             medium: "Animation / Video",
-            info: "",
-            image: "../assets/portfolio/sunday-morning-grooves.png",
-            url: "../portfolio/sunday-morning-grooves.html"
+            info: "This is a performance art piece about the lack of conversation around body image in the dance community. Awarded 2nd Place 3D and selected to display video at the 2023 Cleve Carney Art Gallery Exhibition.",
+            image: "../assets/portfolio/ballet.png",
+            url: "../portfolio/ballet-body.html"
         }
     ]
 
@@ -1172,7 +1172,8 @@ if (window.location.href.includes("starbucks.html")) {
             image_4: "../assets/starbucks/image_4.jpg",
             image_5: "../assets/starbucks/image_5.jpg",
             image_6: "../assets/starbucks/image_6.jpg",
-            image_7: "../assets/starbucks/image_7.png"
+            image_7: "../assets/starbucks/image_7.png",
+            video: "https://www.youtube.com/embed/95gDOqT7foE"
         }
     ]
     
@@ -1211,6 +1212,9 @@ if (window.location.href.includes("starbucks.html")) {
                             </div>`);
             }
         }
+        images.push(`<div class="grid-item">
+                        <iframe title="vimeo-player" src="${item.video}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                    </div>`)
         return images.join('');
     });
     
@@ -1269,3 +1273,40 @@ if (window.location.href.includes("sunday-morning-grooves.html")) {
     mainGrid.innerHTML = mainGridHTML.join('');
     
 }
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Function to check if an element is above the fold
+    function isElementAboveFold(element) {
+      const rect = element.getBoundingClientRect();
+      return rect.top < window.innerHeight;
+    }
+
+    // Get all elements with the specified class
+    const elements = document.querySelectorAll('.grid-item');
+
+    // Check visibility for each element
+    elements.forEach(function(element, index) {
+      if (isElementAboveFold(element)) {
+        console.log(`Element ${index + 1} is above the fold`);
+        element.classList.add('fade-in')
+        element.classList.add('visible')
+      } else {
+        console.log(`Element ${index + 1} is below the fold`);
+        element.classList.remove('fade-in')
+      }
+    });
+
+    // Use a scroll event listener to dynamically update visibility
+    window.addEventListener("scroll", function() {
+      elements.forEach(function(element, index) {
+        if (isElementAboveFold(element)) {
+          console.log(`Element ${index + 1} is now above the fold`);
+          element.classList.add('fade-in')
+        } else {
+          console.log(`Element ${index + 1} is now below the fold`);
+          element.classList.remove('fade-in')
+        }
+      });
+    });
+  });
