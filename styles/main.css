@@ -311,6 +311,7 @@ iframe {
 @media (min-width: 767px) {
   iframe {
     min-height: 26vw;
+    max-height: 26vw;
   }
 }
 
@@ -756,10 +757,10 @@ header img {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-transition: -webkit-transform 0.3s ease-in-out;
-  transition: -webkit-transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  transition: -webkit-transform .8s ease-in-out;
+  transition: transform .8s ease-in-out;
+  transition: transform .8s ease-in-out, -webkit-transform .8s ease-in-out;
 }
 
 #portfolioGrid .grid-item picture:hover img {

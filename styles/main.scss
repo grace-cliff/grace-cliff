@@ -281,6 +281,7 @@ iframe {
     min-height: 50vw;
     @include breakpoint('medium') {
         min-height: 26vw;
+        max-height: 26vw;
     }
 }
 
@@ -710,7 +711,7 @@ header {
             width: 100%;
             height: 100%;
             object-fit: cover; 
-            transition: transform 0.3s ease-in-out;
+            transition: transform .8s ease-in-out;
         }
         picture {
             &:hover {
