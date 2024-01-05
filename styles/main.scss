@@ -323,20 +323,9 @@ main {
     }
 }
 
-.heading-xl {
-    font-size: clamp(2.5rem, 5vw, 5rem);
-    @include breakpoint('small') {
-        font-size: clamp(3.5rem, 5vw, 5rem);
-        line-height: 3.5rem;
-    }
-    @include breakpoint('large') {
-        font-size: clamp(2.5rem, 5vw, 5rem);
-        line-height: 5rem;
-    }
-}
-
 .heading-lg {
-    font-size: clamp(3rem, 7vw, 3rem);
+    @extend .h2;
+    line-height: 2.2rem;
 }
 
 .heading-md {
@@ -356,7 +345,8 @@ h1 {
     line-height: 36px;
 }
 
-h2 {
+h2,
+.h2 {
     color: $color-light;
     font-size: 2.1rem;
     margin: 1rem 0 10px 0;
@@ -603,6 +593,12 @@ header {
             .columns-2,
             .flex,
             .flex-column;
+}
+
+#portfolioGrid {
+    @include breakpoint('large') {
+        grid-template-columns: repeat(3,1fr);
+    }
 }
 
 

@@ -123,6 +123,22 @@ if (window.location.href.includes("portfolio.html")) {
             info: "This is a performance art piece about the lack of conversation around body image in the dance community. Awarded 2nd Place 3D and selected to display video at the 2023 Cleve Carney Art Gallery Exhibition.",
             image: "../assets/portfolio/ballet.png",
             url: "../portfolio/ballet-body.html"
+        },
+        { 
+            category: "Animation / Video Compilation",
+            title: "Animation / Video Compilation",
+            medium: "Animation / Video Compilation",
+            info: "",
+            image: "../assets/portfolio/animation-video-compilation.png",
+            url: "../portfolio/animation-video-compilation.html"
+        },
+        { 
+            category: "Graphic Design Compilation",
+            title: "Graphic Design Compilation",
+            medium: "Graphic Design Compilation",
+            info: "",
+            image: "../assets/portfolio/graphic-design-compilation.png",
+            url: "../portfolio/graphic-design-compilation.html"
         }
     ]
 
@@ -168,6 +184,14 @@ if (window.location.href.includes("portfolio.html")) {
         {
             title: "Installation",
             filter: "Installation"
+        },
+        {
+            title: "Animation / Video Compilation",
+            filter: "Animation / Video Compilation"
+        },
+        {
+            title: "Graphic Design Compilation",
+            filter: "Graphic Design Compilation"
         }
     ];
 
@@ -219,9 +243,9 @@ if (window.location.href.includes("about.html")) {
     var about = [
         { 
             title: "Hello, I'm Grace Cliff",
-            info_1: "<p>I am a highly creative multidisciplinary designer with a strong vision for motion graphics, 3D animation, and graphic design.</p> <p>I graduated from Illinois State University, magna cum laude, with a B.A. Graphic Design, B.A. in Creative Technology, and a minor in Dance. My specialization is in combining kinetic art with immersive installations. </p><p>My work has been displayed at The Art Institute of Chicago, MassArt Studio Foundation Brant Gallery, Waterstreet Dance Milwaukee, College of DuPage Wings Gallery, Illinois State School of Theatre and Dance, and the College Dance Association. <br></br> I am currently in the market for full-time or freelance design positions.</p>",
+            info_1: "<p>I am a highly creative multidisciplinary designer with a strong vision for motion graphics, 3D animation, and graphic design.</p> <p>I graduated from Illinois State University, magna cum laude, with a B.A. Graphic Design, B.A. in Creative Technology, and a minor in Dance. My specialization is in combining kinetic art with immersive installations. </p><p>My work has been displayed at The Art Institute of Chicago, MassArt Studio Foundation Brant Gallery, Waterstreet Dance Milwaukee, College of DuPage Wings Gallery, Illinois State School of Theatre and Dance, and The American College Dance Association. <br></br> I am currently in the market for full-time or freelance design positions.</p>",
             image: "../assets/about/image.jpg",
-            resume: "https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:f33fd1cb-f9fd-3516-b72d-e457bc5d0606"
+            resume: "../assets/about/GraceCliff_Resume.pdf"
         }
     ]
     
@@ -1273,6 +1297,97 @@ if (window.location.href.includes("sunday-morning-grooves.html")) {
     mainGrid.innerHTML = mainGridHTML.join('');
     
 }
+
+
+// Page: Animation / Video Compilation
+if (window.location.href.includes("animation-video-compilation.html")) {
+    var animationVideoCompilation = [
+        { 
+            video_1: "https://player.vimeo.com/video/871249923?h=aff3bc09be",
+            video_2: "https://player.vimeo.com/video/899581434?h=cc606bc6e8",
+            video_3: "https://player.vimeo.com/video/640242995?h=5491d0fe86",
+            video_4: "https://player.vimeo.com/video/650166803?h=0bbeda93c1"
+        }
+    ]
+    
+    // grid
+    const mainGrid = document.getElementById('mainGrid');
+    
+    const mainGridHTML = animationVideoCompilation.map((item) => {
+        const images = [];
+        for (let i = 1; i <= 4; i++) {
+            if (item[`video_${i}`]) {
+                images.push(`<div class="grid-item">
+                                <iframe title="vimeo-player" src="${item[`video_${i}`]}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                            </div>`);
+            }
+        }
+        return images.join('');
+    });
+    
+    mainGrid.innerHTML = mainGridHTML.join('');
+    
+}
+
+
+// Page: Graphic Design Compilation
+if (window.location.href.includes("graphic-design-compilation.html")) {
+    var graphicDesignCompilation = [
+        { 
+            image_1: "../assets/graphic-design-compilation/image_1.png",
+            image_1_title: "Personal Logo",
+            image_2: "../assets/graphic-design-compilation/image_2.png",
+            image_2_title: "Self Portrait",
+            image_3: "../assets/graphic-design-compilation/image_3.jpg",
+            image_3_title: "Free Falling",
+            image_4: "../assets/graphic-design-compilation/image_4.png",
+            image_4_title: "This is a Censored Exhibition Poster (1/3)",
+            image_5: "../assets/graphic-design-compilation/image_5.png",
+            image_5_title: "This is a Censored Exhibition Poster (2/3)",
+            image_6: "../assets/graphic-design-compilation/image_6.png",
+            image_6_title: "This is a Censored Exhibition Poster (3/3)",
+            image_7: "../assets/graphic-design-compilation/image_7.png",
+            image_7_title: "This is a Censored Exhibition Cards",
+            image_8: "../assets/graphic-design-compilation/image_8.png",
+            image_8_title: "Construction Owner to CEO Non-Profit Program Promotion",
+            image_9: "../assets/graphic-design-compilation/image_9.png",
+            image_9_title: "Big Idea Pitch Contest Non-Profit Program Promotion",
+            image_10: "../assets/graphic-design-compilation/image_10.png",
+            image_10_title: "Invasive Species Forest Posters (1/2)",
+            image_11: "../assets/graphic-design-compilation/image_11.png",
+            image_11_title: "Invasive Species Forest Posters (2/2)",
+            image_12: "../assets/graphic-design-compilation/image_12.jpg",
+            image_12_title: "Water Lilies",
+            image_13: "../assets/graphic-design-compilation/image_13.jpg",
+            image_13_title: "Globe Calendar",
+            image_14: "../assets/graphic-design-compilation/image_14.png",
+            image_14_title: "Girl! You Need Therapy Podcast Logo"
+        }
+    ]
+    
+    // grid
+    const mainGrid = document.getElementById('mainGrid');
+    
+    const mainGridHTML = graphicDesignCompilation.map((item) => {
+        const images = [];
+        for (let i = 1; i <= 15; i++) {
+            if (item[`image_${i}`]) {
+                images.push(`<div class="grid-item">
+                                <picture>
+                                    <source srcset="${item[`image_${i}`]}" media="(min-width: 600px)" />
+                                    <img src="${item[`image_${i}`]}" alt="${item[`image_${i}_title`]}'s featured image" width="450" height="450" loading="lazy">
+                                </picture>
+                                <p class="heading-lg">${item[`image_${i}_title`]}</p>
+                            </div>`);
+            }
+        }
+        return images.join('');
+    });
+    
+    mainGrid.innerHTML = mainGridHTML.join('');
+    
+}
+
 
 
 document.addEventListener("DOMContentLoaded", function() {
