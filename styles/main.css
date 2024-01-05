@@ -364,6 +364,7 @@ iframe {
 }
 
 .heading-lg, h5 {
+  font-size: 1.5rem;
   line-height: 2.2rem;
 }
 
@@ -385,12 +386,15 @@ h1 {
   line-height: 36px;
 }
 
-h2,
-.h2,
-.heading-lg,
-h5 {
+h2 {
   color: #000;
   font-size: 2.1rem;
+  margin: 1rem 0 10px 0;
+  font-family: "UncutSans-Medium";
+}
+
+.h2, .heading-lg, h5 {
+  color: #000;
   margin: 1rem 0 10px 0;
   font-family: "UncutSans-Medium";
 }

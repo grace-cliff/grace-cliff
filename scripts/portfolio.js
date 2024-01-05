@@ -127,7 +127,7 @@ if (window.location.href.includes("portfolio.html")) {
         { 
             category: "Animation / Video Compilation",
             title: "Animation / Video Compilation",
-            medium: "Animation / Video Compilation",
+            medium: "Animation / Video",
             info: "",
             image: "../assets/portfolio/animation-video-compilation.png",
             url: "../portfolio/animation-video-compilation.html"
@@ -135,7 +135,7 @@ if (window.location.href.includes("portfolio.html")) {
         { 
             category: "Graphic Design Compilation",
             title: "Graphic Design Compilation",
-            medium: "Graphic Design Compilation",
+            medium: "Graphic Design",
             info: "",
             image: "../assets/portfolio/graphic-design-compilation.png",
             url: "../portfolio/graphic-design-compilation.html"
@@ -184,14 +184,6 @@ if (window.location.href.includes("portfolio.html")) {
         {
             title: "Installation",
             filter: "Installation"
-        },
-        {
-            title: "Animation / Video Compilation",
-            filter: "Animation / Video Compilation"
-        },
-        {
-            title: "Graphic Design Compilation",
-            filter: "Graphic Design Compilation"
         }
     ];
 
