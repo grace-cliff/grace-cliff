@@ -202,6 +202,26 @@ if (window.location.href.includes("portfolio.html")) {
                 item.style.display = 'none';
             }
         });
+
+        function isElementAboveFold(element) {
+            const rect = element.getBoundingClientRect();
+            return rect.top < window.innerHeight;
+          }
+      
+          // Get all elements with the specified class
+          const elements = document.querySelectorAll('.grid-item');
+      
+          // Check visibility for each element
+          elements.forEach(function(element, index) {
+            if (isElementAboveFold(element)) {
+              console.log(`Element ${index + 1} is above the fold`);
+              element.classList.add('fade-in')
+              element.classList.add('visible')
+            } else {
+              console.log(`Element ${index + 1} is below the fold`);
+              element.classList.remove('fade-in')
+            }
+          });
     }
 
     const filterTrigger = document.querySelector('.portfolio-filter-trigger');
