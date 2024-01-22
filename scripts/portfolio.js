@@ -96,7 +96,7 @@ if (window.location.href.includes("portfolio.html")) {
             category: "Expectations Vs. Reality",
             title: "<i>Expectations vs. Reality</i> Performace Art",
             medium: "Projection Design",
-            info: "‘Expectations vs Reality’ is a multimedia piece that challenges one's predisposed notions of reality. It is a DADA inspired work with themes of playfulness, layered ideas, and avant-garde concepts. Time, color, and sound are all explored in this combination of projections with modern dance.",
+            info: "'Expectations vs Reality' is a multimedia piece that challenges one's predisposed notions of reality. It is a DADA inspired work with themes of playfulness, layered ideas, and avant-garde concepts. Time, color, and sound are all explored in this combination of projections with modern dance.",
             image: "../assets/portfolio/expectations-vs-reality.png",
             url: "../portfolio/expectations-vs-reality.html"
         },
@@ -1315,10 +1315,18 @@ if (window.location.href.includes("sunday-morning-grooves.html")) {
 if (window.location.href.includes("animation-video-compilation.html")) {
     var animationVideoCompilation = [
         { 
-            video_1: "https://player.vimeo.com/video/871249923?h=aff3bc09be",
-            video_2: "https://player.vimeo.com/video/899581434?h=cc606bc6e8",
-            video_3: "https://player.vimeo.com/video/640242995?h=5491d0fe86",
-            video_4: "https://player.vimeo.com/video/650166803?h=0bbeda93c1"
+            video_1: "https://player.vimeo.com/video/899581434?h=cc606bc6e8",
+            video_2: "https://player.vimeo.com/video/640242995?h=5491d0fe86",
+            video_3: "https://player.vimeo.com/video/650166803?h=0bbeda93c1",
+            video_4: "https://www.youtube.com/embed/95gDOqT7foE",
+            video_5: "https://player.vimeo.com/video/904986202?h=d52d48f242",
+            video_6: "https://player.vimeo.com/video/486157970?h=dadfed684e",
+            video_7: "",
+            video_8: "",
+            video_9: "../assets/animation-video-compilation/video_8.mp4",
+            video_9_title: "Instagram Reel for Dance Guest Artist Morgan Williams (1/2)",
+            video_10: "../assets/animation-video-compilation/video_9.mp4",
+            video_10_title: "Instagram Reel for Dance Guest Artist Morgan Williams (2/2)",
         }
     ]
     
@@ -1327,10 +1335,29 @@ if (window.location.href.includes("animation-video-compilation.html")) {
     
     const mainGridHTML = animationVideoCompilation.map((item) => {
         const images = [];
-        for (let i = 1; i <= 4; i++) {
+        for (let i = 1; i <= 6; i++) {
             if (item[`video_${i}`]) {
                 images.push(`<div class="grid-item">
                                 <iframe title="vimeo-player" src="${item[`video_${i}`]}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                            </div>`);
+            }
+        }
+        for (let i = 7; i <= 8; i++) {
+            if (item[`video_${i}`]) {
+                images.push(`<div class="grid-item">
+                                <video width="640" height="360" controls>
+                                    <source src="${item[`video_${i}`]}" type="video/mov">
+                                </video>
+                            </div>`);
+            }
+        }
+        for (let i = 9; i <= 10; i++) {
+            if (item[`video_${i}`]) {
+                images.push(`<div class="grid-item">
+                                <video width="640" height="360" controls>
+                                    <source src="${item[`video_${i}`]}" type="video/mp4">
+                                </video>
+                                <h2>${item[`video_${i}_title`]}</h2>
                             </div>`);
             }
         }
@@ -1437,3 +1464,22 @@ document.addEventListener("DOMContentLoaded", function() {
       });
     });
   });
+
+
+  // Scroll To Top
+var scrollToTop = document.querySelector('#scrollToTop');
+scrollToTop.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
+
+scrollToTop.addEventListener('keyup', function(event) {
+    if (event.code === 'Enter') {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    }
+});

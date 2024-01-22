@@ -833,3 +833,43 @@ footer {
         }
     }
 }
+
+
+#scrollToTop {
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    border: 1px solid;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    background: #fff;
+    &:hover {
+        cursor: pointer;
+    }
+    span {
+        position: relative;
+        right: 0.5rem;
+        &:before,
+        &:after {
+            content: '';
+            background: $color-dark;
+            width: 10px;
+            height: 2px;
+            position: absolute;
+        }
+        &:before {
+            right: -1rem;
+            transform: rotate(45deg);
+        }
+        &:after {
+            transform: rotate(-45deg);
+        }
+    }
+    @include breakpoint('xsmall') {
+        display: none;
+    }
+}

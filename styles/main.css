@@ -881,4 +881,58 @@ footer a:hover {
             order: initial;
   }
 }
+
+#scrollToTop {
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  border: 1px solid;
+  width: 2rem;
+  height: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 5;
+  background: #fff;
+}
+
+#scrollToTop:hover {
+  cursor: pointer;
+}
+
+#scrollToTop span {
+  position: relative;
+  right: 0.5rem;
+}
+
+#scrollToTop span:before, #scrollToTop span:after {
+  content: '';
+  background: #000;
+  width: 10px;
+  height: 2px;
+  position: absolute;
+}
+
+#scrollToTop span:before {
+  right: -1rem;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+#scrollToTop span:after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+@media (min-width: 550px) {
+  #scrollToTop {
+    display: none;
+  }
+}
 /*# sourceMappingURL=main.css.map */
