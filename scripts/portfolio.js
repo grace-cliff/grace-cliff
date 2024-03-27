@@ -1320,13 +1320,14 @@ if (window.location.href.includes("animation-video-compilation.html")) {
             video_3: "https://player.vimeo.com/video/650166803?h=0bbeda93c1",
             video_4: "https://www.youtube.com/embed/95gDOqT7foE",
             video_5: "https://player.vimeo.com/video/904986202?h=d52d48f242",
-            video_6: "https://player.vimeo.com/video/486157970?h=dadfed684e",
+            video_6: "https://player.vimeo.com/video/927211117?h=917a20d787",
             video_7: "",
             video_8: "",
-            video_9: "../assets/animation-video-compilation/video_8.mp4",
-            video_9_title: "Instagram Reel for Dance Guest Artist Morgan Williams (1/2)",
-            video_10: "../assets/animation-video-compilation/video_9.mp4",
-            video_10_title: "Instagram Reel for Dance Guest Artist Morgan Williams (2/2)",
+            video_9: "https://player.vimeo.com/video/486157970?h=dadfed684e",
+            video_10: "../assets/animation-video-compilation/video_8.mp4",
+            video_10_title: "Instagram Reel for Dance Guest Artist Morgan Williams (1/2)",
+            video_11: "../assets/animation-video-compilation/video_9.mp4",
+            video_11_title: "Instagram Reel for Dance Guest Artist Morgan Williams (2/2)",
         }
     ]
     
@@ -1342,19 +1343,25 @@ if (window.location.href.includes("animation-video-compilation.html")) {
                             </div>`);
             }
         }
-        for (let i = 7; i <= 8; i++) {
+        return images.join('');
+    });
+    
+    mainGrid.innerHTML = mainGridHTML.join('');
+ 
+    const secondaryGrid = document.getElementById('secondaryGrid');
+    const secondaryGridHTML = animationVideoCompilation.map((item) => {
+        const images = [];
+         for (let i = 8; i <= 9; i++) {
             if (item[`video_${i}`]) {
                 images.push(`<div class="grid-item">
-                                <video width="640" height="360" controls>
-                                    <source src="${item[`video_${i}`]}" type="video/mov">
-                                </video>
+                                <iframe title="vimeo-player" src="${item[`video_${i}`]}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
                             </div>`);
             }
         }
-        for (let i = 9; i <= 10; i++) {
+        for (let i = 10; i <= 11; i++) {
             if (item[`video_${i}`]) {
                 images.push(`<div class="grid-item">
-                                <video width="640" height="360" controls>
+                                <video class="margin-auto" width="250" height="360" controls>
                                     <source src="${item[`video_${i}`]}" type="video/mp4">
                                 </video>
                                 <h2>${item[`video_${i}_title`]}</h2>
@@ -1363,9 +1370,9 @@ if (window.location.href.includes("animation-video-compilation.html")) {
         }
         return images.join('');
     });
-    
-    mainGrid.innerHTML = mainGridHTML.join('');
-    
+
+    secondaryGrid.innerHTML = secondaryGridHTML.join('');
+
 }
 
 
@@ -1388,19 +1395,21 @@ if (window.location.href.includes("graphic-design-compilation.html")) {
             image_7: "../assets/graphic-design-compilation/image_7.png",
             image_7_title: "This is a Censored Exhibition Cards",
             image_8: "../assets/graphic-design-compilation/image_8.png",
-            image_8_title: "Construction Owner to CEO Non-Profit Program Promotion",
+            image_8_title: "Rob",
             image_9: "../assets/graphic-design-compilation/image_9.png",
-            image_9_title: "Big Idea Pitch Contest Non-Profit Program Promotion",
+            image_9_title: "Construction Owner to CEO Non-Profit Program Promotion",
             image_10: "../assets/graphic-design-compilation/image_10.png",
-            image_10_title: "Invasive Species Forest Posters (1/2)",
+            image_10_title: "Big Idea Pitch Contest Non-Profit Program Promotion",
             image_11: "../assets/graphic-design-compilation/image_11.png",
-            image_11_title: "Invasive Species Forest Posters (2/2)",
-            image_12: "../assets/graphic-design-compilation/image_12.jpg",
-            image_12_title: "Water Lilies",
+            image_11_title: "Invasive Species Forest Posters (1/2)",
+            image_12: "../assets/graphic-design-compilation/image_12.png",
+            image_12_title: "Invasive Species Forest Posters (2/2)",
             image_13: "../assets/graphic-design-compilation/image_13.jpg",
-            image_13_title: "Globe Calendar",
-            image_14: "../assets/graphic-design-compilation/image_14.png",
-            image_14_title: "Girl! You Need Therapy Podcast Logo"
+            image_13_title: "Water Lilies",
+            image_14: "../assets/graphic-design-compilation/image_14.jpg",
+            image_14_title: "Globe Calendar",
+            image_15: "../assets/graphic-design-compilation/image_15.png",
+            image_15_title: "Girl! You Need Therapy Podcast Logo"
         }
     ]
     
@@ -1409,7 +1418,7 @@ if (window.location.href.includes("graphic-design-compilation.html")) {
     
     const mainGridHTML = graphicDesignCompilation.map((item) => {
         const images = [];
-        for (let i = 1; i <= 15; i++) {
+        for (let i = 1; i <= 16; i++) {
             if (item[`image_${i}`]) {
                 images.push(`<div class="grid-item">
                                 <picture>
