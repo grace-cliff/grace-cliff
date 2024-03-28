@@ -1321,13 +1321,19 @@ if (window.location.href.includes("animation-video-compilation.html")) {
             video_4: "https://www.youtube.com/embed/95gDOqT7foE",
             video_5: "https://player.vimeo.com/video/904986202?h=d52d48f242",
             video_6: "https://player.vimeo.com/video/927211117?h=917a20d787",
-            video_7: "",
-            video_8: "",
-            video_9: "https://player.vimeo.com/video/486157970?h=dadfed684e",
-            video_10: "../assets/animation-video-compilation/video_8.mp4",
-            video_10_title: "Instagram Reel for Dance Guest Artist Morgan Williams (1/2)",
-            video_11: "../assets/animation-video-compilation/video_9.mp4",
-            video_11_title: "Instagram Reel for Dance Guest Artist Morgan Williams (2/2)",
+            video_7: "https://player.vimeo.com/video/871249923?h=aff3bc09be",
+            video_7_class: "vertical",
+            video_8: "https://player.vimeo.com/video/486157970?h=dadfed684e",
+            video_8_class: "vertical",
+            video_9: "https://player.vimeo.com/video/720066249?h=d2e1658671",
+            video_9_class: "vertical",
+            video_9_title: "Instagram Reel for Dance Guest Artist Morgan Williams (1/3)",
+            video_10: "https://player.vimeo.com/video/720064003?h=17a17a80c5",
+            video_10_class: "vertical",
+            video_10_title: "Instagram Reel for Dance Guest Artist Morgan Williams (2/3)",
+            video_11: "https://player.vimeo.com/video/720067511?h=cfc0237ccf",
+            video_11_class: "vertical",
+            video_11_title: "Instagram Reel for Dance Guest Artist Morgan Williams (3/3)"
         }
     ]
     
@@ -1336,10 +1342,18 @@ if (window.location.href.includes("animation-video-compilation.html")) {
     
     const mainGridHTML = animationVideoCompilation.map((item) => {
         const images = [];
-        for (let i = 1; i <= 6; i++) {
+        for (let i = 1; i <= 11; i++) {
             if (item[`video_${i}`]) {
-                images.push(`<div class="grid-item">
+                
+                const videoTitle = item[`video_${i}_title`];
+                const titleHtml = videoTitle ? `<h2>${videoTitle}</h2>` : '';
+
+                const videoClass = item[`video_${i}_class`];
+                const classHTML = videoClass ? "vertical" : '';
+
+                images.push(`<div class="grid-item ${classHTML}">
                                 <iframe title="vimeo-player" src="${item[`video_${i}`]}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                                ${titleHtml}
                             </div>`);
             }
         }
@@ -1347,31 +1361,6 @@ if (window.location.href.includes("animation-video-compilation.html")) {
     });
     
     mainGrid.innerHTML = mainGridHTML.join('');
- 
-    const secondaryGrid = document.getElementById('secondaryGrid');
-    const secondaryGridHTML = animationVideoCompilation.map((item) => {
-        const images = [];
-         for (let i = 8; i <= 9; i++) {
-            if (item[`video_${i}`]) {
-                images.push(`<div class="grid-item">
-                                <iframe title="vimeo-player" src="${item[`video_${i}`]}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
-                            </div>`);
-            }
-        }
-        for (let i = 10; i <= 11; i++) {
-            if (item[`video_${i}`]) {
-                images.push(`<div class="grid-item">
-                                <video class="margin-auto" width="250" height="360" controls>
-                                    <source src="${item[`video_${i}`]}" type="video/mp4">
-                                </video>
-                                <h2>${item[`video_${i}_title`]}</h2>
-                            </div>`);
-            }
-        }
-        return images.join('');
-    });
-
-    secondaryGrid.innerHTML = secondaryGridHTML.join('');
 
 }
 
@@ -1395,7 +1384,7 @@ if (window.location.href.includes("graphic-design-compilation.html")) {
             image_7: "../assets/graphic-design-compilation/image_7.png",
             image_7_title: "This is a Censored Exhibition Cards",
             image_8: "../assets/graphic-design-compilation/image_8.png",
-            image_8_title: "Rob",
+            image_8_title: "Cartoon Character Design",
             image_9: "../assets/graphic-design-compilation/image_9.png",
             image_9_title: "Construction Owner to CEO Non-Profit Program Promotion",
             image_10: "../assets/graphic-design-compilation/image_10.png",

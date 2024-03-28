@@ -125,16 +125,14 @@ table {
 }
 
 .flex, .grid-item, header .navigation, header .navigation ul, #portfolioGrid,
-#mainGrid,
-#secondaryGrid, #portfolioFilters, footer .flex {
+#mainGrid, #portfolioFilters, footer .flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .flex-column, .grid-item, #portfolioGrid,
-#mainGrid,
-#secondaryGrid, #portfolioFilters {
+#mainGrid, #portfolioFilters {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -147,8 +145,7 @@ table {
 }
 
 .justify-between, header .flex, header .grid-item, header .navigation, header .navigation ul, header #portfolioGrid,
-header #mainGrid,
-header #secondaryGrid, header #portfolioFilters, footer .flex {
+header #mainGrid, header #portfolioFilters, footer .flex {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -215,15 +212,13 @@ header #secondaryGrid, header #portfolioFilters, footer .flex {
             flex-direction: row;
   }
   .large--flex, header .flex, header .grid-item, header .navigation, header .navigation ul, header #portfolioGrid,
-  header #mainGrid,
-  header #secondaryGrid, header #portfolioFilters {
+  header #mainGrid, header #portfolioFilters {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
   .large--justify-start, header .flex, header .grid-item, header .navigation, header .navigation ul, header #portfolioGrid,
-  header #mainGrid,
-  header #secondaryGrid, header #portfolioFilters {
+  header #mainGrid, header #portfolioFilters {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
@@ -237,8 +232,7 @@ header #secondaryGrid, header #portfolioFilters, footer .flex {
 
 @media (min-width: 767px) {
   .large--grid, #portfolioGrid,
-  #mainGrid,
-  #secondaryGrid {
+  #mainGrid {
     display: -ms-grid;
     display: grid;
     grid-gap: 2rem;
@@ -383,8 +377,7 @@ iframe {
 }
 
 .text-center, h5, .button-wrap, header .flex, header .grid-item, header .navigation, header .navigation ul, header #portfolioGrid,
-header #mainGrid,
-header #secondaryGrid, header #portfolioFilters, #contact h5, footer copyright {
+header #mainGrid, header #portfolioFilters, #contact h5, footer copyright {
   text-align: center;
 }
 
@@ -627,36 +620,19 @@ header img {
   }
 }
 
-#secondaryGrid .grid-item video {
-  width: 100%;
-}
-
-#secondaryGrid .grid-item iframe {
-  min-height: 100vw;
+#mainGrid .vertical iframe {
+  min-height: 600px;
 }
 
 @media (min-width: 767px) {
-  #secondaryGrid {
-    margin-top: 2rem;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-  }
-  #secondaryGrid .grid-item iframe {
-    max-height: 57vw;
-    min-height: auto;
+  #mainGrid .vertical iframe {
+    min-height: 700px;
   }
 }
 
 @media (min-width: 1024px) {
-  #secondaryGrid {
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
-  }
-  #secondaryGrid .grid-item video {
-    width: 250px;
-  }
-  #secondaryGrid .grid-item iframe {
-    max-height: 32vw;
+  #mainGrid .vertical iframe {
+    min-height: 800px;
   }
 }
 
@@ -867,8 +843,7 @@ footer * {
 }
 
 footer .grid-item, footer header .navigation, header footer .navigation, footer header .navigation ul, header .navigation footer ul, footer #portfolioGrid,
-footer #mainGrid,
-footer #secondaryGrid, footer #portfolioFilters, footer .flex {
+footer #mainGrid, footer #portfolioFilters, footer .flex {
   padding: 2rem 2rem 1rem 2rem;
 }
 
@@ -904,8 +879,7 @@ footer a:hover {
 
 @media (min-width: 767px) {
   footer .grid-item, footer header .navigation, header footer .navigation, footer header .navigation ul, header .navigation footer ul, footer #portfolioGrid,
-  footer #mainGrid,
-  footer #secondaryGrid, footer #portfolioFilters, footer .flex {
+  footer #mainGrid, footer #portfolioFilters, footer .flex {
     max-width: 500px;
     margin: 0 auto;
     -webkit-box-orient: horizontal;
