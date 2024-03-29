@@ -37,8 +37,8 @@ if (window.location.href.includes("portfolio.html")) {
             url: "../portfolio/kinetic.html"
         },
         { 
-            category: "Art Institute",
-            title: "Art Institute",
+            category: "Sheets and Shadows",
+            title: "Sheets and Shadows",
             medium: "Installation",
             info: "<i>Sheets and Shadows</i> explores the concept of small day-to-day interactions and fleeting connections that typically go unnoticed with strangers.",
             image: "../assets/portfolio/art-institute.jpg",
@@ -1327,13 +1327,10 @@ if (window.location.href.includes("animation-video-compilation.html")) {
             video_8_class: "vertical",
             video_9: "https://player.vimeo.com/video/720066249?h=d2e1658671",
             video_9_class: "vertical",
-            video_9_title: "Instagram Reel for Dance Guest Artist Morgan Williams (1/3)",
             video_10: "https://player.vimeo.com/video/720064003?h=17a17a80c5",
             video_10_class: "vertical",
-            video_10_title: "Instagram Reel for Dance Guest Artist Morgan Williams (2/3)",
             video_11: "https://player.vimeo.com/video/720067511?h=cfc0237ccf",
-            video_11_class: "vertical",
-            video_11_title: "Instagram Reel for Dance Guest Artist Morgan Williams (3/3)"
+            video_11_class: "vertical"
         }
     ]
     
