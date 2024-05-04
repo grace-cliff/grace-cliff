@@ -66,7 +66,8 @@ if (window.location.href.includes("portfolio.html")) {
             medium: "Graphic Design",
             info: "Diggit Magazine's article 'Breaking Global Cultural Boundaries Though Dance' redesigned page spreads bring light to the history of 'breaking' in a creative and fun manner.",
             image: "../assets/portfolio/breaking-magazine.png",
-            url: "../portfolio/breaking-magazine.html"
+            url: ""
+            // url: "../portfolio/breaking-magazine.html"
         },
         { 
             category: "Fragmented",
@@ -1395,7 +1396,21 @@ if (window.location.href.includes("graphic-design-compilation.html")) {
             image_14: "../assets/graphic-design-compilation/image_14.jpg",
             image_14_title: "Globe Calendar",
             image_15: "../assets/graphic-design-compilation/image_15.png",
-            image_15_title: "Girl! You Need Therapy Podcast Logo"
+            image_15_title: "Girl! You Need Therapy Podcast Logo",
+            image_16: "../assets/graphic-design-compilation/image_16.png",
+            image_16_title: "5th Anniversary Celebration",
+            image_17: "../assets/graphic-design-compilation/image_17.png",
+            image_17_title: "Your Money Matters",
+            image_18: "../assets/graphic-design-compilation/image_18.png",
+            image_18_title: "Your Money Matters",
+            image_19: "../assets/graphic-design-compilation/image_19.pdf",
+            image_19_title: "Ivy League Potential",
+            image_20: "../assets/graphic-design-compilation/image_20.png",
+            image_20_title: "Spring Party",
+            image_21: "../assets/graphic-design-compilation/image_21.png",
+            image_21_title: "Spring Party",
+            image_22: "../assets/graphic-design-compilation/image_22.png",
+            image_22_title: "Pickleball"
         }
     ]
     
@@ -1404,7 +1419,7 @@ if (window.location.href.includes("graphic-design-compilation.html")) {
     
     const mainGridHTML = graphicDesignCompilation.map((item) => {
         const images = [];
-        for (let i = 1; i <= 16; i++) {
+        for (let i = 1; i <= 18; i++) {
             if (item[`image_${i}`]) {
                 images.push(`<div class="grid-item">
                                 <picture>
@@ -1415,8 +1430,31 @@ if (window.location.href.includes("graphic-design-compilation.html")) {
                             </div>`);
             }
         }
+
+        for (let i = 19; i <= 19; i++) {
+            if (item[`image_${i}`]) {
+                images.push(`<div class="grid-item">
+                                <embed src="${item[`image_${i}`]}" width="318px" height="381px" />
+                                <p class="heading-lg">${item[`image_${i}_title`]}</p>
+                            </div>`);
+            }
+        }
+
+        for (let i = 20; i <= 23; i++) {
+            if (item[`image_${i}`]) {
+                images.push(`<div class="grid-item">
+                                <picture>
+                                    <source srcset="${item[`image_${i}`]}" media="(min-width: 600px)" />
+                                    <img src="${item[`image_${i}`]}" alt="${item[`image_${i}_title`]}'s featured image" width="450" height="450" loading="lazy">
+                                </picture>
+                                <p class="heading-lg">${item[`image_${i}_title`]}</p>
+                            </div>`);
+            }
+        }
+
         return images.join('');
     });
+
     
     mainGrid.innerHTML = mainGridHTML.join('');
     
