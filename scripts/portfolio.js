@@ -60,15 +60,14 @@ if (window.location.href.includes("portfolio.html")) {
             image: "../assets/portfolio/landscape.png",
             url: "../portfolio/landscape.html"
         },
-        { 
-            category: "Breaking",
-            title: "<i>Breaking</i> Magazine Spread Redesign",
-            medium: "Graphic Design",
-            info: "Diggit Magazine's article 'Breaking Global Cultural Boundaries Though Dance' redesigned page spreads bring light to the history of 'breaking' in a creative and fun manner.",
-            image: "../assets/portfolio/breaking-magazine.png",
-            url: ""
-            // url: "../portfolio/breaking-magazine.html"
-        },
+        // { 
+        //     category: "Breaking",
+        //     title: "<i>Breaking</i> Magazine Spread Redesign",
+        //     medium: "Graphic Design",
+        //     info: "Diggit Magazine's article 'Breaking Global Cultural Boundaries Though Dance' redesigned page spreads bring light to the history of 'breaking' in a creative and fun manner.",
+        //     image: "../assets/portfolio/breaking-magazine.png",
+        //     url: "../portfolio/breaking-magazine.html"
+        // },
         { 
             category: "Fragmented",
             title: "<i>Fragmented / Illuminate</i> Projections",
@@ -1403,14 +1402,20 @@ if (window.location.href.includes("graphic-design-compilation.html")) {
             image_17_title: "Your Money Matters",
             image_18: "../assets/graphic-design-compilation/image_18.png",
             image_18_title: "Your Money Matters",
-            image_19: "../assets/graphic-design-compilation/image_19.pdf",
-            image_19_title: "Ivy League Potential",
+            image_19: "../assets/graphic-design-compilation/image_19.png",
+            image_19_title: "Spring Party",
+            // image_19: "../assets/graphic-design-compilation/image_19.pdf",
+            // image_19_title: "Ivy League Potential",
             image_20: "../assets/graphic-design-compilation/image_20.png",
             image_20_title: "Spring Party",
             image_21: "../assets/graphic-design-compilation/image_21.png",
-            image_21_title: "Spring Party",
+            image_21_title: "Pickleball",
             image_22: "../assets/graphic-design-compilation/image_22.png",
-            image_22_title: "Pickleball"
+            image_22_title: "Ivy League Potential",
+            image_23: "../assets/graphic-design-compilation/image_23.png",
+            image_23_title: "Ivy League Potential",
+            image_24: "../assets/graphic-design-compilation/image_24.png",
+            image_24_title: "Ivy League Potential"
         }
     ]
     
@@ -1419,38 +1424,38 @@ if (window.location.href.includes("graphic-design-compilation.html")) {
     
     const mainGridHTML = graphicDesignCompilation.map((item) => {
         const images = [];
-        for (let i = 1; i <= 18; i++) {
+        for (let i = 1; i <= 25; i++) {
             if (item[`image_${i}`]) {
                 images.push(`<div class="grid-item">
                                 <picture>
                                     <source srcset="${item[`image_${i}`]}" media="(min-width: 600px)" />
                                     <img src="${item[`image_${i}`]}" alt="${item[`image_${i}_title`]}'s featured image" width="450" height="450" loading="lazy">
                                 </picture>
-                                <p class="heading-lg">${item[`image_${i}_title`]}</p>
+                                ${''}<!--  <p class="heading-lg">${item[`image_${i}_title`]}</p> --!>
                             </div>`);
             }
         }
 
-        for (let i = 19; i <= 19; i++) {
-            if (item[`image_${i}`]) {
-                images.push(`<div class="grid-item">
-                                <embed src="${item[`image_${i}`]}" width="318px" height="381px" />
-                                <p class="heading-lg">${item[`image_${i}_title`]}</p>
-                            </div>`);
-            }
-        }
+        // for (let i = 19; i <= 19; i++) {
+        //     if (item[`image_${i}`]) {
+        //         images.push(`<div class="grid-item">
+        //                         <embed src="${item[`image_${i}`]}" width="318px" height="381px" />
+        //                         ${''}<!--  <p class="heading-lg">${item[`image_${i}_title`]}</p> --!>
+        //                     </div>`);
+        //     }
+        // }
 
-        for (let i = 20; i <= 23; i++) {
-            if (item[`image_${i}`]) {
-                images.push(`<div class="grid-item">
-                                <picture>
-                                    <source srcset="${item[`image_${i}`]}" media="(min-width: 600px)" />
-                                    <img src="${item[`image_${i}`]}" alt="${item[`image_${i}_title`]}'s featured image" width="450" height="450" loading="lazy">
-                                </picture>
-                                <p class="heading-lg">${item[`image_${i}_title`]}</p>
-                            </div>`);
-            }
-        }
+        // for (let i = 20; i <= 23; i++) {
+        //     if (item[`image_${i}`]) {
+        //         images.push(`<div class="grid-item">
+        //                         <picture>
+        //                             <source srcset="${item[`image_${i}`]}" media="(min-width: 600px)" />
+        //                             <img src="${item[`image_${i}`]}" alt="${item[`image_${i}_title`]}'s featured image" width="450" height="450" loading="lazy">
+        //                         </picture>
+        //                     ${''}<!--  <p class="heading-lg">${item[`image_${i}_title`]}</p> --!>
+        //                     </div>`);
+        //     }
+        // }
 
         return images.join('');
     });
@@ -1499,20 +1504,22 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
 
-  // Scroll To Top
-var scrollToTop = document.querySelector('#scrollToTop');
-scrollToTop.addEventListener('click', () => {
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
-});
-
-scrollToTop.addEventListener('keyup', function(event) {
-    if (event.code === 'Enter') {
+if(window.location.href.includes("portfolio.html")) {
+    // Scroll To Top
+    var scrollToTop = document.querySelector('#scrollToTop');
+    scrollToTop.addEventListener('click', () => {
         window.scrollTo({
             top: 0,
             behavior: "smooth"
         });
-    }
-});
+    });
+
+    scrollToTop.addEventListener('keyup', function(event) {
+        if (event.code === 'Enter') {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+    });
+}
