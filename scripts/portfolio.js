@@ -125,6 +125,22 @@ if (window.location.href.includes("portfolio.html")) {
             url: "../portfolio/ballet-body.html"
         },
         { 
+            category: "Marz Community Brewing Social Media Motion Design",
+            title: "Marz Community Brewing Social Media Motion Design",
+            medium: "Animation / Video",
+            info: "",
+            image: "../assets/portfolio/marz-community-brewing.png",
+            url: "../portfolio/marz-community-brewing.html"
+        },
+        { 
+            category: "2024 Premiere Film Festival",
+            title: "2024 Premiere Film Festival",
+            medium: "Projection Design",
+            info: "",
+            image: "../assets/portfolio/premiere-film-festival.png",
+            url: "../portfolio/premiere-film-festival.html"
+        },
+        { 
             category: "Animation / Video Compilation",
             title: "Animation / Video Compilation",
             medium: "Animation / Video",
@@ -1321,16 +1337,18 @@ if (window.location.href.includes("animation-video-compilation.html")) {
             video_4: "https://www.youtube.com/embed/95gDOqT7foE",
             video_5: "https://player.vimeo.com/video/904986202?h=d52d48f242",
             video_6: "https://player.vimeo.com/video/927211117?h=917a20d787",
-            video_7: "https://player.vimeo.com/video/871249923?h=aff3bc09be",
-            video_7_class: "vertical",
-            video_8: "https://player.vimeo.com/video/486157970?h=dadfed684e",
-            video_8_class: "vertical",
-            video_9: "https://player.vimeo.com/video/720066249?h=d2e1658671",
+            video_7: "https://player.vimeo.com/video/949979129?h=d7926e3da",
+            video_8: "https://player.vimeo.com/video/950094095?h=556e8fe436",
+            video_9: "https://player.vimeo.com/video/871249923?h=aff3bc09be",
             video_9_class: "vertical",
-            video_10: "https://player.vimeo.com/video/720064003?h=17a17a80c5",
+            video_10: "https://player.vimeo.com/video/486157970?h=dadfed684e",
             video_10_class: "vertical",
-            video_11: "https://player.vimeo.com/video/720067511?h=cfc0237ccf",
-            video_11_class: "vertical"
+            video_11: "https://player.vimeo.com/video/720066249?h=d2e1658671",
+            video_11_class: "vertical",
+            video_12: "https://player.vimeo.com/video/720064003?h=17a17a80c5",
+            video_12_class: "vertical",
+            video_13: "https://player.vimeo.com/video/720067511?h=cfc0237ccf",
+            video_13_class: "vertical",
         }
     ]
     
@@ -1339,7 +1357,7 @@ if (window.location.href.includes("animation-video-compilation.html")) {
     
     const mainGridHTML = animationVideoCompilation.map((item) => {
         const images = [];
-        for (let i = 1; i <= 11; i++) {
+        for (let i = 1; i <= 14; i++) {
             if (item[`video_${i}`]) {
                 
                 const videoTitle = item[`video_${i}_title`];
@@ -1465,6 +1483,124 @@ if (window.location.href.includes("graphic-design-compilation.html")) {
     
 }
 
+
+
+
+// Page: Premiere Film Festival
+if (window.location.href.includes("premiere-film-festival")) {
+    var premiere = [
+        { 
+            title: "2024 Premiere Film Festival",
+            info_1: "For the Depaul University Premiere Film Festival 8 second animations were needed to introduce each award in order to maintain viewer engagement. In collaboration with other graduate students, I designed the animations for ‘Best Producing,’ ‘Best Documentary,’ as well as the Graphic Design for the Program. These animations were then composited into a 3D space and projected in the Music Box Theatre.",
+            video: "https://player.vimeo.com/video/950007356?h=f635b1499d",
+            video_1: "https://player.vimeo.com/video/950004873?h=d34ed574fb",
+            image_1: "../assets/premiere/image.png",
+            image_2: "../assets/premiere/image_1.png",
+            image_3: "../assets/premiere/image_2.png",
+        }
+    ]
+   
+    // top section
+    const topSection = document.getElementById('topSection');
+    
+    const topSectionHTML = premiere
+    .map(item => `<div class="flex large--flex-row flex-column">
+                        <div class="image">
+                            <iframe title="vimeo-player" src="${item.video}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="info">
+                            <h2>${item.title}</h2>
+                            <p>${item.info_1}</p>
+                        </div>
+                    </div>`)
+    .join('');
+    
+    topSection.innerHTML = topSectionHTML;
+    
+    // grid
+    const mainGrid = document.getElementById('mainGrid');
+    
+    const mainGridHTML = premiere.map((item) => {
+        const images = [];
+        images.push(`<div class="grid-item">
+                        <iframe title="vimeo-player" src="${item.video_1}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                    </div>`)
+        for (let i = 1; i <= 3; i++) {
+            if (item[`image_${i}`]) {
+                images.push(`<div class="grid-item">
+                                <picture>
+                                    <source srcset="${item[`image_${i}`]}" media="(min-width: 600px)" />
+                                    <img src="${item[`image_${i}`]}" alt="${item.title}'s featured image" width="450" height="450" loading="lazy">
+                                </picture>
+                            </div>`);
+            }
+        }
+        return images.join('');
+    });
+    
+    mainGrid.innerHTML = mainGridHTML.join('');
+    
+}
+
+
+// Page: Marz Community Brewing
+if (window.location.href.includes("marz-community-brewing")) {
+    var marz = [
+        { 
+            title: "Marz Community Brewing Social Media Motion Design",
+            info_1: "This Chicago-based brewery requested 3D designs, using their provided assets, to create a 5-10 second animation for Instagram. My goal was to make this piece vibrant and fun, with high-energy music enhancing the fast-paced visuals. The creative process began with a pitch featuring 3D rendered images outlining the animation concept, which then evolved into the final product.",
+            image: "../assets/portfolio/marz-community-brewing.png",
+            image_1: "../assets/marz/image_1.png",
+            image_2: "../assets/marz/image_2.png",
+            image_3: "../assets/marz/image_3.png",
+            image_4: "../assets/marz/image_4.png",
+            image_5: "../assets/marz/image_5.png",
+            image_6: "../assets/marz/image_6.png",
+            image_7: "../assets/marz/image_7.png",
+            image_8: "../assets/marz/image_8.png",
+            image_9: "../assets/marz/image_9.png",
+            video: "https://player.vimeo.com/video/950843224?h=02ca765946"
+        }
+    ]
+    
+    // top section
+    const topSection = document.getElementById('topSection');
+    
+    const topSectionHTML = marz
+    .map(item => `<div class="flex large--flex-row flex-column">
+                    <div class="image">
+                        <iframe title="vimeo-player" src="${item.video}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="info">
+                        <h2>${item.title}</h2>
+                        <p>${item.info_1}</p>
+                    </div>
+                </div>`)
+    .join('');
+    
+    topSection.innerHTML = topSectionHTML;
+    
+    // grid
+    const mainGrid = document.getElementById('mainGrid');
+    
+    const mainGridHTML = marz.map((item) => {
+        const images = [];
+        for (let i = 1; i <= 9; i++) {
+            if (item[`image_${i}`]) {
+                images.push(`<div class="grid-item">
+                                <picture>
+                                    <source srcset="${item[`image_${i}`]}" media="(min-width: 600px)" />
+                                    <img src="${item[`image_${i}`]}" alt="${item.title}'s featured image" width="450" height="450" loading="lazy">
+                                </picture>
+                            </div>`);
+            }
+        }
+        return images.join('');
+    });
+    
+    mainGrid.innerHTML = mainGridHTML.join('');
+    
+}
 
 
 document.addEventListener("DOMContentLoaded", function() {
