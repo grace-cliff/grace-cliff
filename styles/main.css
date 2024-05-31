@@ -57,7 +57,7 @@ table {
   src: url("../fonts/UncutSans-Bold.otf");
 }
 
-.hide {
+.hide, .modal {
   display: none;
 }
 
@@ -104,11 +104,11 @@ table {
   }
 }
 
-.relative, main, footer {
+.relative, main, footer, .modal .modal-content {
   position: relative;
 }
 
-.absolute {
+.absolute, .modal .modal-content .arrow, .modal .modal-content .arrow:before, .modal .modal-content .arrow:after {
   position: absolute;
 }
 
@@ -125,7 +125,7 @@ table {
 }
 
 .flex, .grid-item, header .navigation, header .navigation ul, #portfolioGrid,
-#mainGrid, #portfolioFilters, footer .flex {
+#mainGrid, #portfolioFilters, footer .flex, .modal .modal-content .arrow {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -145,7 +145,7 @@ table {
 }
 
 .justify-between, header .flex, header .grid-item, header .navigation, header .navigation ul, header #portfolioGrid,
-header #mainGrid, header #portfolioFilters, footer .flex {
+header #mainGrid, header #portfolioFilters, header .modal .modal-content .arrow, .modal .modal-content header .arrow, footer .flex {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -198,7 +198,7 @@ header #mainGrid, header #portfolioFilters, footer .flex {
           align-items: flex-start;
 }
 
-.align-self-center {
+.align-self-center, .modal .modal-content .arrow {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -212,13 +212,13 @@ header #mainGrid, header #portfolioFilters, footer .flex {
             flex-direction: row;
   }
   .large--flex, header .flex, header .grid-item, header .navigation, header .navigation ul, header #portfolioGrid,
-  header #mainGrid, header #portfolioFilters {
+  header #mainGrid, header #portfolioFilters, header .modal .modal-content .arrow, .modal .modal-content header .arrow {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
   .large--justify-start, header .flex, header .grid-item, header .navigation, header .navigation ul, header #portfolioGrid,
-  header #mainGrid, header #portfolioFilters {
+  header #mainGrid, header #portfolioFilters, header .modal .modal-content .arrow, .modal .modal-content header .arrow {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
@@ -377,7 +377,7 @@ iframe {
 }
 
 .text-center, h5, .button-wrap, header .flex, header .grid-item, header .navigation, header .navigation ul, header #portfolioGrid,
-header #mainGrid, header #portfolioFilters, #contact h5, footer copyright {
+header #mainGrid, header #portfolioFilters, header .modal .modal-content .arrow, .modal .modal-content header .arrow, #contact h5, footer copyright {
   text-align: center;
 }
 
@@ -618,6 +618,14 @@ header img {
   #contact .large--width-50 {
     width: calc(50% - 3px);
   }
+}
+
+.page--graphic-design-compilation.modal-open {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.page--graphic-design-compilation img:hover {
+  cursor: pointer;
 }
 
 .page--graphic-design-compilation embed {
@@ -861,7 +869,7 @@ footer * {
 }
 
 footer .grid-item, footer header .navigation, header footer .navigation, footer header .navigation ul, header .navigation footer ul, footer #portfolioGrid,
-footer #mainGrid, footer #portfolioFilters, footer .flex {
+footer #mainGrid, footer #portfolioFilters, footer .flex, footer .modal .modal-content .arrow, .modal .modal-content footer .arrow {
   padding: 2rem 2rem 1rem 2rem;
 }
 
@@ -897,7 +905,7 @@ footer a:hover {
 
 @media (min-width: 767px) {
   footer .grid-item, footer header .navigation, header footer .navigation, footer header .navigation ul, header .navigation footer ul, footer #portfolioGrid,
-  footer #mainGrid, footer #portfolioFilters, footer .flex {
+  footer #mainGrid, footer #portfolioFilters, footer .flex, footer .modal .modal-content .arrow, .modal .modal-content footer .arrow {
     max-width: 500px;
     margin: 0 auto;
     -webkit-box-orient: horizontal;
@@ -971,6 +979,78 @@ footer a:hover {
 @media (min-width: 550px) {
   #scrollToTop {
     display: none;
+  }
+}
+
+.modal {
+  padding: 0 3rem;
+}
+
+.modal .modal-content .arrow {
+  top: 50%;
+  padding: 1.5rem;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 100%;
+}
+
+.modal .modal-content .arrow:hover {
+  cursor: pointer;
+}
+
+.modal .modal-content .arrow:before, .modal .modal-content .arrow:after {
+  content: "";
+  background: #000;
+  width: 4px;
+  height: 15px;
+  top: 15px;
+}
+
+.modal .modal-content .arrow:before {
+  right: 26px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.modal .modal-content .arrow:after {
+  right: 17px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.modal .modal-content .arrow.prev {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  left: -4rem;
+}
+
+.modal .modal-content .arrow.next {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  right: -4rem;
+}
+
+@media (min-width: 767px) {
+  .modal {
+    padding: 0 11rem;
+  }
+  .modal .modal-content .arrow {
+    padding: 2rem;
+  }
+  .modal .modal-content .arrow:before, .modal .modal-content .arrow:after {
+    height: 25px;
+    top: 17px;
+  }
+  .modal .modal-content .arrow:before {
+    right: 38px;
+  }
+  .modal .modal-content .arrow:after {
+    right: 22px;
+  }
+  .modal .modal-content .arrow.prev {
+    left: -5rem;
+  }
+  .modal .modal-content .arrow.next {
+    right: -5rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

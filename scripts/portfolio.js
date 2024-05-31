@@ -1447,33 +1447,12 @@ if (window.location.href.includes("graphic-design-compilation.html")) {
                 images.push(`<div class="grid-item">
                                 <picture>
                                     <source srcset="${item[`image_${i}`]}" media="(min-width: 600px)" />
-                                    <img src="${item[`image_${i}`]}" alt="${item[`image_${i}_title`]}'s featured image" width="450" height="450" loading="lazy">
+                                    <img src="${item[`image_${i}`]}" alt="${item[`image_${i}_title`]}'s featured image" width="450" height="450" loading="lazy" data-slideshow-id="${i}">
                                 </picture>
                                 ${''}<!--  <p class="heading-lg">${item[`image_${i}_title`]}</p> --!>
                             </div>`);
             }
         }
-
-        // for (let i = 19; i <= 19; i++) {
-        //     if (item[`image_${i}`]) {
-        //         images.push(`<div class="grid-item">
-        //                         <embed src="${item[`image_${i}`]}" width="318px" height="381px" />
-        //                         ${''}<!--  <p class="heading-lg">${item[`image_${i}_title`]}</p> --!>
-        //                     </div>`);
-        //     }
-        // }
-
-        // for (let i = 20; i <= 23; i++) {
-        //     if (item[`image_${i}`]) {
-        //         images.push(`<div class="grid-item">
-        //                         <picture>
-        //                             <source srcset="${item[`image_${i}`]}" media="(min-width: 600px)" />
-        //                             <img src="${item[`image_${i}`]}" alt="${item[`image_${i}_title`]}'s featured image" width="450" height="450" loading="lazy">
-        //                         </picture>
-        //                     ${''}<!--  <p class="heading-lg">${item[`image_${i}_title`]}</p> --!>
-        //                     </div>`);
-        //     }
-        // }
 
         return images.join('');
     });
@@ -1481,8 +1460,77 @@ if (window.location.href.includes("graphic-design-compilation.html")) {
     
     mainGrid.innerHTML = mainGridHTML.join('');
     
-}
 
+    document.addEventListener('DOMContentLoaded', function () {
+        const modal = document.getElementById('myModal');
+        const modalImg = document.getElementById('modalImage');
+        const closeBtn = document.querySelector('.close');
+        const prevBtn = document.querySelector('.prev');
+        const nextBtn = document.querySelector('.next');
+        const mainGrid = document.getElementById('mainGrid');
+        const thePage = document.querySelector('.page--graphic-design-compilation');
+        let currentImageIndex;
+    
+        const images = Array.from(document.querySelectorAll('[data-slideshow-id]'));
+    
+        function openModal(index) {
+            modal.style.display = 'block';
+            currentImageIndex = index;
+            showImage(currentImageIndex);
+            mainGrid.style.display = 'none';
+            thePage.classList.add('modal-open');
+        }
+    
+        function closeModal() {
+            modal.style.display = 'none';
+            mainGrid.style.display = 'grid';
+            thePage.classList.remove('modal-open');
+        }
+    
+        function showImage(index) {
+            if (index >= 0 && index < images.length) {
+                modalImg.src = images[index].src;
+            }
+        }
+    
+        function nextImage() {
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            showImage(currentImageIndex);
+        }
+    
+        function prevImage() {
+            currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+            showImage(currentImageIndex);
+        }
+    
+        images.forEach((img, index) => {
+            img.addEventListener('click', () => openModal(index));
+        });
+    
+        closeBtn.addEventListener('click', closeModal);
+        nextBtn.addEventListener('click', nextImage);
+        prevBtn.addEventListener('click', prevImage);
+    
+        window.addEventListener('click', (event) => {
+            if (event.target == modal) {
+                closeModal();
+            }
+        });
+    
+        window.addEventListener('keydown', (event) => {
+            if (modal.style.display === 'block') {
+                if (event.key === 'ArrowRight') {
+                    nextImage();
+                } else if (event.key === 'ArrowLeft') {
+                    prevImage();
+                } else if (event.key === 'Escape') {
+                    closeModal();
+                }
+            }
+        });
+    });
+
+}
 
 
 
