@@ -597,18 +597,40 @@ header {
 }
 
 .page--graphic-design-compilation {
-    &.modal-open {
-        background: rgba(0,0,0,0.3);
-    }
-    img {
+    .grid-item {
         &:hover {
-            cursor: pointer;
+            cursor: url('../assets/graphic-design-compilation/icon-magnify.svg'), auto;
         }
     }
+    &.modal-open {
+        .blurry__bg {
+            @extend .absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    filter: blur(100px);
+                    background: radial-gradient(#00000085, transparent);
+          }
+    }
+    // img {
+    //     &:hover {
+    //         cursor: pointer;
+    //     }
+    // }
     embed {
         width: 100%;
         height: 100%;
         min-height: 400px;
+    }
+    #mainGrid {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    @include breakpoint('medium') {
+        #mainGrid {
+            grid-template-columns: repeat(2,1fr);
+        }
     }
     @include breakpoint('large') {
         #mainGrid {
@@ -916,70 +938,134 @@ footer {
 // Page: Graphic Design Compilation => MODAL
 .modal {
     @extend .hide;
-    padding: 0 3rem;
+    margin: 0 auto;
+    .close {
+        @extend .relative;
+        width: 2rem;
+        height: 2rem;
+        bottom: 4rem;
+        left: 94%;
+        &:hover {
+            cursor: pointer;
+        }
+        &:before,
+        &:after {
+            content: "";
+            background: #000;
+            width: 25px;
+            height: 3px;
+            @extend .absolute;
+        }
+        &:before {
+            transform: rotate(45deg);
+        }
+        &:after {
+            transform: rotate(-45deg);
+        }
+    }
     .modal-content {
         @extend .relative;
-        .arrow {
+        .arrows {
             @extend .absolute,
                     .flex,
                     .align-self-center;
-            top: 50%;
-            padding: 1.5rem;
-            background: rgba(0,0,0,0.2);
-            border-radius: 100%;
+                    top: 50%;
             &:hover {
                 cursor: pointer;
             }
-            &:before,
-            &:after {
-                content: "";
-                background: #000;
-                width: 4px;
-                height: 15px;
-                top: 15px;
-                @extend .absolute;
-            }
-            &:before {
-                right: 26px;
-                transform: rotate(45deg);
-            }
-            &:after {
-                right: 17px;
-                transform: rotate(-45deg);
+            &.prev,
+            &.next {
+                .text {
+                    display: none;
+                }
+                .arrow {
+                    @extend .relative;
+                    &:before,
+                    &:after {
+                        content: "";
+                        background: #000;
+                        width: 4px;
+                        height: 15px;
+                        @extend .absolute;
+                    }
+                    &:before {
+                        -webkit-transform: rotate(45deg);
+                        transform: rotate(45deg);
+                    }
+                    &:after {
+                        -webkit-transform: rotate(-45deg);
+                        transform: rotate(-45deg);
+                    }
+                }
             }
             &.prev {
-                transform: rotate(-90deg);
-                left: -4rem;
+                left: -20px;
+                .arrow {
+                    &:before {
+                        left: 0;
+                        top: -8px;
+                    }
+                }
             }
             &.next {
-                transform: rotate(90deg);
-                right: -4rem;
+                right: -10px;
+                .arrow {
+                    &:after {
+                        top: -8px;
+                    }
+                }
             }
         }
     }
     @include breakpoint('medium') {
-        padding: 0 11rem;
+        width: 500px;
+        .close {
+            left: calc(100% + 50px);
+        }
         .modal-content {
-            .arrow {
-                padding: 2rem;
-                &:before,
-                &:after {
-                    height: 25px;
-                    top: 17px;
-                }
-                &:before {
-                    right: 38px;
-                }
-                &:after {
-                    right: 22px;
+            .arrows {
+                &.prev,
+                &.next {
+                    .text {
+                        display: inline;
+                    }
                 }
                 &.prev {
-                    left: -5rem;
+                    left: -8rem;
+                    .text {
+                        margin-left: 15px;
+                        margin-top: 3px;
+                    }
+                    .arrow {
+                        &:before {
+                            top: 0;
+                            left: 0;
+                        }
+                        &:after {
+                            top: 8px;
+                        }
+                    }
                 }
                 &.next {
-                    right: -5rem;
+                    right: -6rem;
+                    .text {
+                        margin-top: -6px;
+                        margin-right: 15px;
+                    }
+                    .arrow {
+                        &:before {
+                            right: 0;
+                        }
+                        &:after {
+                            right: 0;
+                            top: -9px;
+                        }
+                    }
                 }
             }
         }
+    }
+    @include breakpoint('large') {
+        width: 750px;
     }
 }

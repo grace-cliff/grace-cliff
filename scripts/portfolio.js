@@ -5,124 +5,12 @@
 if (window.location.href.includes("portfolio.html")) {
     var portfolioContent = [
         { 
-            category: "Projections",
-            title: "<i>When it Rains, it Pours</i>",
-            medium: "Projection Design",
-            info: "Under the School of Theatre and Dance at Illinois State University 'When it Rains, it Pours' was staged on pre-professional dancers. These projection designs were created for professional modern dancer and choreographer Morgan 'Mo' Williams; founder and director of Water Street Dance Milwaukee.",
-            image: "../assets/portfolio/projections.png",
-            url: "../portfolio/projections.html"
-        },
-        { 
-            category: "Starbucks",
-            title: "Starbucks Rebranding",
-            medium: "Graphic Design",
-            info: "For a school project, I rebranded Starbucks because I admire their values and social impact as a company. Having worked at Starbucks, I gained an inside perspective that influenced my creative decisions.",
-            image: "../assets/portfolio/starbucks.png",
-            url: "../portfolio/starbucks.html"
-        },
-        { 
-            category: "Fashion",
-            title: "College of DuPage Fashion Show <i>Euphoria</i>",
-            medium: "Animation / Video",
-            info: "These abstract interactive shapes, with patterns taken from garments in the College of DuPage Fashion Show, create a meta experience. Using Cinema 4D these abstract shapes act like fabric colliding into each other swiftly.",
-            image: "../assets/portfolio/fashion-show.jpg",
-            url: "../portfolio/fashion-show.html"
-        },
-        { 
-            category: "Kinetic",
-            title: "Standards Graphics Manual for Social Good",
-            medium: "Graphic Design",
-            info: "Kinetic Dance Apparel is a mock Clothing Company that focuses on providing clothing options that make dancers feel confident and comfortable in looser fitted athletic clothing.",
-            image: "../assets/portfolio/kinetic.png",
-            url: "../portfolio/kinetic.html"
-        },
-        { 
-            category: "Sheets and Shadows",
-            title: "Sheets and Shadows",
-            medium: "Installation",
-            info: "<i>Sheets and Shadows</i> explores the concept of small day-to-day interactions and fleeting connections that typically go unnoticed with strangers.",
-            image: "../assets/portfolio/art-institute.jpg",
-            url: "../portfolio/art-institute.html"
-        },
-        // { 
-        //     category: "Mixed Media",
-        //     title: "Mixed Media",
-        //     medium: "2D/3D Animation",
-        //     info: "This is a compilation of mixed media from various projects and clients. This includes graphic design posters, logos, kinetic type videos, rotoscoping and dance reels.",
-        //     image: "../assets/portfolio/mixed-media.png",
-        //     url: "../portfolio/mixed-media.html"
-        // },
-        { 
             category: "Landscape",
             title: "<i>Landscape of Time</i> Immersive Projections",
             medium: "Installation",
             info: "Landscape of Time is an immersive projection installation that plays with concepts of time, transportation, and postmodern imagery. Covid-19 changed my perception of time as this piece drives that idea of time as a landscape rather than an arrow.",
             image: "../assets/portfolio/landscape.png",
             url: "../portfolio/landscape.html"
-        },
-        // { 
-        //     category: "Breaking",
-        //     title: "<i>Breaking</i> Magazine Spread Redesign",
-        //     medium: "Graphic Design",
-        //     info: "Diggit Magazine's article 'Breaking Global Cultural Boundaries Though Dance' redesigned page spreads bring light to the history of 'breaking' in a creative and fun manner.",
-        //     image: "../assets/portfolio/breaking-magazine.png",
-        //     url: "../portfolio/breaking-magazine.html"
-        // },
-        { 
-            category: "Fragmented",
-            title: "<i>Fragmented / Illuminate</i> Projections",
-            medium: "Projection Design",
-            info: "Under founder and artistic director Morgan 'Mo' Williams, for Water Street Dance Milwaukee, I created the projection designs for his company modern dancers. Fragmented / Illuminate is an evening-length work that incorporates seven chapters. Chapter I. Entity, II. Speaking to My Younger Self, III. Broken Veil, IV. “My God Aint This Yours” Ft. Brooklyn Llyod, V. Falling Into…, VI. Self ← Unseen, and VII. When it Rains, It Pours (restaged).",
-            image: "../assets/portfolio/fragmented.png",
-            url: "../portfolio/fragmented.html"
-        },
-        { 
-            category: "Censored",
-            title: "<i>This is a Censored Exhibition</i>",
-            medium: "Installation",
-            info: "On February 3 of 2023 a train carrying tons of hazardous and toxic chemicals derailed in Palestine, Ohio. This exhibition is a product of the little we know.",
-            image: "../assets/portfolio/censored.png",
-            url: "../portfolio/censored.html"
-        },
-        {
-            category: "Sunday Morning Grooves",
-            title: "Sunday Morning Grooves",
-            medium: "Animation / Video",
-            info: "",
-            image: "../assets/portfolio/sunday-morning-grooves.png",
-            url: "../portfolio/sunday-morning-grooves.html"
-        },
-        { 
-            category: "Expectations Vs. Reality",
-            title: "<i>Expectations vs. Reality</i> Performace Art",
-            medium: "Projection Design",
-            info: "'Expectations vs Reality' is a multimedia piece that challenges one's predisposed notions of reality. It is a DADA inspired work with themes of playfulness, layered ideas, and avant-garde concepts. Time, color, and sound are all explored in this combination of projections with modern dance.",
-            image: "../assets/portfolio/expectations-vs-reality.png",
-            url: "../portfolio/expectations-vs-reality.html"
-        },
-        {
-            category: "Immersive Visualization Lab",
-            title: "Immersive Visualization Lab",
-            medium: "Projection Design",
-            info: "This 360 space gives a consuming etheric experience with spiritual symbolism such as sound bowls, incense, crystals and nature. This piece reflects a meditative state of healing through the tapping in of spiritual symbols. Some people when meditating experience a spinning sensation which is reflected in the warped flowers and almost dizzying experience of light and color. The theme of circles is also repeatedly used throughout the piece through the circular space itself, the sound bath circles, and the circular swaying images.",
-            image: "../assets/portfolio/immersive-visualization-lab.jpeg",
-            url: "../portfolio/ivl.html"
-        },
-        {
-            category: "Kota the Friend",
-            title: "Kota the Friend",
-            medium: "Graphic Design",
-            info: "This website (hover over image to the left; click to enter) was inspired by lyric rapper Kota the Friend. It mimic’s his phone screen with the apps you can steam his music, find his Discography under Safari, Gallery, and Albums under the Albums app.  HTML and CSS external stylesheets were used in the creation of the website. It is made for a 1280 by 800 monitor or iPad. My process began with researching facts about Kota the Friend to tailor a website that would accurately mimic his iPhone. I then created three wireframe designs and with the best mockup made an interactive prototypes in Adobe XD. After finalizing my mockup I coded all the HTML and CSS using the program ‘Brackets’. I chose Kota the Friend because I like the messages he raps in his music from being down to earth, humble, to hustling for your goals.",
-            image: "../assets/kota-the-friend/image.png",
-            url: "../portfolio/kota-the-friend.html"
-        },
-        { 
-            category: "Ballet Body",
-            title: "<i>Ballet Body</i> Performance Art Piece",
-            medium: "Animation / Video",
-            info: "This is a performance art piece about the lack of conversation around body image in the dance community. Awarded 2nd Place 3D and selected to display video at the 2023 Cleve Carney Art Gallery Exhibition.",
-            image: "../assets/portfolio/ballet.png",
-            url: "../portfolio/ballet-body.html"
         },
         { 
             category: "Marz Community Brewing Social Media Motion Design",
@@ -139,6 +27,102 @@ if (window.location.href.includes("portfolio.html")) {
             info: "",
             image: "../assets/portfolio/premiere-film-festival.png",
             url: "../portfolio/premiere-film-festival.html"
+        },
+        { 
+            category: "Sheets and Shadows",
+            title: "Sheets and Shadows",
+            medium: "Installation",
+            info: "<i>Sheets and Shadows</i> explores the concept of small day-to-day interactions and fleeting connections that typically go unnoticed with strangers.",
+            image: "../assets/portfolio/art-institute.jpg",
+            url: "../portfolio/art-institute.html"
+        },
+        { 
+            category: "Fashion",
+            title: "College of DuPage Fashion Show <i>Euphoria</i>",
+            medium: "Animation / Video",
+            info: "These abstract interactive shapes, with patterns taken from garments in the College of DuPage Fashion Show, create a meta experience. Using Cinema 4D these abstract shapes act like fabric colliding into each other swiftly.",
+            image: "../assets/portfolio/fashion-show.jpg",
+            url: "../portfolio/fashion-show.html"
+        },
+        {
+            category: "Sunday Morning Grooves",
+            title: "Sunday Morning Grooves",
+            medium: "Animation / Video",
+            info: "",
+            image: "../assets/portfolio/sunday-morning-grooves.png",
+            url: "../portfolio/sunday-morning-grooves.html"
+        },
+        { 
+            category: "Projections",
+            title: "<i>When it Rains, it Pours</i>",
+            medium: "Projection Design",
+            info: "Under the School of Theatre and Dance at Illinois State University 'When it Rains, it Pours' was staged on pre-professional dancers. These projection designs were created for professional modern dancer and choreographer Morgan 'Mo' Williams; founder and director of Water Street Dance Milwaukee.",
+            image: "../assets/portfolio/projections.png",
+            url: "../portfolio/projections.html"
+        },
+        {
+            category: "Immersive Visualization Lab",
+            title: "Immersive Visualization Lab",
+            medium: "Projection Design",
+            info: "This 360 space gives a consuming etheric experience with spiritual symbolism such as sound bowls, incense, crystals and nature. This piece reflects a meditative state of healing through the tapping in of spiritual symbols. Some people when meditating experience a spinning sensation which is reflected in the warped flowers and almost dizzying experience of light and color. The theme of circles is also repeatedly used throughout the piece through the circular space itself, the sound bath circles, and the circular swaying images.",
+            image: "../assets/portfolio/immersive-visualization-lab.jpeg",
+            url: "../portfolio/ivl.html"
+        },
+        { 
+            category: "Ballet Body",
+            title: "<i>Ballet Body</i> Performance Art Piece",
+            medium: "Animation / Video",
+            info: "This is a performance art piece about the lack of conversation around body image in the dance community. Awarded 2nd Place 3D and selected to display video at the 2023 Cleve Carney Art Gallery Exhibition.",
+            image: "../assets/portfolio/ballet.png",
+            url: "../portfolio/ballet-body.html"
+        },
+        { 
+            category: "Kinetic",
+            title: "Standards Graphics Manual for Social Good",
+            medium: "Graphic Design",
+            info: "Kinetic Dance Apparel is a mock Clothing Company that focuses on providing clothing options that make dancers feel confident and comfortable in looser fitted athletic clothing.",
+            image: "../assets/portfolio/kinetic.png",
+            url: "../portfolio/kinetic.html"
+        },
+        { 
+            category: "Fragmented",
+            title: "<i>Fragmented / Illuminate</i> Projections",
+            medium: "Projection Design",
+            info: "Under founder and artistic director Morgan 'Mo' Williams, for Water Street Dance Milwaukee, I created the projection designs for his company modern dancers. Fragmented / Illuminate is an evening-length work that incorporates seven chapters. Chapter I. Entity, II. Speaking to My Younger Self, III. Broken Veil, IV. “My God Aint This Yours” Ft. Brooklyn Llyod, V. Falling Into…, VI. Self ← Unseen, and VII. When it Rains, It Pours (restaged).",
+            image: "../assets/portfolio/fragmented.png",
+            url: "../portfolio/fragmented.html"
+        },
+        { 
+            category: "Censored",
+            title: "<i>This is a Censored Exhibition</i>",
+            medium: "Installation",
+            info: "On February 3 of 2023 a train carrying tons of hazardous and toxic chemicals derailed in Palestine, Ohio. This exhibition is a product of the little we know.",
+            image: "../assets/portfolio/censored.png",
+            url: "../portfolio/censored.html"
+        },
+        { 
+            category: "Expectations Vs. Reality",
+            title: "<i>Expectations vs. Reality</i> Performace Art",
+            medium: "Projection Design",
+            info: "'Expectations vs Reality' is a multimedia piece that challenges one's predisposed notions of reality. It is a DADA inspired work with themes of playfulness, layered ideas, and avant-garde concepts. Time, color, and sound are all explored in this combination of projections with modern dance.",
+            image: "../assets/portfolio/expectations-vs-reality.png",
+            url: "../portfolio/expectations-vs-reality.html"
+        },
+        {
+            category: "Kota the Friend",
+            title: "Kota the Friend",
+            medium: "Graphic Design",
+            info: "This website (hover over image to the left; click to enter) was inspired by lyric rapper Kota the Friend. It mimic’s his phone screen with the apps you can steam his music, find his Discography under Safari, Gallery, and Albums under the Albums app.  HTML and CSS external stylesheets were used in the creation of the website. It is made for a 1280 by 800 monitor or iPad. My process began with researching facts about Kota the Friend to tailor a website that would accurately mimic his iPhone. I then created three wireframe designs and with the best mockup made an interactive prototypes in Adobe XD. After finalizing my mockup I coded all the HTML and CSS using the program ‘Brackets’. I chose Kota the Friend because I like the messages he raps in his music from being down to earth, humble, to hustling for your goals.",
+            image: "../assets/kota-the-friend/image.png",
+            url: "../portfolio/kota-the-friend.html"
+        },
+        { 
+            category: "Starbucks",
+            title: "Starbucks Rebranding",
+            medium: "Graphic Design",
+            info: "For a school project, I rebranded Starbucks because I admire their values and social impact as a company. Having worked at Starbucks, I gained an inside perspective that influenced my creative decisions.",
+            image: "../assets/portfolio/starbucks.png",
+            url: "../portfolio/starbucks.html"
         },
         { 
             category: "Animation / Video Compilation",
@@ -158,6 +142,22 @@ if (window.location.href.includes("portfolio.html")) {
         }
     ]
 
+     // { 
+        //     category: "Mixed Media",
+        //     title: "Mixed Media",
+        //     medium: "2D/3D Animation",
+        //     info: "This is a compilation of mixed media from various projects and clients. This includes graphic design posters, logos, kinetic type videos, rotoscoping and dance reels.",
+        //     image: "../assets/portfolio/mixed-media.png",
+        //     url: "../portfolio/mixed-media.html"
+        // },
+        // { 
+        //     category: "Breaking",
+        //     title: "<i>Breaking</i> Magazine Spread Redesign",
+        //     medium: "Graphic Design",
+        //     info: "Diggit Magazine's article 'Breaking Global Cultural Boundaries Though Dance' redesigned page spreads bring light to the history of 'breaking' in a creative and fun manner.",
+        //     image: "../assets/portfolio/breaking-magazine.png",
+        //     url: "../portfolio/breaking-magazine.html"
+        // },
 
     const portfolioGrid = document.getElementById('portfolioGrid');
 
@@ -1469,6 +1469,7 @@ if (window.location.href.includes("graphic-design-compilation.html")) {
         const nextBtn = document.querySelector('.next');
         const mainGrid = document.getElementById('mainGrid');
         const thePage = document.querySelector('.page--graphic-design-compilation');
+        const header = document.getElementById('header');
         let currentImageIndex;
     
         const images = Array.from(document.querySelectorAll('[data-slideshow-id]'));
@@ -1478,12 +1479,14 @@ if (window.location.href.includes("graphic-design-compilation.html")) {
             currentImageIndex = index;
             showImage(currentImageIndex);
             mainGrid.style.display = 'none';
+            header.style.display = 'none';
             thePage.classList.add('modal-open');
         }
     
         function closeModal() {
             modal.style.display = 'none';
             mainGrid.style.display = 'grid';
+            header.style.display = 'block';
             thePage.classList.remove('modal-open');
         }
     
@@ -1540,11 +1543,11 @@ if (window.location.href.includes("premiere-film-festival")) {
         { 
             title: "2024 Premiere Film Festival",
             info_1: "For the Depaul University Premiere Film Festival 8 second animations were needed to introduce each award in order to maintain viewer engagement. In collaboration with other graduate students, I designed the animations for ‘Best Producing,’ ‘Best Documentary,’ as well as the Graphic Design for the Program. These animations were then composited into a 3D space and projected in the Music Box Theatre.",
+            image: "../assets/premiere/image.png",
             video: "https://player.vimeo.com/video/950007356?h=f635b1499d",
             video_1: "https://player.vimeo.com/video/950004873?h=d34ed574fb",
-            image_1: "../assets/premiere/image.png",
-            image_2: "../assets/premiere/image_1.png",
-            image_3: "../assets/premiere/image_2.png",
+            image_1: "../assets/premiere/image_1.png",
+            image_2: "../assets/premiere/image_2.png",
         }
     ]
    
@@ -1554,7 +1557,10 @@ if (window.location.href.includes("premiere-film-festival")) {
     const topSectionHTML = premiere
     .map(item => `<div class="flex large--flex-row flex-column">
                         <div class="image">
-                            <iframe title="vimeo-player" src="${item.video}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                            <picture>
+                                <source srcset="${item.image}" media="(min-width: 600px)" />
+                                <img src="${item.image}" alt="${item.title}'s featured image" width="450" height="450" loading="lazy">
+                            </picture>
                         </div>
                         <div class="info">
                             <h2>${item.title}</h2>
@@ -1571,6 +1577,9 @@ if (window.location.href.includes("premiere-film-festival")) {
     const mainGridHTML = premiere.map((item) => {
         const images = [];
         images.push(`<div class="grid-item">
+                        <iframe title="vimeo-player" src="${item.video}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="grid-item">
                         <iframe title="vimeo-player" src="${item.video_1}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
                     </div>`)
         for (let i = 1; i <= 3; i++) {
@@ -1606,7 +1615,6 @@ if (window.location.href.includes("marz-community-brewing")) {
             image_6: "../assets/marz/image_6.png",
             image_7: "../assets/marz/image_7.png",
             image_8: "../assets/marz/image_8.png",
-            image_9: "../assets/marz/image_9.png",
             video: "https://player.vimeo.com/video/950843224?h=02ca765946"
         }
     ]

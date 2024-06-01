@@ -26,13 +26,19 @@
   <body class="page--graphic-design-compilation">
     <main id="mainContent" class="wrapper">
       <section id="mainGrid"></section>
-      
+      <div class="blurry__bg"></div>
       <modal id="myModal" class="modal">
-        <span class="close" style="display: none;">&times;</span>
+        <span class="close"></span>
         <div class="modal-content">
             <img id="modalImage" src="" alt="">
-            <div class="prev arrow"></div>
-            <div class="next arrow"></div>
+            <div class="flex arrows prev">
+              <div class="arrow"></div>
+              <span class="text">Previous</span>
+            </div>
+            <div class="flex arrows next">
+              <span class="text">Next</span>
+              <div class="arrow"></div>
+            </div>
         </div>
       </modal>
 
