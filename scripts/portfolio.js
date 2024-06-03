@@ -1546,6 +1546,8 @@ if (window.location.href.includes("premiere-film-festival")) {
             image: "../assets/premiere/image.png",
             video: "https://player.vimeo.com/video/950007356?h=f635b1499d",
             video_1: "https://player.vimeo.com/video/950004873?h=d34ed574fb",
+            video_2: "https://player.vimeo.com/video/953338939?h=2c45d898d0",
+            video_3: "https://player.vimeo.com/video/953340141?h=fb67d163ea",
             image_1: "../assets/premiere/image_1.png",
             image_2: "../assets/premiere/image_2.png",
         }
@@ -1581,6 +1583,12 @@ if (window.location.href.includes("premiere-film-festival")) {
                     </div>
                     <div class="grid-item">
                         <iframe title="vimeo-player" src="${item.video_1}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="grid-item">
+                        <iframe title="vimeo-player" src="${item.video_2}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="grid-item">
+                        <iframe title="vimeo-player" src="${item.video_3}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
                     </div>`)
         for (let i = 1; i <= 3; i++) {
             if (item[`image_${i}`]) {
