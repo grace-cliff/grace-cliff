@@ -540,6 +540,7 @@ header {
         }
         a {
             font-size: 1.2rem;
+            font-family: "UncutSans-Bold";
             &.active,
             &:hover {
                 border-bottom: 2px solid;
@@ -548,7 +549,7 @@ header {
     }
     img {
         height: 80px;
-        width: 80px;
+        // width: 80px;
     }
     @include breakpoint('small') {
         padding: 1rem $wrapper--large;
@@ -720,7 +721,7 @@ header {
             .flex-column,
             .justify-evenly;
     li {
-        font-family: "UncutSans-Bold";
+        font-family: "UncutSans-Regular";
         margin-bottom: 1rem;
         &:hover {
             cursor: pointer;
@@ -877,7 +878,7 @@ footer {
             margin: 0 auto;
             flex-direction: row;
             align-items: center;
-            padding: 4rem 0 0;
+            // padding: 4rem 0 0;
         }
         ul {
             margin-bottom: 0;
@@ -1062,5 +1063,54 @@ footer {
     }
     @include breakpoint('large') {
         width: 750px;
+    }
+}
+
+.navigation-arrows {
+    @extend .flex,
+            .justify-between;
+            margin-top: 1.5rem;
+            .prev,
+            .next {
+                @extend .relative;
+                &:before,
+                &:after {
+                    content: "";
+                    width: 20px;
+                    height: 3px;
+                    background: #000;
+                    @extend .absolute;
+                }
+            }
+            .next {
+                padding-right: 30px;
+                &:before {  
+                    transform: rotate(45deg);
+                }
+                &:after {  
+                    transform: rotate(-45deg);
+                    top: 13px;
+                }
+                &:before,
+                &:after {
+                    right: 0px;
+                }
+            }
+            .prev {
+                padding-left: 30px;
+                &:before {  
+                    transform: rotate(-45deg);
+                }
+                &:after {  
+                    transform: rotate(45deg);
+                    top: 13px;
+                }
+                &:before,
+                &:after {
+                    left: 0px;
+                }
+            }
+    @include breakpoint('large') {
+        margin-top: 3rem;
     }
 }

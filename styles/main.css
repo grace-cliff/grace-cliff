@@ -104,11 +104,14 @@ table {
   }
 }
 
-.relative, main, footer, .modal .close, .modal .modal-content, .modal .modal-content .arrows.prev .arrow, .modal .modal-content .arrows.next .arrow {
+.relative, main, footer, .modal .close, .modal .modal-content, .modal .modal-content .arrows.prev .arrow, .modal .modal-content .arrows.next .arrow, .navigation-arrows .prev,
+.navigation-arrows .next {
   position: relative;
 }
 
-.absolute, .page--graphic-design-compilation.modal-open .blurry__bg, .modal .close:before, .modal .close:after, .modal .modal-content .arrows, .modal .modal-content .arrows.prev .arrow:before, .modal .modal-content .arrows.prev .arrow:after, .modal .modal-content .arrows.next .arrow:before, .modal .modal-content .arrows.next .arrow:after {
+.absolute, .page--graphic-design-compilation.modal-open .blurry__bg, .modal .close:before, .modal .close:after, .modal .modal-content .arrows, .modal .modal-content .arrows.prev .arrow:before, .modal .modal-content .arrows.prev .arrow:after, .modal .modal-content .arrows.next .arrow:before, .modal .modal-content .arrows.next .arrow:after, .navigation-arrows .prev:before, .navigation-arrows .prev:after,
+.navigation-arrows .next:before,
+.navigation-arrows .next:after {
   position: absolute;
 }
 
@@ -125,7 +128,7 @@ table {
 }
 
 .flex, .grid-item, header .navigation, header .navigation ul, #portfolioGrid,
-#mainGrid, #portfolioFilters, footer .flex, .modal .modal-content .arrows {
+#mainGrid, #portfolioFilters, footer .flex, .modal .modal-content .arrows, .navigation-arrows {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -145,7 +148,7 @@ table {
 }
 
 .justify-between, header .flex, header .grid-item, header .navigation, header .navigation ul, header #portfolioGrid,
-header #mainGrid, header #portfolioFilters, header .modal .modal-content .arrows, .modal .modal-content header .arrows, footer .flex {
+header #mainGrid, header #portfolioFilters, header .modal .modal-content .arrows, .modal .modal-content header .arrows, header .navigation-arrows, footer .flex, .navigation-arrows {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -212,13 +215,13 @@ header #mainGrid, header #portfolioFilters, header .modal .modal-content .arrows
             flex-direction: row;
   }
   .large--flex, header .flex, header .grid-item, header .navigation, header .navigation ul, header #portfolioGrid,
-  header #mainGrid, header #portfolioFilters, header .modal .modal-content .arrows, .modal .modal-content header .arrows {
+  header #mainGrid, header #portfolioFilters, header .modal .modal-content .arrows, .modal .modal-content header .arrows, header .navigation-arrows {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
   .large--justify-start, header .flex, header .grid-item, header .navigation, header .navigation ul, header #portfolioGrid,
-  header #mainGrid, header #portfolioFilters, header .modal .modal-content .arrows, .modal .modal-content header .arrows {
+  header #mainGrid, header #portfolioFilters, header .modal .modal-content .arrows, .modal .modal-content header .arrows, header .navigation-arrows {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
@@ -377,7 +380,7 @@ iframe {
 }
 
 .text-center, h5, .button-wrap, header .flex, header .grid-item, header .navigation, header .navigation ul, header #portfolioGrid,
-header #mainGrid, header #portfolioFilters, header .modal .modal-content .arrows, .modal .modal-content header .arrows, #contact h5, footer copyright {
+header #mainGrid, header #portfolioFilters, header .modal .modal-content .arrows, .modal .modal-content header .arrows, header .navigation-arrows, #contact h5, footer copyright {
   text-align: center;
 }
 
@@ -565,6 +568,7 @@ header {
 
 header .navigation a {
   font-size: 1.2rem;
+  font-family: "UncutSans-Bold";
 }
 
 header .navigation a.active, header .navigation a:hover {
@@ -573,7 +577,6 @@ header .navigation a.active, header .navigation a:hover {
 
 header img {
   height: 80px;
-  width: 80px;
 }
 
 @media (min-width: 561px) {
@@ -754,7 +757,7 @@ header img {
 }
 
 #portfolioFilters li {
-  font-family: "UncutSans-Bold";
+  font-family: "UncutSans-Regular";
   margin-bottom: 1rem;
 }
 
@@ -889,7 +892,7 @@ footer * {
 }
 
 footer .grid-item, footer header .navigation, header footer .navigation, footer header .navigation ul, header .navigation footer ul, footer #portfolioGrid,
-footer #mainGrid, footer #portfolioFilters, footer .flex, footer .modal .modal-content .arrows, .modal .modal-content footer .arrows {
+footer #mainGrid, footer #portfolioFilters, footer .flex, footer .modal .modal-content .arrows, .modal .modal-content footer .arrows, footer .navigation-arrows {
   padding: 2rem 2rem 1rem 2rem;
 }
 
@@ -925,7 +928,7 @@ footer a:hover {
 
 @media (min-width: 767px) {
   footer .grid-item, footer header .navigation, header footer .navigation, footer header .navigation ul, header .navigation footer ul, footer #portfolioGrid,
-  footer #mainGrid, footer #portfolioFilters, footer .flex, footer .modal .modal-content .arrows, .modal .modal-content footer .arrows {
+  footer #mainGrid, footer #portfolioFilters, footer .flex, footer .modal .modal-content .arrows, .modal .modal-content footer .arrows, footer .navigation-arrows {
     max-width: 500px;
     margin: 0 auto;
     -webkit-box-orient: horizontal;
@@ -935,7 +938,6 @@ footer a:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 4rem 0 0;
   }
   footer ul {
     margin-bottom: 0;
@@ -1123,6 +1125,63 @@ footer a:hover {
 @media (min-width: 1024px) {
   .modal {
     width: 750px;
+  }
+}
+
+.navigation-arrows {
+  margin-top: 1.5rem;
+}
+
+.navigation-arrows .prev:before, .navigation-arrows .prev:after,
+.navigation-arrows .next:before,
+.navigation-arrows .next:after {
+  content: "";
+  width: 20px;
+  height: 3px;
+  background: #000;
+}
+
+.navigation-arrows .next {
+  padding-right: 30px;
+}
+
+.navigation-arrows .next:before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.navigation-arrows .next:after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 13px;
+}
+
+.navigation-arrows .next:before, .navigation-arrows .next:after {
+  right: 0px;
+}
+
+.navigation-arrows .prev {
+  padding-left: 30px;
+}
+
+.navigation-arrows .prev:before {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.navigation-arrows .prev:after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 13px;
+}
+
+.navigation-arrows .prev:before, .navigation-arrows .prev:after {
+  left: 0px;
+}
+
+@media (min-width: 1024px) {
+  .navigation-arrows {
+    margin-top: 3rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

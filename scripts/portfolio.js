@@ -5,6 +5,14 @@
 if (window.location.href.includes("portfolio.html")) {
     var portfolioContent = [
         { 
+            category: "2024 Premiere Film Festival",
+            title: "2024 Premiere Film Festival",
+            medium: "Projection Design",
+            info: "",
+            image: "../assets/portfolio/premiere-film-festival.png",
+            url: "../portfolio/premiere-film-festival.html"
+        },
+        { 
             category: "Landscape",
             title: "<i>Landscape of Time</i> Immersive Projections",
             medium: "Installation",
@@ -21,14 +29,6 @@ if (window.location.href.includes("portfolio.html")) {
             url: "../portfolio/marz-community-brewing.html"
         },
         { 
-            category: "2024 Premiere Film Festival",
-            title: "2024 Premiere Film Festival",
-            medium: "Projection Design",
-            info: "",
-            image: "../assets/portfolio/premiere-film-festival.png",
-            url: "../portfolio/premiere-film-festival.html"
-        },
-        { 
             category: "Sheets and Shadows",
             title: "Sheets and Shadows",
             medium: "Installation",
@@ -39,7 +39,7 @@ if (window.location.href.includes("portfolio.html")) {
         { 
             category: "Fashion",
             title: "College of DuPage Fashion Show <i>Euphoria</i>",
-            medium: "Animation / Video",
+            medium: "Installation",
             info: "These abstract interactive shapes, with patterns taken from garments in the College of DuPage Fashion Show, create a meta experience. Using Cinema 4D these abstract shapes act like fabric colliding into each other swiftly.",
             image: "../assets/portfolio/fashion-show.jpg",
             url: "../portfolio/fashion-show.html"
@@ -63,7 +63,7 @@ if (window.location.href.includes("portfolio.html")) {
         {
             category: "Immersive Visualization Lab",
             title: "Immersive Visualization Lab",
-            medium: "Projection Design",
+            medium: "Installation",
             info: "This 360 space gives a consuming etheric experience with spiritual symbolism such as sound bowls, incense, crystals and nature. This piece reflects a meditative state of healing through the tapping in of spiritual symbols. Some people when meditating experience a spinning sensation which is reflected in the warped flowers and almost dizzying experience of light and color. The theme of circles is also repeatedly used throughout the piece through the circular space itself, the sound bath circles, and the circular swaying images.",
             image: "../assets/portfolio/immersive-visualization-lab.jpeg",
             url: "../portfolio/ivl.html"
@@ -1331,24 +1331,24 @@ if (window.location.href.includes("sunday-morning-grooves.html")) {
 if (window.location.href.includes("animation-video-compilation.html")) {
     var animationVideoCompilation = [
         { 
-            video_1: "https://player.vimeo.com/video/899581434?h=cc606bc6e8",
-            video_2: "https://player.vimeo.com/video/640242995?h=5491d0fe86",
-            video_3: "https://player.vimeo.com/video/650166803?h=0bbeda93c1",
-            video_4: "https://www.youtube.com/embed/95gDOqT7foE",
-            video_5: "https://player.vimeo.com/video/904986202?h=d52d48f242",
-            video_6: "https://player.vimeo.com/video/927211117?h=917a20d787",
-            video_7: "https://player.vimeo.com/video/949979129?h=d7926e3da",
-            video_8: "https://player.vimeo.com/video/950094095?h=556e8fe436",
+            video_1: "https://player.vimeo.com/video/949979129?h=d7926e3da",
+            video_2: "https://player.vimeo.com/video/904986202?h=d52d48f242",
+            video_3: "https://player.vimeo.com/video/950094095?h=556e8fe436",
+            video_4: "https://player.vimeo.com/video/927211117?h=917a20d787",
+            video_5: "https://player.vimeo.com/video/899581434?h=cc606bc6e8",
+            video_6: "https://player.vimeo.com/video/640242995?h=5491d0fe86",
+            video_7: "https://player.vimeo.com/video/650166803?h=0bbeda93c1",
+            video_8: "https://www.youtube.com/embed/95gDOqT7foE",
             video_9: "https://player.vimeo.com/video/871249923?h=aff3bc09be",
             video_9_class: "vertical",
             video_10: "https://player.vimeo.com/video/486157970?h=dadfed684e",
             video_10_class: "vertical",
-            video_11: "https://player.vimeo.com/video/720066249?h=d2e1658671",
-            video_11_class: "vertical",
-            video_12: "https://player.vimeo.com/video/720064003?h=17a17a80c5",
-            video_12_class: "vertical",
-            video_13: "https://player.vimeo.com/video/720067511?h=cfc0237ccf",
-            video_13_class: "vertical",
+            // video_11: "https://player.vimeo.com/video/720066249?h=d2e1658671",
+            // video_11_class: "vertical",
+            // video_12: "https://player.vimeo.com/video/720064003?h=17a17a80c5",
+            // video_12_class: "vertical",
+            // video_13: "https://player.vimeo.com/video/720067511?h=cfc0237ccf",
+            // video_13_class: "vertical",
         }
     ]
     
@@ -1433,7 +1433,9 @@ if (window.location.href.includes("graphic-design-compilation.html")) {
             image_23: "../assets/graphic-design-compilation/image_23.png",
             image_23_title: "Ivy League Potential",
             image_24: "../assets/graphic-design-compilation/image_24.png",
-            image_24_title: "Ivy League Potential"
+            image_24_title: "Ivy League Potential",
+            image_25: "../assets/graphic-design-compilation/image_25.png",
+            image_25_title: "Grace Cliff Logo"
         }
     ]
     
@@ -1545,9 +1547,9 @@ if (window.location.href.includes("premiere-film-festival")) {
             info_1: "For the Depaul University Premiere Film Festival 8 second animations were needed to introduce each award in order to maintain viewer engagement. In collaboration with other graduate students, I designed the animations for ‘Best Producing,’ ‘Best Documentary,’ as well as the Graphic Design for the Program. These animations were then composited into a 3D space and projected in the Music Box Theatre.",
             image: "../assets/premiere/image.png",
             video: "https://player.vimeo.com/video/950007356?h=f635b1499d",
-            video_1: "https://player.vimeo.com/video/950004873?h=d34ed574fb",
-            video_2: "https://player.vimeo.com/video/953338939?h=2c45d898d0",
-            video_3: "https://player.vimeo.com/video/953340141?h=fb67d163ea",
+            video_1: "https://player.vimeo.com/video/953340141?h=fb67d163ea",
+            video_2: "https://player.vimeo.com/video/950004873?h=d34ed574fb",
+            video_3: "https://player.vimeo.com/video/953338939?h=2c45d898d0",
             image_1: "../assets/premiere/image_1.png",
             image_2: "../assets/premiere/image_2.png",
         }
@@ -1623,6 +1625,8 @@ if (window.location.href.includes("marz-community-brewing")) {
             image_6: "../assets/marz/image_6.png",
             image_7: "../assets/marz/image_7.png",
             image_8: "../assets/marz/image_8.png",
+            image_9: "../assets/marz/image_9.jpg",
+            image_10: "../assets/marz/image_10.jpg",
             video: "https://player.vimeo.com/video/950843224?h=02ca765946"
         }
     ]
@@ -1649,7 +1653,7 @@ if (window.location.href.includes("marz-community-brewing")) {
     
     const mainGridHTML = marz.map((item) => {
         const images = [];
-        for (let i = 1; i <= 9; i++) {
+        for (let i = 1; i <= 10; i++) {
             if (item[`image_${i}`]) {
                 images.push(`<div class="grid-item">
                                 <picture>
