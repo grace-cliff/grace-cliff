@@ -577,6 +577,7 @@ header .navigation a.active, header .navigation a:hover {
 
 header img {
   height: 80px;
+  max-width: 64px;
 }
 
 @media (min-width: 561px) {
@@ -801,7 +802,7 @@ header img {
 
 #portfolioGrid .grid-item picture {
   max-width: 688px;
-  min-width: 300px;
+  min-width: auto;
   max-height: 670px;
   overflow: hidden;
   position: relative;
@@ -832,6 +833,12 @@ header img {
   opacity: 0.8;
   -webkit-filter: opacity(0.6);
           filter: opacity(0.6);
+}
+
+@media (min-width: 767px) {
+  #portfolioGrid .grid-item picture {
+    min-width: 300px;
+  }
 }
 
 @media (min-width: 500px) {
