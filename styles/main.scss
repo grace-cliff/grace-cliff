@@ -540,7 +540,8 @@ header {
         }
         a {
             font-size: 1.2rem;
-            font-family: "UncutSans-Bold";
+            font-family: "UncutSans-Regular";
+            text-transform: uppercase;
             &.active,
             &:hover {
                 border-bottom: 2px solid;
@@ -548,8 +549,12 @@ header {
         }
     }
     img {
-        height: 80px;
-        max-width: 64px;
+        // height: 80px;
+        // max-width: 64px;
+        height: 85px;
+        width: 85px;
+        max-width: 85px;
+        object-fit: cover;
     }
     @include breakpoint('small') {
         padding: 1rem $wrapper--large;

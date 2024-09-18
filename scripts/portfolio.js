@@ -5,6 +5,14 @@
 if (window.location.href.includes("portfolio.html")) {
     var portfolioContent = [
         { 
+            category: "Chicago Architecture Center Promotional Motion Graphics",
+            title: "Chicago Architecture Center Promotional Motion Graphics",
+            medium: "Animation / Video",
+            info: "Under Chicago Architecture Center I did a volume of projects. Some  include a promotional video for their new website launch, a 3 second motion graphic for the introduction to the architecture film series ‘Design Matters’ and small animated graphics added to video footage to further draw viewer interest. I worked closely with the videographer Emmely Aldave when making design decisions.",
+            image: "../assets/portfolio/chicago-architecture-center.png",
+            url: "../portfolio/chicago-architecture-center.html"
+        },
+        { 
             category: "2024 Premiere Film Festival",
             title: "2024 Premiere Film Festival",
             medium: "Projection Design",
@@ -114,7 +122,8 @@ if (window.location.href.includes("portfolio.html")) {
             medium: "Graphic Design",
             info: "This website (hover over image to the left; click to enter) was inspired by lyric rapper Kota the Friend. It mimic’s his phone screen with the apps you can steam his music, find his Discography under Safari, Gallery, and Albums under the Albums app.  HTML and CSS external stylesheets were used in the creation of the website. It is made for a 1280 by 800 monitor or iPad. My process began with researching facts about Kota the Friend to tailor a website that would accurately mimic his iPhone. I then created three wireframe designs and with the best mockup made an interactive prototypes in Adobe XD. After finalizing my mockup I coded all the HTML and CSS using the program ‘Brackets’. I chose Kota the Friend because I like the messages he raps in his music from being down to earth, humble, to hustling for your goals.",
             image: "../assets/kota-the-friend/image.png",
-            url: "../portfolio/kota-the-friend.html"
+            url: "#"
+            // url: "../portfolio/kota-the-friend.html"
         },
         { 
             category: "Starbucks",
@@ -299,6 +308,59 @@ if (window.location.href.includes("about.html")) {
     .join('');
     
     topSection.innerHTML = topSectionHTML;    
+}
+
+
+// Page: Chicago Architecture Center
+if (window.location.href.includes("chicago-architecture-center.html")) {
+    var chicago_architecture_center = [
+        { 
+            title: "Chicago Architecture Center",
+            info_1: "<p>Under Chicago Architecture Center I did a volume of projects. Some  include a promotional video for their new website launch, a 3 second motion graphic for the introduction to the architecture film series ‘Design Matters’ and small animated graphics added to video footage to further draw viewer interest. I worked closely with the videographer Emmely Aldave when making design decisions.</p>",
+            image: "https://www.youtube.com/embed/1wle_rcqDFI",
+            image_1: "../assets/chicago-architecture-center/image_1.png",
+            image_2: "../assets/chicago-architecture-center/image_2.png",
+            image_3: "../assets/chicago-architecture-center/image_3.jpg",
+            image_4: "../assets/chicago-architecture-center/image_4.jpg"
+        }
+    ]
+
+    // top section
+    const topSection = document.getElementById('topSection');
+    
+    const topSectionHTML = chicago_architecture_center
+    .map(item => `<div class="flex large--flex-row flex-column">
+                        <div class="image">
+                            <iframe title="vimeo-player" src="${item.image}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="info">
+                            <h2>${item.title}</h2>
+                            <p>${item.info_1}</p>
+                        </div>
+                    </div>`)
+    .join('');
+    
+    topSection.innerHTML = topSectionHTML;
+    
+    // grid
+    const mainGrid = document.getElementById('mainGrid');
+    
+    const mainGridHTML = chicago_architecture_center.map((item) => {
+        const images = [];
+        for (let i = 1; i <= 4; i++) {
+            if (item[`image_${i}`]) {
+                images.push(`<div class="grid-item">
+                                <picture>
+                                    <source srcset="${item[`image_${i}`]}" media="(min-width: 600px)" />
+                                    <img src="${item[`image_${i}`]}" alt="${item.title}'s featured image" width="450" height="450" loading="lazy">
+                                </picture>
+                            </div>`);
+            }
+        }
+        return images.join('');
+    });
+    
+    mainGrid.innerHTML += mainGridHTML.join('');
 }
 
 
@@ -1408,34 +1470,36 @@ if (window.location.href.includes("graphic-design-compilation.html")) {
             image_11_title: "Invasive Species Forest Posters (1/2)",
             image_12: "../assets/graphic-design-compilation/image_12.png",
             image_12_title: "Invasive Species Forest Posters (2/2)",
-            image_13: "../assets/graphic-design-compilation/image_13.jpg",
-            image_13_title: "Water Lilies",
+            image_13: "../assets/graphic-design-compilation/image_13.png",
+            image_13_title: "Hunter x Hunter",
             image_14: "../assets/graphic-design-compilation/image_14.jpg",
-            image_14_title: "Globe Calendar",
-            image_15: "../assets/graphic-design-compilation/image_15.png",
-            image_15_title: "Girl! You Need Therapy Podcast Logo",
+            image_14_title: "Water Lilies",
+            image_15: "../assets/graphic-design-compilation/image_15.jpg",
+            image_15_title: "Globe Calendar",
             image_16: "../assets/graphic-design-compilation/image_16.png",
-            image_16_title: "5th Anniversary Celebration",
+            image_16_title: "Girl! You Need Therapy Podcast Logo",
             image_17: "../assets/graphic-design-compilation/image_17.png",
-            image_17_title: "Your Money Matters",
+            image_17_title: "5th Anniversary Celebration",
             image_18: "../assets/graphic-design-compilation/image_18.png",
             image_18_title: "Your Money Matters",
             image_19: "../assets/graphic-design-compilation/image_19.png",
-            image_19_title: "Spring Party",
-            // image_19: "../assets/graphic-design-compilation/image_19.pdf",
-            // image_19_title: "Ivy League Potential",
+            image_19_title: "Your Money Matters",
             image_20: "../assets/graphic-design-compilation/image_20.png",
             image_20_title: "Spring Party",
+            // image_19: "../assets/graphic-design-compilation/image_19.pdf",
+            // image_19_title: "Ivy League Potential",
             image_21: "../assets/graphic-design-compilation/image_21.png",
-            image_21_title: "Pickleball",
+            image_21_title: "Spring Party",
             image_22: "../assets/graphic-design-compilation/image_22.png",
-            image_22_title: "Ivy League Potential",
+            image_22_title: "Pickleball",
             image_23: "../assets/graphic-design-compilation/image_23.png",
             image_23_title: "Ivy League Potential",
             image_24: "../assets/graphic-design-compilation/image_24.png",
             image_24_title: "Ivy League Potential",
             image_25: "../assets/graphic-design-compilation/image_25.png",
-            image_25_title: "Grace Cliff Logo"
+            image_25_title: "Ivy League Potential",
+            image_26: "../assets/graphic-design-compilation/image_26.png",
+            image_26_title: "Grace Cliff Logo"
         }
     ]
     
@@ -1444,7 +1508,7 @@ if (window.location.href.includes("graphic-design-compilation.html")) {
     
     const mainGridHTML = graphicDesignCompilation.map((item) => {
         const images = [];
-        for (let i = 1; i <= 25; i++) {
+        for (let i = 1; i <= 26; i++) {
             if (item[`image_${i}`]) {
                 images.push(`<div class="grid-item">
                                 <picture>

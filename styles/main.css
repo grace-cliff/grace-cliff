@@ -568,7 +568,8 @@ header {
 
 header .navigation a {
   font-size: 1.2rem;
-  font-family: "UncutSans-Bold";
+  font-family: "UncutSans-Regular";
+  text-transform: uppercase;
 }
 
 header .navigation a.active, header .navigation a:hover {
@@ -576,8 +577,11 @@ header .navigation a.active, header .navigation a:hover {
 }
 
 header img {
-  height: 80px;
-  max-width: 64px;
+  height: 85px;
+  width: 85px;
+  max-width: 85px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media (min-width: 561px) {
