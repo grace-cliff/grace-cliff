@@ -324,7 +324,7 @@ if (window.location.href.includes("chicago-architecture-center.html")) {
             image_4: "../assets/chicago-architecture-center/image_4.jpg"
         }
     ]
-
+ 
     // top section
     const topSection = document.getElementById('topSection');
     
