@@ -317,7 +317,8 @@ if (window.location.href.includes("chicago-architecture-center.html")) {
         { 
             title: "Chicago Architecture Center",
             info_1: "<p>Under Chicago Architecture Center I did a volume of projects. Some  include a promotional video for their new website launch, a 3 second motion graphic for the introduction to the architecture film series ‘Design Matters’ and small animated graphics added to video footage to further draw viewer interest. I worked closely with the videographer Emmely Aldave when making design decisions.</p>",
-            image: "https://www.youtube.com/embed/1wle_rcqDFI",
+            image: "https://www.youtube.com/embed/ll9eg7tWUtE",
+            video_1: "https://www.youtube.com/embed/1wle_rcqDFI",
             image_1: "../assets/chicago-architecture-center/image_1.png",
             image_2: "../assets/chicago-architecture-center/image_2.png",
             image_3: "../assets/chicago-architecture-center/image_3.jpg",
@@ -347,7 +348,10 @@ if (window.location.href.includes("chicago-architecture-center.html")) {
     
     const mainGridHTML = chicago_architecture_center.map((item) => {
         const images = [];
-        for (let i = 1; i <= 4; i++) {
+        images.push(`<div class="grid-item">
+                        <iframe title="vimeo-player" src="${item.video_1}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                    </div>`)
+        for (let i = 1; i <= 5; i++) {
             if (item[`image_${i}`]) {
                 images.push(`<div class="grid-item">
                                 <picture>
