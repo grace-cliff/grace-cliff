@@ -116,14 +116,21 @@ if (window.location.href.includes("portfolio.html")) {
             image: "../assets/portfolio/expectations-vs-reality.png",
             url: "../portfolio/expectations-vs-reality.html"
         },
+        // {
+        //     category: "Kota the Friend",
+        //     title: "Kota the Friend",
+        //     medium: "Graphic Design",
+        //     info: "This website (hover over image to the left; click to enter) was inspired by lyric rapper Kota the Friend. It mimic’s his phone screen with the apps you can steam his music, find his Discography under Safari, Gallery, and Albums under the Albums app.  HTML and CSS external stylesheets were used in the creation of the website. It is made for a 1280 by 800 monitor or iPad. My process began with researching facts about Kota the Friend to tailor a website that would accurately mimic his iPhone. I then created three wireframe designs and with the best mockup made an interactive prototypes in Adobe XD. After finalizing my mockup I coded all the HTML and CSS using the program ‘Brackets’. I chose Kota the Friend because I like the messages he raps in his music from being down to earth, humble, to hustling for your goals.",
+        //     image: "../assets/kota-the-friend/image.png",
+        //     url: "../portfolio/kota-the-friend.html"
+        // },
         {
-            category: "Kota the Friend",
-            title: "Kota the Friend",
+            category: "QWC",
+            title: "Branding for Quality Work Construction",
             medium: "Graphic Design",
-            info: "This website (hover over image to the left; click to enter) was inspired by lyric rapper Kota the Friend. It mimic’s his phone screen with the apps you can steam his music, find his Discography under Safari, Gallery, and Albums under the Albums app.  HTML and CSS external stylesheets were used in the creation of the website. It is made for a 1280 by 800 monitor or iPad. My process began with researching facts about Kota the Friend to tailor a website that would accurately mimic his iPhone. I then created three wireframe designs and with the best mockup made an interactive prototypes in Adobe XD. After finalizing my mockup I coded all the HTML and CSS using the program ‘Brackets’. I chose Kota the Friend because I like the messages he raps in his music from being down to earth, humble, to hustling for your goals.",
-            image: "../assets/kota-the-friend/image.png",
-            url: "#"
-            // url: "../portfolio/kota-the-friend.html"
+            info: "",
+            image: "../assets/portfolio/qwc.png",
+            url: "../portfolio/qwc.html"
         },
         { 
             category: "Starbucks",
@@ -316,11 +323,11 @@ if (window.location.href.includes("chicago-architecture-center.html")) {
     var chicago_architecture_center = [
         { 
             title: "Chicago Architecture Center",
-            info_1: "<p>Under Chicago Architecture Center I did a volume of projects. Some  include a promotional video for their new website launch, a 3 second motion graphic for the introduction to the architecture film series ‘Design Matters’ and small animated graphics added to video footage to further draw viewer interest. I worked closely with the videographer Emmely Aldave when making design decisions.</p>",
+            info_1: "<p>Under the Chicago Architecture Center I did a volume of 2D and 3D Motion Graphics for their social media and website. Some projects include promotional videos for the new website launch and Open House Chicago, 3D animations of the gift shop items, and a 3 second motion graphic for the introduction of the architecture film series ‘Design Matters’.</p>",
             image: "https://www.youtube.com/embed/ll9eg7tWUtE",
             video_1: "https://www.youtube.com/embed/1wle_rcqDFI",
             image_1: "../assets/chicago-architecture-center/image_1.png",
-            image_2: "../assets/chicago-architecture-center/image_2.png",
+            // image_2: "../assets/chicago-architecture-center/image_2.png",
             image_3: "../assets/chicago-architecture-center/image_3.jpg",
             image_4: "../assets/chicago-architecture-center/image_4.jpg"
         }
@@ -1341,6 +1348,73 @@ if (window.location.href.includes("starbucks.html")) {
 }
 
 
+// Page: QWC
+if (window.location.href.includes("qwc.html")) {
+    var qwc = [
+        { 
+            title: "Branding for Quality Work Construction",
+            info_1: "In collaboration with Quality Work Construction I redesigned their branding style guide, business cards, door placards, and email banners. When considering their visual identity, I wanted to emphasize a company that is approachable and producing quality work. After talking to the CEO on the importance of his specialized team and transparency with their clients I chose a humanist font to emphasize those interpersonal relationships.",
+            image: "../assets/qwc/image.png",
+            image_2: "../assets/qwc/image_2.png",
+            image_3: "../assets/qwc/image_3.png",
+            image_4: "../assets/qwc/image_4.png",
+            image_5: "../assets/qwc/image_5.png",
+            image_6: "../assets/qwc/image_6.png",
+            image_7: "../assets/qwc/image_7.png",
+            image_8: "../assets/qwc/image_8.png",
+            image_9: "../assets/qwc/image_9.png",
+            image_10: "../assets/qwc/image_10.png",
+            image_11: "../assets/qwc/image_11.png",
+            image_12: "../assets/qwc/image_12.jpg"
+        }
+    ]
+    
+    // top section
+    const topSection = document.getElementById('topSection');
+    
+    const topSectionHTML = qwc
+    .map(item => `<div class="flex large--flex-row flex-column">
+                        <div class="image">
+                            <picture>
+                                <source srcset="${item.image}" media="(min-width: 600px)" />
+                                <img src="${item.image}" alt="${item.title}'s featured image" width="450" height="450" loading="lazy">
+                            </picture>
+                        </div>
+                        <div class="info">
+                            <h2>${item.title}</h2>
+                            <p>${item.info_1}</p>
+                        </div>
+                    </div>`)
+    .join('');
+    
+    topSection.innerHTML = topSectionHTML;
+    
+    // grid
+    const mainGrid = document.getElementById('mainGrid');
+    
+    const mainGridHTML = qwc.map((item) => {
+        const images = [];
+        for (let i = 1; i <= 12; i++) {
+            if (item[`image_${i}`]) {
+                images.push(`<div class="grid-item">
+                                <picture>
+                                    <source srcset="${item[`image_${i}`]}" media="(min-width: 600px)" />
+                                    <img src="${item[`image_${i}`]}" alt="${item.title}'s featured image" width="450" height="450" loading="lazy">
+                                </picture>
+                            </div>`);
+            }
+        }
+        // images.push(`<div class="grid-item">
+        //                 <iframe title="vimeo-player" src="${item.video}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+        //             </div>`)
+        return images.join('');
+    });
+    
+    mainGrid.innerHTML = mainGridHTML.join('');
+    
+}
+
+
 // Page: Sunday Morning Grooves
 if (window.location.href.includes("sunday-morning-grooves.html")) {
     var sundayMorning = [
@@ -1399,16 +1473,17 @@ if (window.location.href.includes("animation-video-compilation.html")) {
         { 
             video_1: "https://player.vimeo.com/video/949979129?h=d7926e3da",
             video_2: "https://player.vimeo.com/video/904986202?h=d52d48f242",
-            video_3: "https://player.vimeo.com/video/950094095?h=556e8fe436",
-            video_4: "https://player.vimeo.com/video/927211117?h=917a20d787",
-            video_5: "https://player.vimeo.com/video/899581434?h=cc606bc6e8",
-            video_6: "https://player.vimeo.com/video/640242995?h=5491d0fe86",
-            video_7: "https://player.vimeo.com/video/650166803?h=0bbeda93c1",
-            video_8: "https://www.youtube.com/embed/95gDOqT7foE",
-            video_9: "https://player.vimeo.com/video/871249923?h=aff3bc09be",
-            video_9_class: "vertical",
-            video_10: "https://player.vimeo.com/video/486157970?h=dadfed684e",
+            video_3: "https://www.youtube.com/embed/HcmJQkRmaRs",
+            video_4: "https://player.vimeo.com/video/950094095?h=556e8fe436",
+            video_5: "https://player.vimeo.com/video/927211117?h=917a20d787",
+            video_6: "https://player.vimeo.com/video/899581434?h=cc606bc6e8",
+            video_7: "https://player.vimeo.com/video/640242995?h=5491d0fe86",
+            video_8: "https://player.vimeo.com/video/650166803?h=0bbeda93c1",
+            video_9: "https://www.youtube.com/embed/95gDOqT7foE",
+            video_10: "https://player.vimeo.com/video/871249923?h=aff3bc09be",
             video_10_class: "vertical",
+            video_11: "https://player.vimeo.com/video/486157970?h=dadfed684e",
+            video_11_class: "vertical",
             // video_11: "https://player.vimeo.com/video/720066249?h=d2e1658671",
             // video_11_class: "vertical",
             // video_12: "https://player.vimeo.com/video/720064003?h=17a17a80c5",
