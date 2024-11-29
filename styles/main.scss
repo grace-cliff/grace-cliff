@@ -663,6 +663,14 @@ header {
     }
 }
 
+@include breakpoint('medium') {
+    #mainGrid {
+        img {
+            max-height: 500px;
+        }
+    }
+}
+
 #portfolioGrid {
     @include breakpoint('large') {
         grid-template-columns: repeat(3,1fr);

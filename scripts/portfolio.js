@@ -328,8 +328,8 @@ if (window.location.href.includes("chicago-architecture-center.html")) {
             video_1: "https://www.youtube.com/embed/yBQdkXp7oO4",
             video_2: "https://www.youtube.com/embed/1wle_rcqDFI",
             video_3: "https://www.youtube.com/embed/dMAEEtbak-g",
-            // image_1: "../assets/chicago-architecture-center/image_1.png",
-            // image_2: "../assets/chicago-architecture-center/image_2.png",
+            image_1: "../assets/chicago-architecture-center/image_1.jpg",
+            image_2: "../assets/chicago-architecture-center/image_2.jpg",
             image_3: "../assets/chicago-architecture-center/image_3.jpg",
             image_4: "../assets/chicago-architecture-center/image_4.jpg"
         }

@@ -690,6 +690,12 @@ header img {
   }
 }
 
+@media (min-width: 767px) {
+  #mainGrid img {
+    max-height: 500px;
+  }
+}
+
 @media (min-width: 1024px) {
   #portfolioGrid {
     -ms-grid-columns: (1fr)[3];
