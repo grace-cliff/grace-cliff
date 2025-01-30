@@ -325,9 +325,11 @@ if (window.location.href.includes("chicago-architecture-center.html")) {
             title: "Chicago Architecture Center",
             info_1: "<p>Under the Chicago Architecture Center I did a volume of 2D and 3D Motion Graphics for their social media and website. Some projects include promotional videos for the new website launch and Open House Chicago, 3D animations of the gift shop items, and a 3 second motion graphic for the introduction of the architecture film series ‘Design Matters’.</p>",
             image: "https://www.youtube.com/embed/ll9eg7tWUtE",
-            video_1: "https://www.youtube.com/embed/yBQdkXp7oO4",
-            video_2: "https://www.youtube.com/embed/1wle_rcqDFI",
-            video_3: "https://www.youtube.com/embed/dMAEEtbak-g",
+            video_1: "https://www.youtube.com/embed/SIOQutHYTSE",
+            video_2: "https://www.youtube.com/embed/NP30IyoZFQw",
+            video_3: "https://www.youtube.com/embed/yBQdkXp7oO4",
+            video_4: "https://www.youtube.com/embed/1wle_rcqDFI",
+            video_5: "https://www.youtube.com/embed/dMAEEtbak-g",
             image_1: "../assets/chicago-architecture-center/image_1.jpg",
             image_2: "../assets/chicago-architecture-center/image_2.jpg",
             image_3: "../assets/chicago-architecture-center/image_3.jpg",
@@ -365,6 +367,12 @@ if (window.location.href.includes("chicago-architecture-center.html")) {
                     </div>
                     <div class="grid-item">
                         <iframe title="vimeo-player" src="${item.video_3}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                     <div class="grid-item">
+                        <iframe title="vimeo-player" src="${item.video_4}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                     <div class="grid-item">
+                        <iframe title="vimeo-player" src="${item.video_5}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
                     </div>`)
         for (let i = 1; i <= 5; i++) {
             if (item[`image_${i}`]) {
