@@ -20,6 +20,14 @@ if (window.location.href.includes("portfolio.html")) {
             image: "../assets/portfolio/premiere-film-festival.png",
             url: "../portfolio/premiere-film-festival.html"
         },
+        {
+            category: "A Cyborg Manifesto",
+            title: "A Cyborg Manifesto",
+            medium: "Animation / Video",
+            info: "",
+            image: "../assets/portfolio/cyborg-manifesto.png",
+            url: "../portfolio/cyborg-manifesto.html"
+        },
         { 
             category: "Landscape",
             title: "<i>Landscape of Time</i> Immersive Projections",
@@ -35,6 +43,14 @@ if (window.location.href.includes("portfolio.html")) {
             info: "",
             image: "../assets/portfolio/marz-community-brewing.png",
             url: "../portfolio/marz-community-brewing.html"
+        },
+        { 
+            category: "Incline Gaming Marketing",
+            title: "Incline Gaming Marketing",
+            medium: "Graphic Design",
+            info: "",
+            image: "../assets/portfolio/incline.png",
+            url: "../portfolio/incline.html"
         },
         { 
             category: "Sheets and Shadows",
@@ -1495,11 +1511,13 @@ if (window.location.href.includes("animation-video-compilation.html")) {
             video_6: "https://player.vimeo.com/video/899581434?h=cc606bc6e8",
             video_7: "https://player.vimeo.com/video/640242995?h=5491d0fe86",
             video_8: "https://player.vimeo.com/video/650166803?h=0bbeda93c1",
-            video_9: "https://www.youtube.com/embed/95gDOqT7foE",
+            // video_9: "https://www.youtube.com/embed/95gDOqT7foE",
             video_10: "https://player.vimeo.com/video/871249923?h=aff3bc09be",
             video_10_class: "vertical",
-            video_11: "https://player.vimeo.com/video/486157970?h=dadfed684e",
-            video_11_class: "vertical",
+            video_11: "https://www.youtube.com/embed/XKp9zxVJErc",
+            video_12: "https://www.youtube.com/embed/flPOLmTcJyw"
+            // video_11: "https://player.vimeo.com/video/486157970?h=dadfed684e",
+            // video_11_class: "vertical",
             // video_11: "https://player.vimeo.com/video/720066249?h=d2e1658671",
             // video_11_class: "vertical",
             // video_12: "https://player.vimeo.com/video/720064003?h=17a17a80c5",
@@ -1548,11 +1566,11 @@ if (window.location.href.includes("graphic-design-compilation.html")) {
             image_3: "../assets/graphic-design-compilation/image_3.jpg",
             image_3_title: "Free Falling",
             image_4: "../assets/graphic-design-compilation/image_4.png",
-            image_4_title: "This is a Censored Exhibition Poster (1/3)",
+            image_4_title: "This is a Censored Exhibition Poster (1/2)",
             image_5: "../assets/graphic-design-compilation/image_5.png",
-            image_5_title: "This is a Censored Exhibition Poster (2/3)",
-            image_6: "../assets/graphic-design-compilation/image_6.png",
-            image_6_title: "This is a Censored Exhibition Poster (3/3)",
+            image_5_title: "This is a Censored Exhibition Poster (2/2)",
+            // image_6: "../assets/graphic-design-compilation/image_6.png",
+            // image_6_title: "This is a Censored Exhibition Poster (3/3)",
             image_7: "../assets/graphic-design-compilation/image_7.png",
             image_7_title: "This is a Censored Exhibition Cards",
             image_8: "../assets/graphic-design-compilation/image_8.png",
@@ -1562,9 +1580,9 @@ if (window.location.href.includes("graphic-design-compilation.html")) {
             image_10: "../assets/graphic-design-compilation/image_10.png",
             image_10_title: "Big Idea Pitch Contest Non-Profit Program Promotion",
             image_11: "../assets/graphic-design-compilation/image_11.png",
-            image_11_title: "Invasive Species Forest Posters (1/2)",
-            image_12: "../assets/graphic-design-compilation/image_12.png",
-            image_12_title: "Invasive Species Forest Posters (2/2)",
+            image_11_title: "Invasive Species Forest Poster",
+            // image_12: "../assets/graphic-design-compilation/image_12.png",
+            // image_12_title: "Invasive Species Forest Posters (2/2)",
             image_13: "../assets/graphic-design-compilation/image_13.png",
             image_13_title: "Hunter x Hunter",
             image_14: "../assets/graphic-design-compilation/image_14.jpg",
@@ -1575,8 +1593,8 @@ if (window.location.href.includes("graphic-design-compilation.html")) {
             image_16_title: "Girl! You Need Therapy Podcast Logo",
             image_17: "../assets/graphic-design-compilation/image_17.png",
             image_17_title: "5th Anniversary Celebration",
-            image_18: "../assets/graphic-design-compilation/image_18.png",
-            image_18_title: "Your Money Matters",
+            // image_18: "../assets/graphic-design-compilation/image_18.png",
+            // image_18_title: "Your Money Matters",
             image_19: "../assets/graphic-design-compilation/image_19.png",
             image_19_title: "Your Money Matters",
             image_20: "../assets/graphic-design-compilation/image_20.png",
@@ -1594,7 +1612,19 @@ if (window.location.href.includes("graphic-design-compilation.html")) {
             image_25: "../assets/graphic-design-compilation/image_25.png",
             image_25_title: "Ivy League Potential",
             image_26: "../assets/graphic-design-compilation/image_26.png",
-            image_26_title: "Grace Cliff Logo"
+            image_26_title: "Grace Cliff Logo",
+            image_27: "../assets/graphic-design-compilation/image_27.png",
+            image_27_title: "Premiere Film Showcase",
+            image_28: "../assets/graphic-design-compilation/image_28.png",
+            image_28_title: "Premiere Film Showcase",
+            image_29: "../assets/graphic-design-compilation/image_29.jpeg",
+            image_29_title: "Incline (1/2)",
+            image_30: "../assets/graphic-design-compilation/image_30.jpeg",
+            image_30_title: "Incline (2/2)",
+            image_31: "../assets/graphic-design-compilation/image_31.jpeg",
+            image_31_title: "Incline (1/2)",
+            image_32: "../assets/graphic-design-compilation/image_32.png",
+            image_32_title: "Incline (2/2)",
         }
     ]
     
@@ -1603,7 +1633,7 @@ if (window.location.href.includes("graphic-design-compilation.html")) {
     
     const mainGridHTML = graphicDesignCompilation.map((item) => {
         const images = [];
-        for (let i = 1; i <= 26; i++) {
+        for (let i = 1; i <= 32; i++) {
             if (item[`image_${i}`]) {
                 images.push(`<div class="grid-item">
                                 <picture>
@@ -1768,6 +1798,165 @@ if (window.location.href.includes("premiere-film-festival")) {
     
 }
 
+// Page: Cyborg Manifesto
+if (window.location.href.includes("cyborg-manifesto")) {
+    var cyborg = [
+        { 
+            title: "A Cyborg Manifesto",
+            info_1: "This prompt was to develop a professional creative Pitch Deck for an imaginary main title sequence. I developed my own short narrative, logline, and synopsis loosely based off of A Cyborg Manifesto by Donna J. Haraway. Below is the moodboard, style frames, and a motion test for two of the style frames. Narrative The cyborg is a rejection of the rigid boundaries between human, animal, and machine. The divide between human and animal has been blurred by evolution. The divide between physical and non-physical has been blurred by digital technologies. Chapters Transformation Identity Acceptance",
+            image: "",
+            video: "https://www.youtube.com/embed/F65HKpC4TPQ",
+            image_1: "../assets/cyborg/image_1.png",
+            image_2: "../assets/cyborg/image_2.png",
+            image_3: "../assets/cyborg/image_3.png",
+            video_1: "https://www.youtube.com/embed/5AEU-UwFWAo",
+            image_4: "../assets/cyborg/image_4.png",
+            image_5: "../assets/cyborg/image_5.png",
+            image_6: "../assets/cyborg/image_6.png",
+            image_7: "../assets/cyborg/image_7.png",
+        }
+    ]
+   
+    // top section
+    const topSection = document.getElementById('topSection');
+    
+    const topSectionHTML = cyborg
+    .map(item => `<div class="flex large--flex-row flex-column">
+                        <div class="image">
+                            <iframe title="vimeo-player" src="${item.video}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="info">
+                            <h2>${item.title}</h2>
+                            <p>${item.info_1}</p>
+                        </div>
+                    </div>`)
+    .join('');
+    
+    topSection.innerHTML = topSectionHTML;
+    
+    // grid
+    const mainGrid = document.getElementById('mainGrid');
+    
+    const mainGridHTML = cyborg.map((item) => {
+        const images = [];
+        for (let i = 1; i <= 3; i++) {
+            if (item[`image_${i}`]) {
+                images.push(`<div class="grid-item">
+                                <picture>
+                                    <source srcset="${item[`image_${i}`]}" media="(min-width: 600px)" />
+                                    <img src="${item[`image_${i}`]}" alt="${item.title}'s featured image" width="450" height="450" loading="lazy">
+                                </picture>
+                            </div>`);
+            }
+        }
+        images.push(`
+            <div class="grid-item">
+                <iframe title="vimeo-player" src="${item.video_1}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+            </div>
+        `)
+        for (let i = 4; i <= 7; i++) {
+            if (item[`image_${i}`]) {
+                images.push(`<div class="grid-item">
+                                <picture>
+                                    <source srcset="${item[`image_${i}`]}" media="(min-width: 600px)" />
+                                    <img src="${item[`image_${i}`]}" alt="${item.title}'s featured image" width="450" height="450" loading="lazy">
+                                </picture>
+                            </div>`);
+            }
+        }
+        return images.join('');
+    });
+    
+    mainGrid.innerHTML = mainGridHTML.join('');
+    
+}
+
+// Page: Incline
+if (window.location.href.includes("incline")) {
+    var incline = [
+        { 
+            title: "A incline Manifesto",
+            info_1: "Incline is a B2C marketing services company focused on the global regulated sports betting and online casino markets. As a graphic designer / motion graphic designer my role included Designing graphics for upcoming gambling promotions, animating engaging graphics for various Casino games, and editing assets to fit the context of graphics.",
+            image: "../assets/incline/image.png",
+            image_1: "../assets/incline/image_1.jpeg",
+            image_2: "../assets/incline/image_2.jpeg",
+            image_3: "../assets/incline/image_3.png",
+            image_4: "../assets/incline/image_4.png",
+            image_5: "../assets/incline/image_5.png",
+            video_1: "https://www.youtube.com/embed/SFXrqHO0p4A",
+            video_2: "https://www.youtube.com/embed/G3Dx5_2ZUnA",
+            video_3: "https://www.youtube.com/embed/UFdvieIczt8",
+            video_4: "https://www.youtube.com/embed/SUx0NwYNu0Q",
+            image_6: "../assets/incline/image_6.png",
+            image_7: "../assets/incline/image_7.png",
+        }
+    ]
+   
+    // top section
+    const topSection = document.getElementById('topSection');
+    
+    const topSectionHTML = incline
+    .map(item => `<div class="flex large--flex-row flex-column">
+                        <div class="image">
+                            <picture>
+                                <source srcset="${item.image}" media="(min-width: 600px)" />
+                                <img src="${item.image}" alt="${item.title}'s featured image" width="450" height="450" loading="lazy">
+                            </picture>
+                        </div>
+                        <div class="info">
+                            <h2>${item.title}</h2>
+                            <p>${item.info_1}</p>
+                        </div>
+                    </div>`)
+    .join('');
+    
+    topSection.innerHTML = topSectionHTML;
+    
+    // grid
+    const mainGrid = document.getElementById('mainGrid');
+    
+    const mainGridHTML = incline.map((item) => {
+        const images = [];
+        for (let i = 1; i <= 5; i++) {
+            if (item[`image_${i}`]) {
+                images.push(`<div class="grid-item">
+                                <picture>
+                                    <source srcset="${item[`image_${i}`]}" media="(min-width: 600px)" />
+                                    <img src="${item[`image_${i}`]}" alt="${item.title}'s featured image" width="450" height="450" loading="lazy">
+                                </picture>
+                            </div>`);
+            }
+        }
+        images.push(`
+            <div class="grid-item">
+                <iframe title="vimeo-player" src="${item.video_1}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+            </div>
+             <div class="grid-item">
+                <iframe title="vimeo-player" src="${item.video_2}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+            </div>
+             <div class="grid-item">
+                <iframe title="vimeo-player" src="${item.video_3}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+            </div>
+             <div class="grid-item">
+                <iframe title="vimeo-player" src="${item.video_4}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+            </div>
+        `)
+        for (let i = 6; i <= 8; i++) {
+            if (item[`image_${i}`]) {
+                images.push(`<div class="grid-item">
+                                <picture>
+                                    <source srcset="${item[`image_${i}`]}" media="(min-width: 600px)" />
+                                    <img src="${item[`image_${i}`]}" alt="${item.title}'s featured image" width="450" height="450" loading="lazy">
+                                </picture>
+                            </div>`);
+            }
+        }
+        return images.join('');
+    });
+    
+    mainGrid.innerHTML = mainGridHTML.join('');
+    
+}
 
 // Page: Marz Community Brewing
 if (window.location.href.includes("marz-community-brewing")) {
