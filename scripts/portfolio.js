@@ -1875,7 +1875,7 @@ if (window.location.href.includes("cyborg-manifesto")) {
 if (window.location.href.includes("incline")) {
     var incline = [
         { 
-            title: "A incline Manifesto",
+            title: "Incline Gaming Marketing",
             info_1: "Incline is a B2C marketing services company focused on the global regulated sports betting and online casino markets. As a graphic designer / motion graphic designer my role included Designing graphics for upcoming gambling promotions, animating engaging graphics for various Casino games, and editing assets to fit the context of graphics.",
             image: "../assets/incline/image.png",
             image_1: "../assets/incline/image_1.jpeg",
