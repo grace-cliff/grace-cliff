@@ -1503,19 +1503,21 @@ if (window.location.href.includes("sunday-morning-grooves.html")) {
 if (window.location.href.includes("animation-video-compilation.html")) {
     var animationVideoCompilation = [
         { 
-            video_1: "https://player.vimeo.com/video/949979129?h=d7926e3da",
-            video_2: "https://player.vimeo.com/video/904986202?h=d52d48f242",
-            video_3: "https://www.youtube.com/embed/HcmJQkRmaRs",
-            video_4: "https://player.vimeo.com/video/950094095?h=556e8fe436",
-            video_5: "https://player.vimeo.com/video/927211117?h=917a20d787",
-            video_6: "https://player.vimeo.com/video/899581434?h=cc606bc6e8",
-            video_7: "https://player.vimeo.com/video/640242995?h=5491d0fe86",
-            video_8: "https://player.vimeo.com/video/650166803?h=0bbeda93c1",
+            video_1: "https://www.youtube.com/embed/to8-bTCsCJU", // grace 
+            video_2: "https://www.youtube.com/embed/aXNsmdYLEYs", // premiere
+            video_3: "https://www.youtube.com/embed/XKp9zxVJErc", // berin
+            video_4: "https://www.youtube.com/embed/flPOLmTcJyw", // abstraction
+            video_5: "https://player.vimeo.com/video/899581434?h=cc606bc6e8", // look for the light
+            video_6: "https://player.vimeo.com/video/640242995?h=5491d0fe86", // pride
+            video_7: "https://player.vimeo.com/video/650166803?h=0bbeda93c1", // mulberry
+            video_8: "https://player.vimeo.com/video/871249923?h=aff3bc09be", //art of observing
+            video_8_class: "vertical",
+            video_9: "https://player.vimeo.com/video/949979129?h=d7926e3da", // title credits
+            video_10: "https://player.vimeo.com/video/904986202?h=d52d48f242", // reckless
+            video_11: "https://www.youtube.com/embed/HcmJQkRmaRs", // kinetic typography
+            video_12: "https://player.vimeo.com/video/950094095?h=556e8fe436", // griselda
+            video_13: "https://player.vimeo.com/video/927211117?h=917a20d787" // evil eye
             // video_9: "https://www.youtube.com/embed/95gDOqT7foE",
-            video_10: "https://player.vimeo.com/video/871249923?h=aff3bc09be",
-            video_10_class: "vertical",
-            video_11: "https://www.youtube.com/embed/XKp9zxVJErc",
-            video_12: "https://www.youtube.com/embed/flPOLmTcJyw"
             // video_11: "https://player.vimeo.com/video/486157970?h=dadfed684e",
             // video_11_class: "vertical",
             // video_11: "https://player.vimeo.com/video/720066249?h=d2e1658671",
@@ -1803,7 +1805,7 @@ if (window.location.href.includes("cyborg-manifesto")) {
     var cyborg = [
         { 
             title: "A Cyborg Manifesto",
-            info_1: "This prompt was to develop a professional creative Pitch Deck for an imaginary main title sequence. I developed my own short narrative, logline, and synopsis loosely based off of A Cyborg Manifesto by Donna J. Haraway. Below is the moodboard, style frames, and a motion test for two of the style frames. Narrative The cyborg is a rejection of the rigid boundaries between human, animal, and machine. The divide between human and animal has been blurred by evolution. The divide between physical and non-physical has been blurred by digital technologies. Chapters Transformation Identity Acceptance",
+            info_1: "This prompt was to develop a professional creative Pitch Deck for an imaginary main title sequence. I developed my own short narrative, logline, and synopsis loosely based off of A Cyborg Manifesto by Donna J. Haraway. Below is the moodboard, style frames, and a motion test for two of the style frames. <br><br> <b> Narrative</b><br> The cyborg is a rejection of the rigid boundaries between human, animal, and machine. The divide between human and animal has been blurred by evolution. The divide between physical and non-physical has been blurred by digital technologies. <br> <br> <b>Chapters</b><br> Transformation<br> Identity<br> Acceptance",
             image: "",
             video: "https://www.youtube.com/embed/F65HKpC4TPQ",
             image_1: "../assets/cyborg/image_1.png",
