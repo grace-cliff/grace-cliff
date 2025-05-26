@@ -304,6 +304,7 @@ if (window.location.href.includes("about.html")) {
         { 
             title: "Hello, I'm Grace Cliff",
             info_1: "<p>I am a highly creative interdisciplinary designer with a strong vision for brand design, social media marketing, and audiovisual storytelling. My specialization is in graphic design, motion graphics, and video editing.</p> <p>I am pursuing a MA in Animation with a concentration in Motion Graphics at DePaul University’s Jarvis College of Computing. I graduated from Illinois State University, magna cum laude, with a B.A. Graphic Design, B.A. in Creative Technology, and a minor in Dance. </p><p>Some of my client work includes social media marketing for nonprofit start-up entrepreneurial companies, projection designs for modern dance company Waterstreet Dance Milwaukee, and 3D animations for Chicago local Brewery Marz Community Brewing.<br></br> I am currently in the market for full-time or freelance design positions.</p>",
+            video: "https://www.youtube.com/embed/to8-bTCsCJU",
             image: "../assets/about/image.jpg",
             resume: "../assets/about/GraceCliff_Resume.pdf"
         }
@@ -327,6 +328,10 @@ if (window.location.href.includes("about.html")) {
                                 <a href="${item.resume}" target="_blank" class="button" title="External link to resume">Resume</a>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="grid-item about-video">
+                        <iframe title="vimeo-player" src="${item.video}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
                     </div>`)
     .join('');
     
