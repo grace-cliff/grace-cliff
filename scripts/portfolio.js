@@ -49,7 +49,7 @@ if (window.location.href.includes("portfolio.html")) {
             title: "Marz Community Brewing Social Media Motion Design",
             medium: "Animation / Video",
             info: "",
-            image: "../assets/portfolio/marz-community-brewing.png",
+            image: "../assets/portfolio/marz-community-brewing.gif",
             url: "../portfolio/marz-community-brewing.html"
         },
         { 
