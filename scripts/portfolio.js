@@ -33,7 +33,7 @@ if (window.location.href.includes("portfolio.html")) {
             title: "A Cyborg Manifesto",
             medium: "Animation / Video",
             info: "",
-            image: "../assets/portfolio/cyborg-manifesto.png",
+            image: "../assets/portfolio/cyborg-manifesto.gif",
             url: "../portfolio/cyborg-manifesto.html"
         },
         { 
