@@ -17,7 +17,7 @@ if (window.location.href.includes("portfolio.html")) {
             title: "2024 Premiere Film Festival",
             medium: "Projection Design",
             info: "",
-            image: "../assets/portfolio/premiere-film-festival.png",
+            image: "../assets/portfolio/premiere-film-festival.gif",
             url: "../portfolio/premiere-film-festival.html"
         },
         { 
