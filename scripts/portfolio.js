@@ -57,7 +57,7 @@ if (window.location.href.includes("portfolio.html")) {
             title: "Incline Gaming Marketing",
             medium: "Graphic Design",
             info: "",
-            image: "../assets/portfolio/incline.png",
+            image: "../assets/portfolio/incline.gif",
             url: "../portfolio/incline.html"
         },
         { 
