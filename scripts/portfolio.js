@@ -73,7 +73,7 @@ if (window.location.href.includes("portfolio.html")) {
             title: "College of DuPage Fashion Show <i>Euphoria</i>",
             medium: "Installation",
             info: "These abstract interactive shapes, with patterns taken from garments in the College of DuPage Fashion Show, create a meta experience. Using Cinema 4D these abstract shapes act like fabric colliding into each other swiftly.",
-            image: "../assets/portfolio/fashion-show.jpg",
+            image: "../assets/portfolio/fashion-show.gif",
             url: "../portfolio/fashion-show.html"
         },
         {
