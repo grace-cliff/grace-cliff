@@ -9,7 +9,7 @@ if (window.location.href.includes("portfolio.html")) {
             title: "Chicago Architecture Center Promotional Motion Graphics",
             medium: "Animation / Video",
             info: "Under Chicago Architecture Center I did a volume of projects. Some  include a promotional video for their new website launch, a 3 second motion graphic for the introduction to the architecture film series ‘Design Matters’ and small animated graphics added to video footage to further draw viewer interest. I worked closely with the videographer Emmely Aldave when making design decisions.",
-            image: "../assets/portfolio/chicago-architecture-center.png",
+            image: "../assets/portfolio/chicago-architecture-center.gif",
             url: "../portfolio/chicago-architecture-center.html"
         },
         { 
