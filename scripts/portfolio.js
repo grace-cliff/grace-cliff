@@ -25,7 +25,7 @@ if (window.location.href.includes("portfolio.html")) {
             title: "2025 Premiere Film Showcase",
             medium: "Projection Design",
             info: "",
-            image: "../assets/portfolio/premiere-film-festival.png",
+            image: "../assets/portfolio/premiere_2025.gif",
             url: "../portfolio/2025-festival.html"
         },
         {
