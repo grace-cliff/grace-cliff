@@ -20,6 +20,14 @@ if (window.location.href.includes("portfolio.html")) {
             image: "../assets/portfolio/premiere-film-festival.png",
             url: "../portfolio/premiere-film-festival.html"
         },
+        // { 
+        //     category: "2025 Premiere Film Showcase",
+        //     title: "2025 Premiere Film Showcase",
+        //     medium: "Projection Design",
+        //     info: "",
+        //     image: "../assets/portfolio/premiere-film-festival.png",
+        //     url: "../portfolio/2025-festival.html"
+        // },
         {
             category: "A Cyborg Manifesto",
             title: "A Cyborg Manifesto",
@@ -1798,6 +1806,75 @@ if (window.location.href.includes("premiere-film-festival")) {
                             </div>`);
             }
         }
+        return images.join('');
+    });
+    
+    mainGrid.innerHTML = mainGridHTML.join('');
+    
+}
+
+
+// Page: 2025 Premiere Film Showcase
+if (window.location.href.includes("2025-festival")) {
+    var premiere_showcase = [
+        { 
+            title: "2025 Premiere Film Showcase",
+            info_1: "For the DePaul 2025 Premiere Showcase at the Music Box Theatre, I collaborated with six other graduate students to design the introduction to the awards segment. Together, we created five unique 3D animations and developed eight distinct 2D text layouts to represent the 25 different awards. I was responsible for designing one of the 3D animations and four of the 2D text layouts. The final designs were presented as part of a Keynote presentation during the award announcements. <br><br><b>Collaborators</b><br>Manuela Garcia Gonzalez<br>Lea Hall<br>Aanya Mishra<br>Maria Gabriela Perez Duran<br>Emory Wise",
+            image: "../assets/premiere/image.png",
+            video: "",
+            video_1: "",
+            video_2: "",
+            video_3: ""
+        }
+    ]
+   
+    // top section
+    const topSection = document.getElementById('topSection');
+    
+    const topSectionHTML = premiere_showcase
+    .map(item => `<div class="flex large--flex-row flex-column">
+                        <div class="image">
+                            <picture>
+                                <source srcset="${item.image}" media="(min-width: 600px)" />
+                                <img src="${item.image}" alt="${item.title}'s featured image" width="450" height="450" loading="lazy">
+                            </picture>
+                        </div>
+                        <div class="info">
+                            <h2>${item.title}</h2>
+                            <p>${item.info_1}</p>
+                        </div>
+                    </div>`)
+    .join('');
+    
+    topSection.innerHTML = topSectionHTML;
+    
+    // grid
+    const mainGrid = document.getElementById('mainGrid');
+    
+    const mainGridHTML = premiere_showcase.map((item) => {
+        const images = [];
+        images.push(`<div class="grid-item">
+                        <iframe title="vimeo-player" src="${item.video}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="grid-item">
+                        <iframe title="vimeo-player" src="${item.video_1}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="grid-item">
+                        <iframe title="vimeo-player" src="${item.video_2}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="grid-item">
+                        <iframe title="vimeo-player" src="${item.video_3}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                    </div>`)
+        // for (let i = 1; i <= 3; i++) {
+        //     if (item[`image_${i}`]) {
+        //         images.push(`<div class="grid-item">
+        //                         <picture>
+        //                             <source srcset="${item[`image_${i}`]}" media="(min-width: 600px)" />
+        //                             <img src="${item[`image_${i}`]}" alt="${item.title}'s featured image" width="450" height="450" loading="lazy">
+        //                         </picture>
+        //                     </div>`);
+        //     }
+        // }
         return images.join('');
     });
     
