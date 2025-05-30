@@ -89,7 +89,7 @@ if (window.location.href.includes("portfolio.html")) {
             title: "<i>When it Rains, it Pours</i>",
             medium: "Projection Design",
             info: "Under the School of Theatre and Dance at Illinois State University 'When it Rains, it Pours' was staged on pre-professional dancers. These projection designs were created for professional modern dancer and choreographer Morgan 'Mo' Williams; founder and director of Water Street Dance Milwaukee.",
-            image: "../assets/portfolio/projections.png",
+            image: "../assets/portfolio/projections.gif",
             url: "../portfolio/projections.html"
         },
         // {
