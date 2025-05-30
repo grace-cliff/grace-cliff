@@ -81,7 +81,7 @@ if (window.location.href.includes("portfolio.html")) {
             title: "Sunday Morning Grooves",
             medium: "Animation / Video",
             info: "",
-            image: "../assets/portfolio/sunday-morning-grooves.png",
+            image: "../assets/portfolio/sunday-morning-grooves.gif",
             url: "../portfolio/sunday-morning-grooves.html"
         },
         { 
