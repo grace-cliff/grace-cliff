@@ -65,7 +65,7 @@ if (window.location.href.includes("portfolio.html")) {
             title: "Sheets and Shadows",
             medium: "Installation",
             info: "<i>Sheets and Shadows</i> explores the concept of small day-to-day interactions and fleeting connections that typically go unnoticed with strangers.",
-            image: "../assets/portfolio/art-institute.jpg",
+            image: "../assets/portfolio/art-institute.gif",
             url: "../portfolio/art-institute.html"
         },
         { 
