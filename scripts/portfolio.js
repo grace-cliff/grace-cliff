@@ -41,7 +41,7 @@ if (window.location.href.includes("portfolio.html")) {
             title: "<i>Landscape of Time</i> Immersive Projections",
             medium: "Installation",
             info: "Landscape of Time is an immersive projection installation that plays with concepts of time, transportation, and postmodern imagery. Covid-19 changed my perception of time as this piece drives that idea of time as a landscape rather than an arrow.",
-            image: "../assets/portfolio/landscape.png",
+            image: "../assets/portfolio/landscape.gif",
             url: "../portfolio/landscape.html"
         },
         { 
@@ -92,14 +92,14 @@ if (window.location.href.includes("portfolio.html")) {
             image: "../assets/portfolio/projections.png",
             url: "../portfolio/projections.html"
         },
-        {
-            category: "Immersive Visualization Lab",
-            title: "Immersive Visualization Lab",
-            medium: "Installation",
-            info: "This 360 space gives a consuming etheric experience with spiritual symbolism such as sound bowls, incense, crystals and nature. This piece reflects a meditative state of healing through the tapping in of spiritual symbols. Some people when meditating experience a spinning sensation which is reflected in the warped flowers and almost dizzying experience of light and color. The theme of circles is also repeatedly used throughout the piece through the circular space itself, the sound bath circles, and the circular swaying images.",
-            image: "../assets/portfolio/immersive-visualization-lab.jpeg",
-            url: "../portfolio/ivl.html"
-        },
+        // {
+        //     category: "Immersive Visualization Lab",
+        //     title: "Immersive Visualization Lab",
+        //     medium: "Installation",
+        //     info: "This 360 space gives a consuming etheric experience with spiritual symbolism such as sound bowls, incense, crystals and nature. This piece reflects a meditative state of healing through the tapping in of spiritual symbols. Some people when meditating experience a spinning sensation which is reflected in the warped flowers and almost dizzying experience of light and color. The theme of circles is also repeatedly used throughout the piece through the circular space itself, the sound bath circles, and the circular swaying images.",
+        //     image: "../assets/portfolio/immersive-visualization-lab.jpeg",
+        //     url: "../portfolio/ivl.html"
+        // },
         { 
             category: "Ballet Body",
             title: "<i>Ballet Body</i> Performance Art Piece",
@@ -124,14 +124,14 @@ if (window.location.href.includes("portfolio.html")) {
             image: "../assets/portfolio/fragmented.png",
             url: "../portfolio/fragmented.html"
         },
-        { 
-            category: "Censored",
-            title: "<i>This is a Censored Exhibition</i>",
-            medium: "Installation",
-            info: "On February 3 of 2023 a train carrying tons of hazardous and toxic chemicals derailed in Palestine, Ohio. This exhibition is a product of the little we know.",
-            image: "../assets/portfolio/censored.png",
-            url: "../portfolio/censored.html"
-        },
+        // { 
+        //     category: "Censored",
+        //     title: "<i>This is a Censored Exhibition</i>",
+        //     medium: "Installation",
+        //     info: "On February 3 of 2023 a train carrying tons of hazardous and toxic chemicals derailed in Palestine, Ohio. This exhibition is a product of the little we know.",
+        //     image: "../assets/portfolio/censored.png",
+        //     url: "../portfolio/censored.html"
+        // },
         { 
             category: "Expectations Vs. Reality",
             title: "<i>Expectations vs. Reality</i> Performace Art",
