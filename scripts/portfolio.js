@@ -304,7 +304,7 @@ if (window.location.href.includes("about.html")) {
         { 
             title: "Hello, I'm Grace Cliff",
             info_1: "<p>I am a highly creative interdisciplinary designer with a strong vision for brand design, social media marketing, and audiovisual storytelling. My specialization is in graphic design, motion graphics, and video editing.</p> <p>I am pursuing a MA in Animation with a concentration in Motion Graphics at DePaul University’s Jarvis College of Computing. I graduated from Illinois State University, magna cum laude, with a B.A. Graphic Design, B.A. in Creative Technology, and a minor in Dance. </p><p>Some of my client work includes social media marketing for nonprofit start-up entrepreneurial companies, projection designs for modern dance company Waterstreet Dance Milwaukee, and 3D animations for Chicago local Brewery Marz Community Brewing.<br></br> I am currently in the market for full-time or freelance design positions.</p>",
-            video: "https://www.youtube.com/embed/to8-bTCsCJU",
+            video: "https://player.vimeo.com/video/1088474443",
             image: "../assets/about/image.jpg",
             resume: "../assets/about/GraceCliff_Resume.pdf"
         }
@@ -1508,7 +1508,7 @@ if (window.location.href.includes("sunday-morning-grooves.html")) {
 if (window.location.href.includes("animation-video-compilation.html")) {
     var animationVideoCompilation = [
         { 
-            video_1: "https://www.youtube.com/embed/to8-bTCsCJU", // grace 
+            video_1: "https://player.vimeo.com/video/1088474443", // grace 
             video_2: "https://player.vimeo.com/video/949979129?h=d7926e3da", // title credits
             video_3: "https://player.vimeo.com/video/904986202?h=d52d48f242", // reckless
             video_4: "https://www.youtube.com/embed/HcmJQkRmaRs", // kinetic typography
