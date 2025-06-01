@@ -137,7 +137,7 @@ if (window.location.href.includes("portfolio.html")) {
             title: "<i>Expectations vs. Reality</i> Performace Art",
             medium: "Projection Design",
             info: "'Expectations vs Reality' is a multimedia piece that challenges one's predisposed notions of reality. It is a DADA inspired work with themes of playfulness, layered ideas, and avant-garde concepts. Time, color, and sound are all explored in this combination of projections with modern dance.",
-            image: "../assets/portfolio/expectations-vs-reality.png",
+            image: "../assets/portfolio/expectations-vs-reality.gif",
             url: "../portfolio/expectations-vs-reality.html"
         },
         // {
