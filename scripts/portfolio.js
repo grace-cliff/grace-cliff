@@ -121,7 +121,7 @@ if (window.location.href.includes("portfolio.html")) {
             title: "<i>Fragmented / Illuminate</i> Projections",
             medium: "Projection Design",
             info: "Under founder and artistic director Morgan 'Mo' Williams, for Water Street Dance Milwaukee, I created the projection designs for his company modern dancers. Fragmented / Illuminate is an evening-length work that incorporates seven chapters. Chapter I. Entity, II. Speaking to My Younger Self, III. Broken Veil, IV. “My God Aint This Yours” Ft. Brooklyn Llyod, V. Falling Into…, VI. Self ← Unseen, and VII. When it Rains, It Pours (restaged).",
-            image: "../assets/portfolio/fragmented.png",
+            image: "../assets/portfolio/fragmented.gif",
             url: "../portfolio/fragmented.html"
         },
         // { 
