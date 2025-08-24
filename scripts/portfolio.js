@@ -355,7 +355,7 @@ if (window.location.href.includes("chicago-architecture-center.html")) {
             info_1: "<p>Under the Chicago Architecture Center I did a volume of 2D and 3D Motion Graphics for their social media and website. Some projects include promotional videos for the new website launch and Open House Chicago, 3D animations of the gift shop items, and a 3 second motion graphic for the introduction of the architecture film series ‘Design Matters’.</p>",
             image: "https://www.youtube.com/embed/ll9eg7tWUtE",
             video_1: "https://www.youtube.com/embed/SIOQutHYTSE",
-            video_2: "https://www.youtube.com/embed/NP30IyoZFQw",
+            video_2: "../assets/chicago-architecture-center/gif_1.gif",
             video_3: "https://www.youtube.com/embed/yBQdkXp7oO4",
             video_4: "https://www.youtube.com/embed/dMAEEtbak-gw",
             video_5: "https://www.youtube.com/embed/1wle_rcqDFI",
@@ -392,7 +392,10 @@ if (window.location.href.includes("chicago-architecture-center.html")) {
                         <iframe title="vimeo-player" src="${item.video_1}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
                     </div>
                     <div class="grid-item">
-                        <iframe title="vimeo-player" src="${item.video_2}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                        <picture>
+                            <source srcset="${item.video_2}" media="(min-width: 600px)" />
+                            <img src="${item.video_2}" alt="${item.title}'s featured image" width="450" height="450" loading="lazy">
+                        </picture>
                     </div>
                     <div class="grid-item">
                         <iframe title="vimeo-player" src="${item.video_3}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
@@ -799,9 +802,9 @@ if (window.location.href.includes("fragmented.html")) {
             video_2: "https://player.vimeo.com/video/853824331?h=d0e64d6610",
             video_3: "https://player.vimeo.com/video/853832578?h=c60428555e",
             video_4: "https://player.vimeo.com/video/806944546?h=5c6129bd86",
-            video_5: "https://player.vimeo.com/video/806940893?h=d4f225c881",
-            video_6: "https://player.vimeo.com/video/853819174?h=47c40b818c",
-            video_7: "https://player.vimeo.com/video/853834196?h=e0999d81f7",
+            video_5: "../assets/fragmented/gif_1.gif",
+            video_6: "../assets/fragmented/gif_2.gif",
+            video_7: "../assets/fragmented/gif_3.gif",
             video_8: "https://player.vimeo.com/video/806942966?h=b32920b7d8",
             image_1: "../assets/fragmented/image_1.png",
             image_3: "../assets/fragmented/image_3.jpg",
@@ -856,13 +859,22 @@ if (window.location.href.includes("fragmented.html")) {
                         <iframe title="vimeo-player" src="${item.video_3}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
                     </div>
                     <div class="grid-item">
-                        <iframe title="vimeo-player" src="${item.video_5}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                        <picture>
+                            <source srcset="${item.video_5}" media="(min-width: 600px)" />
+                            <img src="${item.video_5}" alt="${item.title}'s featured image" width="450" height="450" loading="lazy">
+                        </picture>
+                    </div>
+                     <div class="grid-item">
+                        <picture>
+                            <source srcset="${item.video_6}" media="(min-width: 600px)" />
+                            <img src="${item.video_6}" alt="${item.title}'s featured image" width="450" height="450" loading="lazy">
+                        </picture>
                     </div>
                     <div class="grid-item">
-                        <iframe title="vimeo-player" src="${item.video_6}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <div class="grid-item">
-                        <iframe title="vimeo-player" src="${item.video_7}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                        <picture>
+                            <source srcset="${item.video_7}" media="(min-width: 600px)" />
+                            <img src="${item.video_7}" alt="${item.title}'s featured image" width="450" height="450" loading="lazy">
+                        </picture>
                     </div>
                     <div class="grid-item">
                         <iframe title="vimeo-player" src="${item.video_8}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
@@ -1909,16 +1921,16 @@ if (window.location.href.includes("cyborg-manifesto")) {
         { 
             title: "A Cyborg Manifesto",
             info_1: "This prompt was to develop a professional creative Pitch Deck for an imaginary main title sequence. I developed my own short narrative, logline, and synopsis loosely based off of A Cyborg Manifesto by Donna J. Haraway. Below is the moodboard, style frames, and a motion test for two of the style frames. <br><br> <b> Narrative</b><br> The cyborg is a rejection of the rigid boundaries between human, animal, and machine. The divide between human and animal has been blurred by evolution. The divide between physical and non-physical has been blurred by digital technologies. <br> <br> <b>Chapters</b><br> Transformation<br> Identity<br> Acceptance",
-            image: "",
-            video: "https://www.youtube.com/embed/F65HKpC4TPQ",
+            image: "../assets/cyborg/gif_1.gif",
+            // video: "https://www.youtube.com/embed/F65HKpC4TPQ",
             image_1: "../assets/cyborg/image_1.png",
             image_2: "../assets/cyborg/image_2.png",
             image_3: "../assets/cyborg/image_3.png",
-            video_1: "https://www.youtube.com/embed/5AEU-UwFWAo",
-            image_4: "../assets/cyborg/image_4.png",
-            image_5: "../assets/cyborg/image_5.png",
-            image_6: "../assets/cyborg/image_6.png",
-            image_7: "../assets/cyborg/image_7.png",
+            image_4: "../assets/cyborg/gif_2.gif",
+            image_5: "../assets/cyborg/image_4.png",
+            image_6: "../assets/cyborg/image_5.png",
+            image_7: "../assets/cyborg/image_6.png",
+            image_8: "../assets/cyborg/image_7.png",
         }
     ]
    
@@ -1928,7 +1940,10 @@ if (window.location.href.includes("cyborg-manifesto")) {
     const topSectionHTML = cyborg
     .map(item => `<div class="flex large--flex-row flex-column">
                         <div class="image">
-                            <iframe title="vimeo-player" src="${item.video}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                            <picture>
+                                <source srcset="${item.image}" media="(min-width: 600px)" />
+                                <img src="${item.image}" alt="${item.title}'s featured image" width="450" height="450" loading="lazy">
+                            </picture>
                         </div>
                         <div class="info">
                             <h2>${item.title}</h2>
@@ -1944,7 +1959,7 @@ if (window.location.href.includes("cyborg-manifesto")) {
     
     const mainGridHTML = cyborg.map((item) => {
         const images = [];
-        for (let i = 1; i <= 3; i++) {
+        for (let i = 1; i <= 8; i++) {
             if (item[`image_${i}`]) {
                 images.push(`<div class="grid-item">
                                 <picture>
@@ -1954,21 +1969,7 @@ if (window.location.href.includes("cyborg-manifesto")) {
                             </div>`);
             }
         }
-        images.push(`
-            <div class="grid-item">
-                <iframe title="vimeo-player" src="${item.video_1}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
-            </div>
-        `)
-        for (let i = 4; i <= 7; i++) {
-            if (item[`image_${i}`]) {
-                images.push(`<div class="grid-item">
-                                <picture>
-                                    <source srcset="${item[`image_${i}`]}" media="(min-width: 600px)" />
-                                    <img src="${item[`image_${i}`]}" alt="${item.title}'s featured image" width="450" height="450" loading="lazy">
-                                </picture>
-                            </div>`);
-            }
-        }
+
         return images.join('');
     });
     
