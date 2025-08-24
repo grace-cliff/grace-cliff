@@ -118,7 +118,7 @@ if (window.location.href.includes("portfolio.html")) {
         },
         { 
             category: "Fragmented",
-            title: "<i>Fragmented / Illuminate</i> Projections",
+            title: "<i>Fragmented / Illuminate</i>",
             medium: "Projection Design",
             info: "Under founder and artistic director Morgan 'Mo' Williams, for Water Street Dance Milwaukee, I created the projection designs for his company modern dancers. Fragmented / Illuminate is an evening-length work that incorporates seven chapters. Chapter I. Entity, II. Speaking to My Younger Self, III. Broken Veil, IV. “My God Aint This Yours” Ft. Brooklyn Llyod, V. Falling Into…, VI. Self ← Unseen, and VII. When it Rains, It Pours (restaged).",
             image: "../assets/portfolio/fragmented.gif",
@@ -1398,7 +1398,7 @@ if (window.location.href.includes("qwc.html")) {
     var qwc = [
         { 
             title: "Branding for Quality Work Construction",
-            info_1: "In collaboration with Quality Work Construction I redesigned their branding style guide, business cards, door placards, and email banners. When considering their visual identity, I wanted to emphasize a company that is approachable and producing quality work. After talking to the CEO on the importance of his specialized team and transparency with their clients I chose a humanist font to emphasize those interpersonal relationships.",
+            info_1: "In collaboration with Quality Work Construction I redesigned their branding style guide, business cards, door placards, and email banners. When considering their visual identity, I wanted to emphasize a company that is approachable and producing quality work. To ensure creativity and consistency with the brand, I initially spoke with the CEO to fully understand the purpose of the redesign and how to better visually align the brand's mission, values, tone, audience, and competitors. I then established visual rules such as color usage and logo variations with do’s / don’t and real-world application examples such as t-shirt designs and social media. To ensure creativity, I left room for alternate logo treatments and secondary color pallets.The final style guide was created in Adobe Illustrator and delivered to the client as a single, professionally formatted PDF.",
             image: "../assets/qwc/image.png",
             image_2: "../assets/qwc/image_2.png",
             image_3: "../assets/qwc/image_3.png",
@@ -1748,14 +1748,14 @@ if (window.location.href.includes("premiere-film-festival")) {
     var premiere = [
         { 
             title: "2024 Premiere Film Festival",
-            info_1: "For the Depaul University Premiere Film Festival 8 second animations were needed to introduce each award in order to maintain viewer engagement. In collaboration with other graduate students, I designed the animations for ‘Best Producing,’ ‘Best Documentary,’ as well as the Graphic Design for the Program. These animations were then composited into a 3D space and projected in the Music Box Theatre.",
+            info_1: "For the 2024 Depaul University Premiere Film Festival at the Music Box Theatre, I designed two 8 second animations introducing various awards. In collaboration with other graduate students, I designed the animations for ‘Best Producing,’ ‘Best Documentary,’ as well as the graphic design for the program. These animations were then composited into a 3D space using Cinema 4D and presented in a Keynote during the award announcements. In regard to aesthetics, the theme was a more literal interpretation of the theatre space with how the light interacts in the space. The only source of light comes from the screen at the center of the composition.",
             image: "../assets/premiere/image.png",
             video: "https://player.vimeo.com/video/950007356?h=f635b1499d",
             video_1: "https://player.vimeo.com/video/953340141?h=fb67d163ea",
             video_2: "https://player.vimeo.com/video/950004873?h=d34ed574fb",
-            video_3: "https://player.vimeo.com/video/953338939?h=2c45d898d0",
-            image_1: "../assets/premiere/image_1.png",
+            image_1: "../assets/premiere/image_1.gif",
             image_2: "../assets/premiere/image_2.png",
+            image_3: "../assets/premiere/image_3.png",
         }
     ]
    
@@ -1792,11 +1792,8 @@ if (window.location.href.includes("premiere-film-festival")) {
                     </div>
                     <div class="grid-item">
                         <iframe title="vimeo-player" src="${item.video_2}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <div class="grid-item">
-                        <iframe title="vimeo-player" src="${item.video_3}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
                     </div>`)
-        for (let i = 1; i <= 3; i++) {
+        for (let i = 1; i <= 4; i++) {
             if (item[`image_${i}`]) {
                 images.push(`<div class="grid-item">
                                 <picture>
@@ -1961,7 +1958,7 @@ if (window.location.href.includes("incline")) {
     var incline = [
         { 
             title: "Incline Gaming Marketing",
-            info_1: "Incline is a B2C marketing services company focused on the global regulated sports betting and online casino markets. As a graphic designer / motion graphic designer my role included Designing graphics for upcoming gambling promotions, animating engaging graphics for various Casino games, and editing assets to fit the context of graphics.",
+            info_1: "Incline is a B2C marketing services company focused on the global regulated sports betting and online casino markets. As a graphic designer / motion graphic designer my role included designing graphics for upcoming gambling promotions, animating engaging graphics for various casino games, and editing assets to fit the context of graphics. I often would switch out the latest game assets within a template depending on the week’s promotion. My tasks often involved frequently updating promotional templates by swapping out game-specific assets such as logos, footage, icons (e.g. coins), background images, and promotional text for titles like Gates of Olympus. Additionally, I provided closed captioning for social media videos (primarily TikTok) and tailored disclaimers by adhering to regulatory guidelines for states such as Michigan, South Carolina, and Virginia.",
             image: "../assets/incline/image.png",
             image_1: "../assets/incline/image_1.jpeg",
             image_2: "../assets/incline/image_2.jpeg",
