@@ -1245,8 +1245,8 @@ if (window.location.href.includes("projections.html")) {
             info_3: "<b>Lighting Designer</b> Ash Parra",
             info_4: "<b>Photography</b> Pete Guither",
             video_1: "https://player.vimeo.com/video/712161548?h=d90052fe4c",
-            video_2: "https://player.vimeo.com/video/712599018?h=44ee6278ea",
-            video_3: "https://player.vimeo.com/video/712605717?h=91517b956c",
+            video_2: "../assets/projections/gif_1.gif",
+            video_3: "../assets/projections/gif_2.gif",
             image: "../assets/projections/image.jpg",
             image_1: "../assets/projections/image_1.jpg",
             image_2: "../assets/projections/image_2.jpg",
@@ -1294,10 +1294,16 @@ if (window.location.href.includes("projections.html")) {
                         <iframe title="vimeo-player" src="${item.video_1}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
                     </div>
                     <div class="grid-item">
-                        <iframe title="vimeo-player" src="${item.video_2}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                        <picture>
+                            <source srcset="${item.video_2}" media="(min-width: 600px)" />
+                            <img src="${item.video_2}" alt="${item.title}'s featured image" width="450" height="450" loading="lazy">
+                        </picture>
                     </div>
-                    <div class="grid-item">
-                        <iframe title="vimeo-player" src="${item.video_3}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                     <div class="grid-item">
+                        <picture>
+                            <source srcset="${item.video_3}" media="(min-width: 600px)" />
+                            <img src="${item.video_3}" alt="${item.title}'s featured image" width="450" height="450" loading="lazy">
+                        </picture>
                     </div>`)
         for (let i = 1; i <= 9; i++) {
             if (item[`image_${i}`]) {
