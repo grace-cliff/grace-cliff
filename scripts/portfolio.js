@@ -727,12 +727,12 @@ if (window.location.href.includes("fashion-show.html")) {
     var fashion = [
         { 
             title: "College of DuPage Fashion Show Projections 'Euphoria'",
-            info_1: "<p>These abstract interactive shapes use patterns from garments in the College of DuPage Fashion Show create a meta experience. Using Cinema 4D, pillow-like shapes collide into each other swiftly. <i>Euphoria</i> translates to “I'm bringing something good” in Greek. This was the intention for the fashion show bringing movement and energy into the space. </p></p> The Sculpture and Music is influenced by sea waves and indie music created by Philio Milioti. </p>",
+            info_1: "<p>For the 2023 College of DuPage Fashion Show I collaborated with a sculpture student to create abstract interactive shapes from garments in the show. Using Cinema 4D, I designed soft, pillow-like forms that slowly collided and moved across the screen evoking energy and rhythm to mirror the flow of the fashion pieces. For my process I took photos of different garments that were in the show and then UV mapped the images onto the 3D objects. The projection aimed to bring dynamic movement into the space, aligning with the show's theme of Euphoria—a word rooted in the Greek phrase \"I'm bringing something good.\" The sculpture was made with styrofoam and plastic sheets that were glued in a way to further add texture to the projections. It was then placed adjacent to the fashion show walkway and played on a seamless loop during the show.</p><p>Sculpture and music are influenced by sea waves and indie music created by Philio Milioti.</p>",
             image: "../assets/fashion-show/image.jpg",
             video_1: "https://player.vimeo.com/video/827116854?h=2b4d5813d8",
-            video_2: "https://player.vimeo.com/video/827117294?h=67ea38b46d",
-            image_1: "../assets/fashion-show/image_1.jpg",
-            image_2: "../assets/fashion-show/image_2.jpg"
+            image_1: "../assets/fashion-show/image_1.gif",
+            image_2: "../assets/fashion-show/image_2.jpg",
+            image_3: "../assets/fashion-show/image_3.jpg"
         }
     ]
 
@@ -763,11 +763,8 @@ if (window.location.href.includes("fashion-show.html")) {
         const images = [];
         images.push(`<div class="grid-item">
                         <iframe title="vimeo-player" src="${item.video_1}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <div class="grid-item">
-                        <iframe title="vimeo-player" src="${item.video_2}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
                     </div>`)
-        for (let i = 1; i <= 2; i++) {
+        for (let i = 1; i <= 3; i++) {
             if (item[`image_${i}`]) {
                 images.push(`<div class="grid-item">
                                 <picture>
@@ -1253,10 +1250,10 @@ if (window.location.href.includes("projections.html")) {
     var projections = [
         { 
             title: "When it Rains, it Pours",
-            info_1: "Under the School of Theatre and Dance at Illinois State I designed projections for modern dance choreographer Morgan 'Mo' Williams; director of Water Street Dance Milwaukee. He staged his work on pre-professional dancers as I worked closely with him and the dancers as creative assistant. My intention was to further emphasize the choreography through the linework. In my creative process I wanted to animate an abstract storm that progressed from a drizzle to pouring rain.",
-            info_2: "Costume Designer: Kari Rust",
-            info_3: "Lighting Designer: Ash Parra",
-            info_4: "Photography: Pete Guither",
+            info_1: "Under the School of Theatre and Dance at Illinois State I designed projections for modern dance choreographer Morgan 'Mo' Williams; director of Water Street Dance Milwaukee. He staged his work on pre-professional dancers as I worked closely with him and the dancers as creative assistant. My intention was to further emphasize the choreography through the linework. In my creative process I wanted to animate an abstract storm starting with a drizzle that is sparse, slowly transforming into lines that create puddles of water at the bottom of the screen. As the performance progressed, the projection intensified into abstracted, rhythmic rainfall, mirroring the choreography.",
+            info_2: "<b>Costume Designer</b> Kari Rust",
+            info_3: "<b>Lighting Designer</b> Ash Parra",
+            info_4: "<b>Photography</b> Pete Guither",
             video_1: "https://player.vimeo.com/video/712161548?h=d90052fe4c",
             video_2: "https://player.vimeo.com/video/712599018?h=44ee6278ea",
             video_3: "https://player.vimeo.com/video/712605717?h=91517b956c",
