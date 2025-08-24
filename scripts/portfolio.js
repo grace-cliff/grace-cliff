@@ -357,8 +357,8 @@ if (window.location.href.includes("chicago-architecture-center.html")) {
             video_1: "https://www.youtube.com/embed/SIOQutHYTSE",
             video_2: "https://www.youtube.com/embed/NP30IyoZFQw",
             video_3: "https://www.youtube.com/embed/yBQdkXp7oO4",
-            video_4: "https://www.youtube.com/embed/1wle_rcqDFI",
-            video_5: "https://www.youtube.com/embed/dMAEEtbak-g",
+            video_4: "https://www.youtube.com/embed/dMAEEtbak-gw",
+            video_5: "https://www.youtube.com/embed/1wle_rcqDFI",
             image_1: "../assets/chicago-architecture-center/image_1.jpg",
             image_2: "../assets/chicago-architecture-center/image_2.jpg",
             image_3: "../assets/chicago-architecture-center/image_3.jpg",
@@ -804,7 +804,6 @@ if (window.location.href.includes("fragmented.html")) {
             video_7: "https://player.vimeo.com/video/853834196?h=e0999d81f7",
             video_8: "https://player.vimeo.com/video/806942966?h=b32920b7d8",
             image_1: "../assets/fragmented/image_1.png",
-            image_2: "../assets/fragmented/image_2.png",
             image_3: "../assets/fragmented/image_3.jpg",
             image_4: "../assets/fragmented/image_4.jpg"
         }
@@ -848,12 +847,6 @@ if (window.location.href.includes("fragmented.html")) {
                         </picture>
                     </div>
                     <div class="grid-item">
-                        <picture>
-                            <source srcset="${item.image_2}" media="(min-width: 600px)" />
-                            <img src="${item.image_2}" alt="${item.title}'s featured image" width="450" height="450" loading="lazy">
-                        </picture>
-                    </div>
-                    <div class="grid-item">
                         <iframe title="vimeo-player" src="${item.video_1}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
                     </div>
                     <div class="grid-item">
@@ -861,9 +854,6 @@ if (window.location.href.includes("fragmented.html")) {
                     </div>
                     <div class="grid-item">
                         <iframe title="vimeo-player" src="${item.video_3}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <div class="grid-item">
-                        <iframe title="vimeo-player" src="${item.video_4}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
                     </div>
                     <div class="grid-item">
                         <iframe title="vimeo-player" src="${item.video_5}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
@@ -1821,7 +1811,11 @@ if (window.location.href.includes("2025-festival")) {
             video_5: "https://player.vimeo.com/video/1088570685",
             video_6: "https://player.vimeo.com/video/1088584108",
             video_7: "https://player.vimeo.com/video/1088571322",
-            video_8: "https://player.vimeo.com/video/1088584712"
+            video_8: "https://player.vimeo.com/video/1088584712",
+            image_1: "../assets/2025-festival/image_1.png",
+            image_2: "../assets/2025-festival/image_2.png",
+            image_3: "../assets/2025-festival/image_3.jpg",
+            image_4: "../assets/2025-festival/image_4.jpg",
         }
     ]
    
@@ -1870,7 +1864,20 @@ if (window.location.href.includes("2025-festival")) {
                     <div class="grid-item">
                         <iframe title="vimeo-player" src="${item.video_8}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
                     </div>`)
+
+         for (let i = 1; i <= 3; i++) {
+            if (item[`image_${i}`]) {
+                images.push(`<div class="grid-item">
+                                <picture>
+                                    <source srcset="${item[`image_${i}`]}" media="(min-width: 600px)" />
+                                    <img src="${item[`image_${i}`]}" alt="${item.title}'s featured image" width="450" height="450" loading="lazy">
+                                </picture>
+                            </div>`);
+            }
+        }
+
         return images.join('');
+
     });
     
     mainGrid.innerHTML = mainGridHTML.join('');
