@@ -1805,12 +1805,12 @@ if (window.location.href.includes("2025-festival")) {
             title: "2025 Premiere Film Showcase",
             info_1: "For the DePaul 2025 Premiere Showcase at the Music Box Theatre, I collaborated with six other graduate students to design the introduction to the awards segment. Together, we created five unique 3D animations and developed eight distinct 2D text layouts to represent the 25 different awards. I was responsible for designing one of the 3D animations and four of the 2D text layouts. The final designs were presented as part of a Keynote presentation during the award announcements. <br><br><b>Collaborators</b><br>Manuela Garcia Gonzalez<br>Lea Hall<br>Aanya Mishra<br>Maria Gabriela Perez Duran<br>Emory Wise",
             video_1: "https://player.vimeo.com/video/1088572008",
-            video_2: "https://player.vimeo.com/video/1088583512",
+            video_2: "../assets/2025-festival/gif_1.gif",
             video_3: "https://player.vimeo.com/video/1088583073",
-            video_4: "https://player.vimeo.com/video/1088583728",
-            video_5: "https://player.vimeo.com/video/1088570685",
+            video_4: "../assets/2025-festival/gif_2.gif",
+            video_5: "../assets/2025-festival/gif_3.gif",
             video_6: "https://player.vimeo.com/video/1088584108",
-            video_7: "https://player.vimeo.com/video/1088571322",
+            video_7: "../assets/2025-festival/gif_4.gif",
             video_8: "https://player.vimeo.com/video/1088584712",
             image_1: "../assets/2025-festival/image_1.png",
             image_2: "../assets/2025-festival/image_2.png",
@@ -1843,23 +1843,36 @@ if (window.location.href.includes("2025-festival")) {
     
     const mainGridHTML = premiere_showcase.map((item) => {
         const images = [];
+
         images.push(`<div class="grid-item">
-                        <iframe title="vimeo-player" src="${item.video_2}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                        <picture>
+                            <source srcset="${item.video_2}" media="(min-width: 600px)" />
+                            <img src="${item.video_2}" alt="${item.title}'s featured image" width="450" height="450" loading="lazy">
+                        </picture>
                     </div>
                     <div class="grid-item">
                         <iframe title="vimeo-player" src="${item.video_3}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
                     </div>
-                    <div class="grid-item">
-                        <iframe title="vimeo-player" src="${item.video_4}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                   <div class="grid-item">
+                        <picture>
+                            <source srcset="${item.video_4}" media="(min-width: 600px)" />
+                            <img src="${item.video_4}" alt="${item.title}'s featured image" width="450" height="450" loading="lazy">
+                        </picture>
                     </div>
                     <div class="grid-item">
-                        <iframe title="vimeo-player" src="${item.video_5}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                        <picture>
+                            <source srcset="${item.video_5}" media="(min-width: 600px)" />
+                            <img src="${item.video_5}" alt="${item.title}'s featured image" width="450" height="450" loading="lazy">
+                        </picture>
                     </div>
                     <div class="grid-item">
                         <iframe title="vimeo-player" src="${item.video_6}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
                     </div>
                     <div class="grid-item">
-                        <iframe title="vimeo-player" src="${item.video_7}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                        <picture>
+                            <source srcset="${item.video_7}" media="(min-width: 600px)" />
+                            <img src="${item.video_7}" alt="${item.title}'s featured image" width="450" height="450" loading="lazy">
+                        </picture>
                     </div>
                     <div class="grid-item">
                         <iframe title="vimeo-player" src="${item.video_8}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
