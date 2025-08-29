@@ -358,7 +358,7 @@ if (window.location.href.includes("chicago-architecture-center.html")) {
             video_2: "../assets/chicago-architecture-center/gif_1.gif",
             video_3: "https://www.youtube.com/embed/yBQdkXp7oO4",
             video_4: "https://www.youtube.com/embed/dMAEEtbak-gw",
-            video_5: "https://www.youtube.com/embed/1wle_rcqDFI",
+            video_5: "../assets/chicago-architecture-center/gif_2.gif",
             image_1: "../assets/chicago-architecture-center/image_1.jpg",
             image_2: "../assets/chicago-architecture-center/image_2.jpg",
             image_3: "../assets/chicago-architecture-center/image_3.jpg",
@@ -404,7 +404,10 @@ if (window.location.href.includes("chicago-architecture-center.html")) {
                         <iframe title="vimeo-player" src="${item.video_4}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
                     </div>
                      <div class="grid-item">
-                        <iframe title="vimeo-player" src="${item.video_5}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                        <picture>
+                            <source srcset="${item.video_5}" media="(min-width: 600px)" />
+                            <img src="${item.video_5}" alt="${item.title}'s featured image" width="450" height="450" loading="lazy">
+                        </picture>
                     </div>`)
         for (let i = 1; i <= 5; i++) {
             if (item[`image_${i}`]) {
@@ -1531,7 +1534,7 @@ if (window.location.href.includes("animation-video-compilation.html")) {
             video_8: "https://www.youtube.com/embed/XKp9zxVJErc", // berin
             video_9: "https://www.youtube.com/embed/flPOLmTcJyw", // abstraction
             video_10: "https://player.vimeo.com/video/899581434?h=cc606bc6e8", // look for the light
-            video_11: "https://player.vimeo.com/video/640242995?h=5491d0fe86", // pride
+            // video_11: "https://player.vimeo.com/video/640242995?h=5491d0fe86", // pride
             video_12: "https://player.vimeo.com/video/650166803?h=0bbeda93c1", // mulberry
             video_13: "https://player.vimeo.com/video/871249923?h=aff3bc09be", //art of observing
             video_13_class: "vertical"
@@ -1756,7 +1759,7 @@ if (window.location.href.includes("premiere-film-festival")) {
             info_1: "For the 2024 Depaul University Premiere Film Festival at the Music Box Theatre, I designed two 8 second animations introducing various awards. In collaboration with other graduate students, I designed the animations for ‘Best Producing,’ ‘Best Documentary,’ as well as the graphic design for the program. These animations were then composited into a 3D space using Cinema 4D and presented in a Keynote during the award announcements. In regard to aesthetics, the theme was a more literal interpretation of the theatre space with how the light interacts in the space. The only source of light comes from the screen at the center of the composition.",
             image: "../assets/premiere/image.png",
             video: "https://player.vimeo.com/video/950007356?h=f635b1499d",
-            video_1: "https://player.vimeo.com/video/953340141?h=fb67d163ea",
+            video_1: "../assets/premiere/video_1.gif",
             video_2: "https://player.vimeo.com/video/950004873?h=d34ed574fb",
             image_1: "../assets/premiere/image_1.gif",
             image_2: "../assets/premiere/image_2.png",
@@ -1789,11 +1792,15 @@ if (window.location.href.includes("premiere-film-festival")) {
     
     const mainGridHTML = premiere.map((item) => {
         const images = [];
-        images.push(`<div class="grid-item">
-                        <iframe title="vimeo-player" src="${item.video}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+        images.push(`
+                    <div class="grid-item">
+                        <picture>
+                            <source srcset="${item.video_1}" media="(min-width: 600px)" />
+                            <img src="${item.video_1}" alt="${item.title}'s featured image" width="450" height="450" loading="lazy">
+                        </picture>
                     </div>
                     <div class="grid-item">
-                        <iframe title="vimeo-player" src="${item.video_1}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                        <iframe title="vimeo-player" src="${item.video}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
                     </div>
                     <div class="grid-item">
                         <iframe title="vimeo-player" src="${item.video_2}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
@@ -1826,8 +1833,8 @@ if (window.location.href.includes("2025-festival")) {
             video_2: "../assets/2025-festival/gif_1.gif",
             video_3: "https://player.vimeo.com/video/1088583073",
             video_4: "../assets/2025-festival/gif_2.gif",
-            video_5: "../assets/2025-festival/gif_3.gif",
-            video_6: "https://player.vimeo.com/video/1088584108",
+            // video_5: "../assets/2025-festival/gif_3.gif",
+            // video_6: "https://player.vimeo.com/video/1088584108",
             video_7: "../assets/2025-festival/gif_4.gif",
             video_8: "https://player.vimeo.com/video/1088584712",
             image_1: "../assets/2025-festival/image_1.png",
@@ -1876,15 +1883,6 @@ if (window.location.href.includes("2025-festival")) {
                             <source srcset="${item.video_4}" media="(min-width: 600px)" />
                             <img src="${item.video_4}" alt="${item.title}'s featured image" width="450" height="450" loading="lazy">
                         </picture>
-                    </div>
-                    <div class="grid-item">
-                        <picture>
-                            <source srcset="${item.video_5}" media="(min-width: 600px)" />
-                            <img src="${item.video_5}" alt="${item.title}'s featured image" width="450" height="450" loading="lazy">
-                        </picture>
-                    </div>
-                    <div class="grid-item">
-                        <iframe title="vimeo-player" src="${item.video_6}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
                     </div>
                     <div class="grid-item">
                         <picture>
