@@ -672,7 +672,7 @@ if (window.location.href.includes("expectations-vs-reality.html")) {
             info_1: "<p><i>Expectations versus Reality</i> challenges one's predisposed notions of reality. This surrealistic and DADA inspired multimedia work incorporates visual and sound pairings that initiates questions about the phenomenon we live in. For example, when cutting a melon one would expect fruit inside but what if that is not the case. In the history of surrealism, pieces are based on the subconscious mind and do not make logical sense just as this piece does not follow linear thinking. This piece reflects surrealism with ambiguity towards time and exaggerated color. Themes of DADA are shown through playfulness, layered ideas, and avant-garde concepts.</p><p>Artist Mika Rottenberg I first drew inspiration from in her video <i>Spaghetti Blockchain</i> when I attended her exhibit at the Museum of Contemporary Art in Chicago. I was also influenced by the episode <i>Identity</i> by Art of the 21st Century Season 1 when Steve Martin sets the scene. Finally, the music videos <i>Locket</i> and <i> M.R.</i> for the band <i>Crumb.</i></p>",
             image: "https://player.vimeo.com/video/492938005",
             video_1: "https://www.youtube.com/embed/GILdaPoTNIM",
-            video_2: "https://player.vimeo.com/video/680264144?h=43ca499a3c",
+            video_2: "../assets/expectations-vs-reality/gif.gif",
             image_1: "../assets/expectations-vs-reality/image_1.jpg",
             image_2: "../assets/expectations-vs-reality/image_2.jpg",
             image_3: "../assets/expectations-vs-reality/image_3.jpg",
@@ -708,7 +708,10 @@ if (window.location.href.includes("expectations-vs-reality.html")) {
                         <iframe title="vimeo-player" src="${item.video_1}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
                     </div>
                     <div class="grid-item">
-                        <iframe title="vimeo-player" src="${item.video_2}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                        <picture>
+                            <source srcset="${item.video_2}" media="(min-width: 600px)" />
+                            <img src="${item.video_2}" alt="${item.title}'s featured image" width="450" height="450" loading="lazy">
+                        </picture>
                     </div>`)
         for (let i = 1; i <= 6; i++) {
             if (item[`image_${i}`]) {
@@ -848,15 +851,18 @@ if (window.location.href.includes("fragmented.html")) {
         const images = [];
         images.push(`<div class="grid-item">
                         <picture>
+                            <source srcset="${item.video_7}" media="(min-width: 600px)" />
+                            <img src="${item.video_7}" alt="${item.title}'s featured image" width="450" height="450" loading="lazy">
+                        </picture>
+                    </div>
+                    <div class="grid-item">
+                        <picture>
                             <source srcset="${item.image_1}" media="(min-width: 600px)" />
                             <img src="${item.image_1}" alt="${item.title}'s featured image" width="450" height="450" loading="lazy">
                         </picture>
                     </div>
                     <div class="grid-item">
                         <iframe title="vimeo-player" src="${item.video_1}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <div class="grid-item">
-                        <iframe title="vimeo-player" src="${item.video_2}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
                     </div>
                     <div class="grid-item">
                         <iframe title="vimeo-player" src="${item.video_3}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
@@ -867,20 +873,11 @@ if (window.location.href.includes("fragmented.html")) {
                             <img src="${item.video_5}" alt="${item.title}'s featured image" width="450" height="450" loading="lazy">
                         </picture>
                     </div>
-                     <div class="grid-item">
-                        <picture>
-                            <source srcset="${item.video_6}" media="(min-width: 600px)" />
-                            <img src="${item.video_6}" alt="${item.title}'s featured image" width="450" height="450" loading="lazy">
-                        </picture>
-                    </div>
-                    <div class="grid-item">
-                        <picture>
-                            <source srcset="${item.video_7}" media="(min-width: 600px)" />
-                            <img src="${item.video_7}" alt="${item.title}'s featured image" width="450" height="450" loading="lazy">
-                        </picture>
-                    </div>
                     <div class="grid-item">
                         <iframe title="vimeo-player" src="${item.video_8}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="grid-item">
+                        <iframe title="vimeo-player" src="${item.video_2}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
                     </div>
                     <div class="grid-item">
                         <picture>
@@ -1529,15 +1526,19 @@ if (window.location.href.includes("animation-video-compilation.html")) {
             video_3: "https://player.vimeo.com/video/904986202?h=d52d48f242", // reckless
             video_4: "https://www.youtube.com/embed/HcmJQkRmaRs", // kinetic typography
             video_5: "https://player.vimeo.com/video/950094095?h=556e8fe436", // griselda
-            video_6: "https://player.vimeo.com/video/927211117?h=917a20d787", // evil eye
-            video_7: "https://www.youtube.com/embed/aXNsmdYLEYs", // premiere
+            image_6: "../assets/animation-video-compilation/image_6.gif",
+            image_7: "../assets/animation-video-compilation/image_7.gif",
+            // video_6: "https://player.vimeo.com/video/927211117?h=917a20d787", // evil eye
+            // video_7: "https://www.youtube.com/embed/aXNsmdYLEYs", // premiere
             video_8: "https://www.youtube.com/embed/XKp9zxVJErc", // berin
-            video_9: "https://www.youtube.com/embed/flPOLmTcJyw", // abstraction
+            // video_9: "https://www.youtube.com/embed/flPOLmTcJyw", // abstraction
             video_10: "https://player.vimeo.com/video/899581434?h=cc606bc6e8", // look for the light
             // video_11: "https://player.vimeo.com/video/640242995?h=5491d0fe86", // pride
             video_12: "https://player.vimeo.com/video/650166803?h=0bbeda93c1", // mulberry
             video_13: "https://player.vimeo.com/video/871249923?h=aff3bc09be", //art of observing
-            video_13_class: "vertical"
+            video_13_class: "vertical",
+            image_1: "../assets/animation-video-compilation/image_1.gif",
+
             // video_9: "https://www.youtube.com/embed/95gDOqT7foE",
             // video_11: "https://player.vimeo.com/video/486157970?h=dadfed684e",
             // video_11_class: "vertical",
@@ -1555,7 +1556,7 @@ if (window.location.href.includes("animation-video-compilation.html")) {
     
     const mainGridHTML = animationVideoCompilation.map((item) => {
         const images = [];
-        for (let i = 1; i <= 14; i++) {
+        for (let i = 1; i <= 5; i++) {
             if (item[`video_${i}`]) {
                 
                 const videoTitle = item[`video_${i}_title`];
@@ -1570,6 +1571,41 @@ if (window.location.href.includes("animation-video-compilation.html")) {
                             </div>`);
             }
         }
+        images.push(`<div class="grid-item">
+                        <picture>
+                            <source srcset="${item.image_6}" media="(min-width: 600px)" />
+                            <img src="${item.image_6}" alt="${item.title}'s featured image" width="450" height="450" loading="lazy">
+                        </picture>
+                    </div>
+                    <div class="grid-item">
+                        <picture>
+                            <source srcset="${item.image_7}" media="(min-width: 600px)" />
+                            <img src="${item.image_7}" alt="${item.title}'s featured image" width="450" height="450" loading="lazy">
+                        </picture>
+                    </div>
+        `)
+        for (let i = 8; i <= 13; i++) {
+            if (item[`video_${i}`]) {
+                
+                const videoTitle = item[`video_${i}_title`];
+                const titleHtml = videoTitle ? `<h2>${videoTitle}</h2>` : '';
+
+                const videoClass = item[`video_${i}_class`];
+                const classHTML = videoClass ? "vertical" : '';
+
+                images.push(`<div class="grid-item ${classHTML}">
+                                <iframe title="vimeo-player" src="${item[`video_${i}`]}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                                ${titleHtml}
+                            </div>`);
+            }
+        }
+        images.push(`<div class="grid-item">
+                        <picture>
+                            <source srcset="${item.image_1}" media="(min-width: 600px)" />
+                            <img src="${item.image_1}" alt="${item.title}'s featured image" width="450" height="450" loading="lazy">
+                        </picture>
+                    </div>
+        `)
         return images.join('');
     });
     
