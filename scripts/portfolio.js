@@ -1692,7 +1692,18 @@ if (window.location.href.includes("graphic-design-compilation.html")) {
     
     const mainGridHTML = graphicDesignCompilation.map((item) => {
         const images = [];
-        for (let i = 1; i <= 32; i++) {
+        for (let i = 1; i <= 15; i++) {
+            if (item[`image_${i}`]) {
+                images.push(`<div class="grid-item">
+                                <picture>
+                                    <source srcset="${item[`image_${i}`]}" media="(min-width: 600px)" />
+                                    <img src="${item[`image_${i}`]}" alt="${item[`image_${i}_title`]}'s featured image" width="450" height="450" data-slideshow-id="${i}">
+                                </picture>
+                                ${''}<!--  <p class="heading-lg">${item[`image_${i}_title`]}</p> --!>
+                            </div>`);
+            }
+        }
+        for (let i = 16; i <= 32; i++) {
             if (item[`image_${i}`]) {
                 images.push(`<div class="grid-item">
                                 <picture>
@@ -1976,7 +1987,7 @@ if (window.location.href.includes("cyborg-manifesto")) {
                         <div class="image">
                             <picture>
                                 <source srcset="${item.image}" media="(min-width: 600px)" />
-                                <img src="${item.image}" alt="${item.title}'s featured image" width="450" height="450" loading="lazy">
+                                <img src="${item.image}" alt="${item.title}'s featured image" width="450" height="450">
                             </picture>
                         </div>
                         <div class="info">
