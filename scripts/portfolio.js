@@ -357,7 +357,7 @@ if (window.location.href.includes("chicago-architecture-center.html")) {
             video_1: "https://www.youtube.com/embed/SIOQutHYTSE",
             video_2: "../assets/chicago-architecture-center/gif_1.gif",
             video_3: "https://www.youtube.com/embed/yBQdkXp7oO4",
-            video_4: "https://www.youtube.com/embed/dMAEEtbak-gw",
+            video_4: "https://www.youtube.com/embed/dMAEEtbak-g",
             video_5: "../assets/chicago-architecture-center/gif_2.gif",
             image_1: "../assets/chicago-architecture-center/image_1.jpg",
             image_2: "../assets/chicago-architecture-center/image_2.jpg",
@@ -853,12 +853,6 @@ if (window.location.href.includes("fragmented.html")) {
                         <picture>
                             <source srcset="${item.video_7}" media="(min-width: 600px)" />
                             <img src="${item.video_7}" alt="${item.title}'s featured image" width="450" height="450" loading="lazy">
-                        </picture>
-                    </div>
-                    <div class="grid-item">
-                        <picture>
-                            <source srcset="${item.image_1}" media="(min-width: 600px)" />
-                            <img src="${item.image_1}" alt="${item.title}'s featured image" width="450" height="450" loading="lazy">
                         </picture>
                     </div>
                     <div class="grid-item">
@@ -1532,7 +1526,7 @@ if (window.location.href.includes("animation-video-compilation.html")) {
             // video_7: "https://www.youtube.com/embed/aXNsmdYLEYs", // premiere
             video_8: "https://www.youtube.com/embed/XKp9zxVJErc", // berin
             // video_9: "https://www.youtube.com/embed/flPOLmTcJyw", // abstraction
-            video_10: "https://player.vimeo.com/video/899581434?h=cc606bc6e8", // look for the light
+            video_10: "../assets/animation-video-compilation/image_10.gif", // look for the light
             // video_11: "https://player.vimeo.com/video/640242995?h=5491d0fe86", // pride
             video_12: "https://player.vimeo.com/video/650166803?h=0bbeda93c1", // mulberry
             video_13: "https://player.vimeo.com/video/871249923?h=aff3bc09be", //art of observing
@@ -1583,8 +1577,17 @@ if (window.location.href.includes("animation-video-compilation.html")) {
                             <img src="${item.image_7}" alt="${item.title}'s featured image" width="450" height="450" loading="lazy">
                         </picture>
                     </div>
+                    <div class="grid-item">
+                        <iframe title="vimeo-player" src="${item.video_8}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="grid-item">
+                        <picture>
+                            <source srcset="${item.video_10}" media="(min-width: 600px)" />
+                            <img src="${item.video_10}" alt="${item.title}'s featured image" width="450" height="450" loading="lazy">
+                        </picture>
+                    </div>
         `)
-        for (let i = 8; i <= 13; i++) {
+        for (let i = 12; i <= 13; i++) {
             if (item[`video_${i}`]) {
                 
                 const videoTitle = item[`video_${i}_title`];
@@ -1602,7 +1605,7 @@ if (window.location.href.includes("animation-video-compilation.html")) {
         images.push(`<div class="grid-item">
                         <picture>
                             <source srcset="${item.image_1}" media="(min-width: 600px)" />
-                            <img src="${item.image_1}" alt="${item.title}'s featured image" width="450" height="450" loading="lazy">
+                            <img src="${item.image_1}" alt="${item.title}'s featured image" width="450" height="450" loading="lazy" style="max-height: 800px;">
                         </picture>
                     </div>
         `)
