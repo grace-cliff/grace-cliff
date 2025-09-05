@@ -671,7 +671,7 @@ if (window.location.href.includes("expectations-vs-reality.html")) {
             title: "Expectations vs. Reality",
             info_1: "<p><i>Expectations versus Reality</i> challenges one's predisposed notions of reality. This surrealistic and DADA inspired multimedia work incorporates visual and sound pairings that initiates questions about the phenomenon we live in. For example, when cutting a melon one would expect fruit inside but what if that is not the case. In the history of surrealism, pieces are based on the subconscious mind and do not make logical sense just as this piece does not follow linear thinking. This piece reflects surrealism with ambiguity towards time and exaggerated color. Themes of DADA are shown through playfulness, layered ideas, and avant-garde concepts.</p><p>Artist Mika Rottenberg I first drew inspiration from in her video <i>Spaghetti Blockchain</i> when I attended her exhibit at the Museum of Contemporary Art in Chicago. I was also influenced by the episode <i>Identity</i> by Art of the 21st Century Season 1 when Steve Martin sets the scene. Finally, the music videos <i>Locket</i> and <i> M.R.</i> for the band <i>Crumb.</i></p>",
             image: "https://player.vimeo.com/video/492938005",
-            video_1: "https://www.youtube.com/embed/GILdaPoTNIM",
+            video_1: "https://player.vimeo.com/video/1115572915",
             video_2: "../assets/expectations-vs-reality/gif.gif",
             image_1: "../assets/expectations-vs-reality/image_1.jpg",
             image_2: "../assets/expectations-vs-reality/image_2.jpg",
