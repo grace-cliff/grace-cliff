@@ -4,7 +4,8 @@
   "version": "1.0.0",
   "description": "One-time script that uploads content/projects.json into Sanity. Not part of the deployed site.",
   "scripts": {
-    "migrate": "node migrate-to-sanity.js"
+    "migrate": "node migrate-to-sanity.js",
+    "patch-medium": "node patch-medium.js"
   },
   "dependencies": {
     "@sanity/client": "^6",

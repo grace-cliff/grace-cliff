@@ -24,7 +24,7 @@ export default defineType({
       title: 'Medium',
       type: 'string',
       options: {
-        list: ['Projection Design', 'Graphic Design', 'Animation / Video', 'Installation'],
+        list: ['Projection Design', 'Graphic Design', 'Animation'],
       },
       validation: (Rule) => Rule.required(),
     }),

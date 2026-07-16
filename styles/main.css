@@ -696,10 +696,14 @@ header img {
   }
 }
 
+#portfolioGrid h2, #portfolioGrid h3 {
+  display: none;
+}
+
 @media (min-width: 1024px) {
   #portfolioGrid {
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
   }
 }
 
@@ -1204,5 +1208,23 @@ footer a:hover {
 
 .about-video {
   margin-top: 2rem;
+}
+
+.page--about .container {
+  text-align: center;
+}
+
+.page--about .container img {
+  max-width: 450px;
+  max-height: 450px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (min-width: 1024px) {
+  .page--about .info {
+    margin-right: 5rem;
+    margin-bottom: 5rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */

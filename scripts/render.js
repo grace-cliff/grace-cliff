@@ -113,8 +113,7 @@ async function renderPortfolioGrid() {
     { title: 'All', filter: 'All' },
     { title: 'Projection Design', filter: 'Projection Design' },
     { title: 'Graphic Design', filter: 'Graphic Design' },
-    { title: 'Animation / Video', filter: 'Animation / Video' },
-    { title: 'Installation', filter: 'Installation' },
+    { title: 'Animation', filter: 'Animation' },
   ]
 
   portfolioFilters.innerHTML += categories
@@ -292,11 +291,11 @@ async function renderAboutPage() {
   const bioHTML = about.bio && about.bio.length ? toHTML(about.bio) : ''
   const src = imageUrl(about.imageUrl, { width: 900 })
 
-  topSection.innerHTML = `<div class="flex large--flex-row flex-column">
-                                <div class="image">
+  topSection.innerHTML = `<div class="flex large--flex-row flex-column page--about">
+                                <div class="image container">
                                     <picture>
                                         <source srcset="${src}" media="(min-width: 600px)" />
-                                        <img src="${src}" alt="${about.heading}'s featured image" width="450" height="450" loading="lazy">
+                                        <img class="about-image" src="${src}" alt="${about.heading}'s featured image" width="450" height="450" loading="lazy">
                                     </picture>
                                 </div>
                                 <div class="info">
