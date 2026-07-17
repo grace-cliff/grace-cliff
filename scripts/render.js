@@ -46,6 +46,7 @@ const ABOUT_QUERY = `*[_type == "aboutPage"][0]{
   heading,
   bio,
   videoEmbedUrl,
+  videoEmbedUrl2,
   "imageUrl": image.asset->url,
   "resumeUrl": resume.asset->url
 }`
@@ -290,6 +291,24 @@ async function renderAboutPage() {
 
   const bioHTML = about.bio && about.bio.length ? toHTML(about.bio) : ''
   const src = imageUrl(about.imageUrl, { width: 900 })
+  const videos = [about.videoEmbedUrl, about.videoEmbedUrl2].filter(Boolean)
+
+  let videosHTML = ''
+  if (videos.length === 1) {
+    videosHTML = `<div class="grid-item about-video">
+                        <iframe title="vimeo-player" src="${videos[0]}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                    </div>`
+  } else if (videos.length > 1) {
+    videosHTML = `<div class="large--grid columns-2 about-videos">
+                        ${videos
+                          .map(
+                            (url) => `<div class="grid-item">
+                                <iframe title="vimeo-player" src="${url}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+                            </div>`
+                          )
+                          .join('')}
+                    </div>`
+  }
 
   topSection.innerHTML = `<div class="flex large--flex-row flex-column page--about">
                                 <div class="image container">
@@ -307,9 +326,7 @@ async function renderAboutPage() {
                                 </div>
                             </div>
 
-                            <div class="grid-item about-video">
-                                <iframe title="vimeo-player" src="${about.videoEmbedUrl}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
-                            </div>`
+                            ${videosHTML}`
 }
 
 // --- Shared: fade-in on scroll (unchanged behavior from the old portfolio.js)

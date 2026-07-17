@@ -24,6 +24,12 @@ export default defineType({
       type: 'url',
     }),
     defineField({
+      name: 'videoEmbedUrl2',
+      title: 'Second video embed URL (optional)',
+      description: 'Optional. When filled in, this plays side by side with the first video instead of below it.',
+      type: 'url',
+    }),
+    defineField({
       name: 'image',
       title: 'Photo',
       type: 'image',
